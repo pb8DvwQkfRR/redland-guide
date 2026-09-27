@@ -67,7 +67,7 @@ export const booths = [
   { id: 'B04a', zone: 'B', no: 'B04', ip: '永劫无间', alias: '好菜坞 糕手胡桃', blurb: '永劫无间首个沉浸式片场，好“菜”坞公开招募特邀主演！', xhs: { uid: '640aedab0000000029011710', name: '永劫无间' } },
   { id: 'B04b', zone: 'B', no: 'B04', ip: '暴雪游戏', alias: '魔兽世界 守望先锋 炉石传说 Blizzard 网易', blurb: '巨型吉安娜雕塑落地上海，快来重温你的赛博初恋！', xhs: { uid: '5bf907bae5efa70001c288f8', name: '魔兽世界' } },
   { id: 'B05', zone: 'B', no: 'B05', ip: '漫威影业', blurb: '漫威电影宇宙英雄“空降”复兴岛，复联五倒计时提前集结', xhs: { uid: '5f4dc002000000000101d078', name: '迪士尼中国' } },
-  { id: 'B06', zone: 'B', no: 'B06', ip: '无畏契约端手游', alias: 'VALORANT 源能行动', blurb: '瓦搭市集嗨翻天，舞台 PK 不设限，喊上搭子，尽兴开逛！', xhs: { uid: '63d88f440000000026012432', name: '无畏契约' } },
+  { id: 'B06', zone: 'B', no: 'B06', ip: '无畏契约端手游', alias: 'VALORANT 源能行动', blurb: '瓦搭市集嗨翻天，舞台 PK 不设限，喊上搭子，尽兴开逛！', xhs: { uid: '6546721d000000000301e8d4', name: '无畏契约手游' } },  // 用户 9/27：主账号用手游号，端游号进 boothDetails.B06.accounts
   { id: 'B07', zone: 'B', no: 'B07', ip: '第五人格', blurb: '放假了 该来德茉里学院上学了', xhs: { uid: '5bdafdf03f1adc0001032e53', name: '第五人格' } },
   { id: 'B08', zone: 'B', no: 'B08', ip: '遗忘之海', blurb: '神秘船队强势登陆，全面接管冒险岛海岸线！*惊喜待升级', xhs: { uid: '6317035a000000001200215b', name: '遗忘之海' } },
   { id: 'B09', zone: 'B', no: 'B09', ip: '重返未来：1999', blurb: '卡美洛古堡旧事重现，飞行女巫破空而来', xhs: { uid: '617260e90000000002024e57', name: '重返未来：1999' } },

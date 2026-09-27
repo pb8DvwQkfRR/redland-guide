@@ -92,6 +92,8 @@ CROPS = {
     'B08': ('public/img/booths/B08/03.jpg', (365, 410, 455, 499), {'fileId': 'spectrum/1040g34o325gn1o4ik4b05oon0dd4g8ara8oticg', 'upscale': True}),
     'A13': ('public/img/booths/A13/04.jpg', (169, 517, 300, 638), {'fileId': 'spectrum/1040g34o325ghc5df4a5g5q2ssop2773g7ts3fv0', 'upscale': True}),
     'A30': ('public/img/booths/A30/guide-04.jpg', (516, 700, 660, 838), {'fileId': 'spectrum/1040g0k0325f1eat2k61g5p52ojnl7cnv0tgm78o', 'upscale': True}),
+    # 航海王 9/27 攻略 III 长图（6288 高）里的路飞款橙软盘，810 基准 ~450px、用 fileId 拉原图
+    'A23': ('public/img/booths/A23/iii-01.jpg', (172, 2222, 646, 2696), {'fileId': 'spectrum/1040g34o325gfc9sq4a005pve4n72ngff7d4fbi0'}),
     'A35': ('public/img/booths/A35/guimi-03.jpg', (159, 403, 390, 623), {'fileId': 'spectrum/1040g34o325gknpeekc105p13ojukc96miismp2g', 'upscale': True}),
     'B02-1': ('public/img/booths/B02/04.jpg', (555, 335, 710, 480), {'upscale': True}),
     'B02-2': ('public/img/booths/B02/04.jpg', (555, 485, 710, 630), {'upscale': True}),

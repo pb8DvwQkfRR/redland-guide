@@ -54,7 +54,7 @@ export default {
   B04a: { f: ["yongjiewujian","haocaiwu","gaoshouhutao"], i: ["yjwj","hcw","gsht"] },
   B04b: { f: ["baoxueyouxi","moshoushijie","shouwangxianfeng","lushichuanshuo","blizzard","wangyi"], i: ["bxyx","mssj","swxf","lscs","wy"] },
   B05: { f: ["manweiyingye","dishinizhongguo"], i: ["mwyy","dsnzg"] },
-  B06: { f: ["wuweiqiyueduanshouyou","valorant","yuannengxingdong","wuweiqiyue"], i: ["wwqydsy","ynxd","wwqy"] },
+  B06: { f: ["wuweiqiyueduanshouyou","valorant","yuannengxingdong","wuweiqiyueshouyou","wuweiqiyueduanyou"], i: ["wwqydsy","ynxd","wwqysy","wwqydy"] },
   B07: { f: ["diwurenge"], i: ["dwrg"] },
   B08: { f: ["yiwangzhihai"], i: ["ywzh"] },
   B09: { f: ["chongfanweilai1999"], i: ["cfwl1"] },
@@ -90,7 +90,7 @@ export default {
   C15: { f: ["laruiangongzuoshi","shenjie","shenjieyuanzui2","larian"], i: ["lragzs","sj","sjyz2"] },
   C16: { f: ["baokemengjihuanshikapaiyouxi","ptcg","pokemonbaokemeng","baokemengguanfangqijiandianb17","dakadian","baokemengguanfangqijiandian","red","land","guanfang"], i: ["bkmjhskpyx","pbkm","bkmgfqjdb","dkd","bkmgfqjd","gf"] },
   C17: { f: ["hanghaiwangkapaiduizhan"], i: ["hhwkpdz"] },
-  C18: { f: ["shanhun","shanhunshiningsoul"], i: ["sh","shs"] },
+  C18: { f: ["shanhun","shanhunshiningsoul","red","land"], i: ["sh","shs"] },
   C19: { f: ["gaodahuizhan","gundam","ganda","assemble"], i: ["gdhz","gd"] },
   C20: { f: ["fuwenzhanchang"], i: ["fwzc"] },
 }

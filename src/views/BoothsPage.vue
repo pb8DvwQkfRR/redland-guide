@@ -151,6 +151,7 @@
                 <div v-for="e in d.entries" :key="e.ip" class="mt-6 small" style="padding-left:8px;border-left:3px solid var(--sky)">
                   <b>{{ e.ip }}</b>
                   <button v-for="id in calBooths(e)" :key="id" class="tag blue text btn" style="margin-left:6px" @click="openBooth(id)">{{ id }} →</button>
+                  <span v-if="calTime(e)" class="pill hot" style="margin-left:6px">⏰ {{ calTime(e) }}</span>
                   <div v-for="a in e.acts" :key="a.name" class="mt-4">
                     <span class="tag text" :class="calKind(a.kind)" style="font-size:10px;padding:2px 6px">{{ a.kind }}</span>
                     <b style="margin-left:4px">{{ a.name }}</b>
@@ -159,6 +160,7 @@
                 </div>
               </div>
               <div class="small muted mt-6">{{ booking.calendar.note }}</div>
+              <div class="small muted mt-4">⏰ {{ booking.calendar.square.note }}</div>
               <div class="mt-10" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
                 <img v-for="(im, i) in booking.calendar.images" :key="im.src" :src="base + im.src" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(calImages, i)" />
               </div>
@@ -533,6 +535,13 @@ const calImages = booking.calendar.images.map((m) => ({ src: base + m.src, capti
 const calBooths = (e) => [].concat(e.booth || [])
 const calCount = new Set(booking.calendar.days.flatMap((d) => d.entries.map((e) => e.ip.replace(/（.*$/, '')))).size
 const calKind = (k) => (k === '展台互动' ? 'blue' : k === '无料领取' ? 'yellow' : 'gray')
+// 活动广场「下一场预约时间」：按条目的展位 id 取，官方活动（冒险者营地）用 'camp'
+const calTime = (e) => {
+  const t = booking.calendar.square.times
+  if (!e.booth) return e.ip.includes('营地') ? t.camp : ''
+  for (const id of calBooths(e)) if (t[id]) return t[id]
+  return ''
+}
 const diningImages = dining.images.map((m) => ({ src: base + m.src, caption: m.alt }))
 const mallImages = mallDeals.images.map((m) => ({ src: base + m.src, caption: m.alt }))
 const facCount = venueFacilities.groups.reduce((n, g) => n + g.items.length, 0)
