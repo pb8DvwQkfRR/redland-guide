@@ -13,5 +13,6 @@ import { useRoute } from 'vue-router'
 import TabBar from './components/TabBar.vue'
 
 const route = useRoute()
-const showTab = computed(() => route.name !== 'booth')
+// 底栏常驻（用户 9/28：展位攻略等按钮栏冻结常驻），详情页也显示；只有开发者模式 #/dev 不挂
+const showTab = computed(() => route.name !== 'dev')
 </script>

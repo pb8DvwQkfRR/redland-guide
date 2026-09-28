@@ -113,7 +113,7 @@ const pinBoothCount = allNos.length - noPinNos.size
 const placeholders = pendingNos.map((no) => {
   const rows = rowsOf(no).filter((b) => !b.noPin)
   const zone = no[0]
-  return { id: 'booth:' + no, no, type: 'region', zone, booth: rows[0].id, name: `${rows.map((b) => b.ip).join(' / ')}（暂无 PIN 情报）`, how: '还没公布 PIN 情报', thumb: null }
+  return { id: 'booth:' + no, no, type: 'region', zone, booth: rows[0].id, name: `${rows.map((b) => b.ip).join(' / ')}「存档碎片」· 暂无情报`, how: '还没公布 PIN 情报', thumb: null }
 })
 const all = computed(() => {
   const region = [...pins.filter((p) => p.type === 'region'), ...placeholders].sort((a, b) => a.no.localeCompare(b.no, 'en', { numeric: true }))

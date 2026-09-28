@@ -65,7 +65,7 @@ CROPS = {
     'A17b': ('public/img/booths/A17b/04.jpg', (425, 422, 539, 515), {'fileId': 'spectrum/1040g0k0325b4gl4l4c005pmqd42ncdo3q6ir2gg', 'upscale': True}),
     # B03 Lovania「RED LAND 存档碎片」：官方只在「集章礼」格子里画了软盘造型的粉色图案（方形 + 中间浅色标签），没给成品实拍。
     # 图案在原图里**斜着摆**，按投影扫描定角 18°（逆时针转正后 92×93 的方形），转正后按同一个框裁（用户 9/22 要求这种也进图鉴）
-    'B03-pin': ('public/img/booths/B03/guide-04.jpg', (608, 652, 746, 792), {'fileId': 'spectrum/1040g0k0325cm579uk41043d79goggb4aa40mh6g', 'upscale': True}),  # 9/21 攻略里的黄色实图（9/15 只有粉色剪影，那条框已作废）
+    'B03-pin': ('public/img/booths/B03/guide-04.jpg', (604, 654, 748, 798), {'fileId': 'spectrum/1040g0k0325cm579uk41043d79goggb4aa40mh6g', 'upscale': True, 'rotate': 14}),  # 9/21 攻略黄色实图，斜约 14°（黄色掩膜投影扫描定角，用户 9/28 指出斜了）
     # 9/23 这批：无限暖暖（橙，178px 直接够）、明日方舟 / 终末地（黄，奖品图里只有 80–120px）、刺客信条两枚（蓝，并排各 ~80px）
     'A27': ('public/img/booths/A27/07.jpg', (308, 538, 494, 724), {'fileId': 'spectrum/1040g0k0325dsisbjk6hg5oq6aam65v73p15sido', 'upscale': True}),
     'B10': ('public/img/booths/B10/03.jpg', (494, 1478, 584, 1568), {'fileId': 'spectrum/1040g0k0325b1qso4kc005nsdhqcg85448fnd0k0', 'upscale': True}),
