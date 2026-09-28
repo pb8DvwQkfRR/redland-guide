@@ -86,7 +86,7 @@
               <div v-else class="small muted">当日名单待公布</div>
               <div v-if="f.guestNote" class="small muted mt-4">* {{ f.guestNote }}</div>
               <div v-if="f.images" class="fl-thumbs">
-                <img v-for="(im, i) in f.images" :key="im" :src="base + im" :alt="f.ip + ' 专属花车'" loading="lazy" @click="openImgs(floatImages(f), i)" />
+                <img v-for="(im, i) in f.images" :key="im" :src="thumb(base + im)" :alt="f.ip + ' 专属花车'" loading="lazy" @click="openImgs(floatImages(f), i)" />
               </div>
             </div>
           </div>
@@ -133,6 +133,7 @@ export default { name: 'ParadePage' }
 </script>
 
 <script setup>
+import { thumb } from '../utils/thumb.js'
 import { ref, computed, reactive, watch, nextTick, onActivated } from 'vue'
 import { useRoute } from 'vue-router'
 import PageHeader from '../components/PageHeader.vue'

@@ -225,7 +225,7 @@
             <span class="small muted">点击放大 · 左右滑动翻页</span>
           </div>
           <div class="gallery mt-10">
-            <img v-for="(img, i) in detail.images" :key="imgSrc(img)" :src="imgSrc(img)" :alt="imgCap(img)" :title="imgCap(img)" loading="lazy" @click="openImgs(noteImages, i)" />
+            <img v-for="(img, i) in detail.images" :key="imgSrc(img)" :src="thumb(imgSrc(img))" :alt="imgCap(img)" :title="imgCap(img)" loading="lazy" @click="openImgs(noteImages, i)" />
           </div>
         </div>
       </div>
@@ -289,6 +289,7 @@
 </template>
 
 <script setup>
+import { thumb } from '../utils/thumb.js'
 import { ref, reactive, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import PageHeader from '../components/PageHeader.vue'

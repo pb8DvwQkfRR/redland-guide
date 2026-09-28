@@ -10,7 +10,9 @@
     <link rel="icon" type="image/svg+xml" href="/redland-guide/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet" />
+    <!-- 字体异步加载：国内访问 Google Fonts 常很慢甚至超时，写成普通 stylesheet 会阻塞首屏渲染；这里先用系统字体显示，字体到了再替换（display=swap） -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=ZCOOL+QingKe+HuangYou&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=ZCOOL+QingKe+HuangYou&display=swap" /></noscript>
     <title>RED LAND 2026 冒险者攻略</title>
   </head>
   <body>

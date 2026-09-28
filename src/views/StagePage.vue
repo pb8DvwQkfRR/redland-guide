@@ -23,7 +23,7 @@
         <div v-if="p.note" class="note">{{ p.note }}</div>
         <!-- 补充演出情报笔记的图（如拳头游戏音乐 DJ 专场）：小缩略图一排，点开灯箱 -->
         <div v-if="p.images" class="fl-thumbs">
-          <img v-for="(im, i) in p.images" :key="im" :src="base + im" :alt="p.performer" loading="lazy" @click="openImgs(p.images.map((x) => ({ src: base + x, caption: p.performer })), i)" />
+          <img v-for="(im, i) in p.images" :key="im" :src="thumb(base + im)" :alt="p.performer" loading="lazy" @click="openImgs(p.images.map((x) => ({ src: base + x, caption: p.performer })), i)" />
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
           <div class="small mt-6">📰 DAY{{ current.day }} 主题报纸：{{ newspaperOf(current.day) }}</div>
           <div class="small mt-6" style="color:var(--brown)">💡 {{ campProgram.tip }}</div>
           <div class="mt-10" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
-            <img v-for="(im, i) in campProgram.images" :key="im.src" :src="base + im.src" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(campImages, i)" />
+            <img v-for="(im, i) in campProgram.images" :key="im.src" :src="thumb(base + im.src)" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(campImages, i)" />
           </div>
           <div class="small muted mt-6">图源：{{ campProgram.source.author }}「{{ campProgram.source.title }}」{{ campProgram.source.publishedAt }} · <a :href="campProgram.source.url" target="_blank" rel="noopener" style="text-decoration:underline">原笔记</a></div>
         </template>
@@ -125,6 +125,7 @@ export default { name: 'StagePage' }
 </script>
 
 <script setup>
+import { thumb } from '../utils/thumb.js'
 import { ref, reactive, computed, watch, nextTick, onActivated } from 'vue'
 import { useRoute } from 'vue-router'
 import PageHeader from '../components/PageHeader.vue'

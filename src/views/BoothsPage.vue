@@ -61,7 +61,7 @@
           <div class="hr" />
           <div v-for="t in mainline.tips" :key="t" class="small" style="color:var(--brown)">💡 {{ t }}</div>
           <div class="mt-10" style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
-            <img v-for="(im, i) in mainline.images" :key="im.src" :src="base + im.src" :alt="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(mainlineImages, i)" />
+            <img v-for="(im, i) in mainline.images" :key="im.src" :src="thumb(base + im.src)" :alt="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(mainlineImages, i)" />
           </div>
           <div class="small muted mt-6">图源：{{ mainline.source.author }}「{{ mainline.source.title }}」{{ mainline.source.publishedAt }} · <a :href="mainline.source.url" target="_blank" rel="noopener" style="text-decoration:underline">原笔记</a></div>
           <!-- 主角专属装备包（RED LAND 官方号 9/15）：入场安检后到装备区人人可领，是主线的第一步，所以放在主线玩法卡里（用户 9/17） -->
@@ -79,7 +79,7 @@
           </div>
           <div v-for="n in equipPack.notes" :key="n" class="small mt-6" style="color:var(--brown)">⚠️ {{ n }}</div>
           <div class="mt-6" style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">
-            <img v-for="(im, i) in equipPack.images" :key="im.src" :src="base + im.src" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(equipImages, i)" />
+            <img v-for="(im, i) in equipPack.images" :key="im.src" :src="thumb(base + im.src)" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(equipImages, i)" />
           </div>
           <div class="small muted mt-6">图源：{{ equipPack.source.author }}「{{ equipPack.source.title }}」{{ equipPack.source.publishedAt }} · <a :href="equipPack.source.url" target="_blank" rel="noopener" style="text-decoration:underline">原笔记</a></div>
           </template>
@@ -97,7 +97,7 @@
             </div>
             <div class="muted">*{{ e.note }}</div>
             <div v-if="e.image || e.images" class="mt-6" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
-              <img v-for="(im, i) in (e.images || [e.image])" :key="im" :src="base + im" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs((e.images || [e.image]).map((x) => base + x), i)" />
+              <img v-for="(im, i) in (e.images || [e.image])" :key="im" :src="thumb(base + im)" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs((e.images || [e.image]).map((x) => base + x), i)" />
             </div>
           </div>
           <div class="small muted mt-6">图源：{{ eggs.source.author }}「{{ eggs.source.title }}」{{ eggs.source.publishedAt }} · <a :href="eggs.source.url" target="_blank" rel="noopener" style="text-decoration:underline">原笔记</a></div>
@@ -162,7 +162,7 @@
               <div class="small muted mt-6">{{ booking.calendar.note }}</div>
               <div class="small muted mt-4">⏰ {{ booking.calendar.square.note }}</div>
               <div class="mt-10" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
-                <img v-for="(im, i) in booking.calendar.images" :key="im.src" :src="base + im.src" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(calImages, i)" />
+                <img v-for="(im, i) in booking.calendar.images" :key="im.src" :src="thumb(base + im.src)" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(calImages, i)" />
               </div>
               <div class="small muted mt-6">
                 图源：{{ booking.calendar.source.author }}「{{ booking.calendar.source.title }}」{{ booking.calendar.source.publishedAt }} ·
@@ -171,7 +171,7 @@
             </div>
             <div class="small mt-10" style="color:var(--brown)">💡 {{ booking.note }}</div>
             <div class="mt-10" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
-              <img v-for="(im, i) in booking.images" :key="im.src" :src="base + im.src" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(bookingImages, i)" />
+              <img v-for="(im, i) in booking.images" :key="im.src" :src="thumb(base + im.src)" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(bookingImages, i)" />
             </div>
             <div class="small muted mt-6">
               图源：{{ booking.source.author }}「{{ booking.source.title }}」{{ booking.source.publishedAt }} ·
@@ -195,7 +195,7 @@
               <li v-for="it in dining.survey.items" :key="it">{{ it }}</li>
             </ul>
             <div class="mt-10" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
-              <img v-for="(im, i) in dining.images" :key="im.src" :src="base + im.src" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(diningImages, i)" />
+              <img v-for="(im, i) in dining.images" :key="im.src" :src="thumb(base + im.src)" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(diningImages, i)" />
             </div>
             <div class="small mt-6" style="color:var(--brown)">💡 {{ dining.note }}</div>
             <div class="small muted mt-6">图源：{{ dining.source.author }}「{{ dining.source.title }}」{{ dining.source.publishedAt }} · <a :href="dining.source.url" target="_blank" rel="noopener" style="text-decoration:underline">原笔记</a></div>
@@ -216,7 +216,7 @@
             </div>
             <div v-for="t in mallDeals.points" :key="t" class="small mt-6" style="color:var(--brown)">· {{ t }}</div>
             <div class="mt-10" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
-              <img v-for="(im, i) in mallDeals.images" :key="im.src" :src="base + im.src" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(mallImages, i)" />
+              <img v-for="(im, i) in mallDeals.images" :key="im.src" :src="thumb(base + im.src)" :alt="im.alt" :title="im.alt" loading="lazy" style="border:2px solid var(--navy);border-radius:2px" @click="openImgs(mallImages, i)" />
             </div>
             <div class="small mt-6" style="color:var(--brown)">💡 {{ mallDeals.note }}</div>
             <div class="small muted mt-6">图源：{{ mallDeals.source.author }}「{{ mallDeals.source.title }}」{{ mallDeals.source.publishedAt }} · <a :href="mallDeals.source.url" target="_blank" rel="noopener" style="text-decoration:underline">原笔记</a></div>
@@ -258,7 +258,7 @@
             </div>
             <div class="mt-10" style="color:#c9c8ea">{{ venueFacilities.note }}</div>
             <div class="gallery mt-6">
-              <img v-for="(m, i) in facImages" :key="m.src" :src="m.src" :alt="m.caption" :title="m.caption" loading="lazy" @click="openImgs(facImages, i)" />
+              <img v-for="(m, i) in facImages" :key="m.src" :src="thumb(m.src)" :alt="m.caption" :title="m.caption" loading="lazy" @click="openImgs(facImages, i)" />
             </div>
             <div class="mt-6" style="color:#a9a8cc">
               来源：RED LAND 官方号 · {{ venueFacilities.source.publishedAt }}
@@ -270,7 +270,7 @@
             <img
               v-for="(m, i) in mapSlices"
               :key="m.src"
-              :src="m.src"
+              :src="thumb(m.src)"
               :alt="m.caption"
               :title="m.caption"
               loading="lazy"
@@ -301,7 +301,7 @@
           </ul>
           <div class="small mt-10" style="color:#ffe27a;font-weight:700">🗺 2025 场地图（点击放大，左右滑动翻页）</div>
           <div class="gallery mt-6">
-            <img v-for="(m, i) in venueMapRef.images" :key="m.src" :src="base + m.src" :alt="m.alt" :title="m.alt" loading="lazy" @click="openImgs(mapImages, i)" />
+            <img v-for="(m, i) in venueMapRef.images" :key="m.src" :src="thumb(base + m.src)" :alt="m.alt" :title="m.alt" loading="lazy" @click="openImgs(mapImages, i)" />
           </div>
         </div>
         <div class="small mt-6" style="color:#a9a8cc">
@@ -434,7 +434,7 @@
             <span class="tag blue text" style="flex:none">{{ r.dateText }}</span>
           </div>
           <div class="row mt-10" style="gap:10px;align-items:flex-start">
-            <img :src="base + r.image" :alt="r.name" loading="lazy" style="width:96px;flex:none;border:2px solid var(--navy);border-radius:2px" @click="openImgs([base + r.image], 0)" />
+            <img :src="thumb(base + r.image)" :alt="r.name" loading="lazy" style="width:96px;flex:none;border:2px solid var(--navy);border-radius:2px" @click="openImgs([base + r.image], 0)" />
             <div style="flex:1;min-width:0">
               <div class="small">{{ r.where }}</div>
               <div class="row wrap mt-6" style="gap:0">
@@ -464,8 +464,9 @@ import { ref, reactive, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import PageHeader from '../components/PageHeader.vue'
 import Lightbox from '../components/Lightbox.vue'
+import { thumb } from '../utils/thumb.js'
 import { booths, zones } from '../data/booths.js'
-import boothDetails from '../data/boothDetails.js'
+import boothIndex from '../data/boothIndex.js'  // 构建期生成的轻量索引，首屏不加载完整的 boothDetails.js
 import boothPinyin from '../data/boothPinyin.js'
 import { event, venueNav, mainline, eggs, places, dailySchedule, venueMap, venueMapRef, venueFacilities, equipPack, booking, dining, mallDeals } from '../data/rules.js'
 import { mapSpotList, mapSpots } from '../data/mapSpots.js'
@@ -546,33 +547,22 @@ const diningImages = dining.images.map((m) => ({ src: base + m.src, caption: m.a
 const mallImages = mallDeals.images.map((m) => ({ src: base + m.src, caption: m.alt }))
 const facCount = venueFacilities.groups.reduce((n, g) => n + g.items.length, 0)
 
-const hasDetail = (id) => !!boothDetails[id]
+const detailSet = new Set(boothIndex.detailIds)
+const hasDetail = (id) => detailSet.has(id)
+// 列表渲染完后空闲时预取详情数据，点进展位不用等
+if (typeof window !== 'undefined') (window.requestIdleCallback || ((f) => setTimeout(f, 1500)))(() => import('../data/boothDetails.js'))
 
 // 需要预约的展位：boothDetails 里任一 activities / tasks / stage 条目（含 items 分步项）带 needBooking，
 // 列表行的 IP 名后面出现亮黄「需预约」标签（用户 9/22）。新补详情时别忘了给要预约的活动加这个字段
-const bookingIds = new Set(
-  Object.entries(boothDetails)
-    .filter(([, d]) =>
-      ['activities', 'tasks', 'stage'].some((k) =>
-        (d[k] || []).some((x) => x.needBooking || (x.items || []).some((i) => i && i.needBooking)),
-      ),
-    )
-    .map(([id]) => id),
-)
+const bookingIds = new Set(boothIndex.bookingIds)
 // RED LAND 官方 9/25 预约日历里列出的展位也算「需预约」（IP 自己还没发笔记、只有日历轻量详情的 A32 / C18 / B14 靠这个兜底）
 for (const d of booking.calendar.days) for (const e of d.entries) for (const id of calBooths(e)) bookingIds.add(id)
 const needsBooking = (id) => bookingIds.has(id)
 const bookingCount = booths.filter((b) => bookingIds.has(b.id)).length
 // 搜索附加关键词：主账号昵称 + 详情里各 IP 官方账号 / 其他官方笔记作者（多 IP 共用展位时能搜到子 IP，如搜「魔兽」「炉石」出暴雪游戏，搜「假面骑士」出 SCLA）
-const extraKeys = Object.fromEntries(
-  booths.map((b) => {
-    const d = boothDetails[b.id]
-    const parts = [b.xhs?.name, ...(d?.accounts || []).map((a) => a.name), ...(d?.moreSources || []).map((m) => m.author)]
-    return [b.id, parts.filter(Boolean).join(' ').toLowerCase()]
-  }),
-)
+const extraKeys = boothIndex.extraKeys
 const searchExtra = (b) => extraKeys[b.id] || ''
-const detailCount = Object.keys(boothDetails).length
+const detailCount = boothIndex.detailIds.length
 const zoneDone = (z) => booths.filter((b) => b.zone === z && checked.value.has(b.id)).length
 
 const list = computed(() => {

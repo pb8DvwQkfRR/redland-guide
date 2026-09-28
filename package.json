@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/gen-pinyin.mjs",
     "dev": "vite --host",
     "pinyin": "node scripts/gen-pinyin.mjs",
     "prebuild": "node scripts/gen-pinyin.mjs",

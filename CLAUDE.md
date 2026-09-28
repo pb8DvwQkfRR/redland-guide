@@ -180,6 +180,13 @@ docs/                         总资料底稿：REDLAND2026_信息汇总.md + as
 - 本机状态只用 localStorage（打卡 `rl26.checked`、当前 DAY `rl26.day`、PIN 已收集 `rl26.pins`），不引入登录 / 云同步。
 - 中文与英文 / 数字之间留一个空格；官方专有名词不改写（「存档碎片」「冒险者营地」「月下模式」等）。
 
+## 5.0 加载性能（9/28 用户反馈「加载很慢」后优化）
+
+- **字体异步**：`index.html` 的 Google Fonts 用 `rel=preload` + `onload` 切成 stylesheet，不再阻塞首屏（国内 fonts.googleapis.com 常超时，原来整页白屏等到超时）。字体到了再替换，先用系统字体。
+- **首屏不背 boothDetails**：展位列表页只 import 构建期生成的 `src/data/boothIndex.js`（`detailIds` / `bookingIds` / `extraKeys`，由 `scripts/gen-pinyin.mjs` 顺带生成，`predev` / `prebuild` 自动跑），完整的 `boothDetails.js`（400+ KB）在列表渲染完后 `requestIdleCallback` 预取，点进详情不用等。**列表页别再直接 import boothDetails**；新增判断条件就加进 gen-pinyin.mjs 的索引里。
+- **小图用缩略图**：`python scripts/gen-thumbs.py` 把 `public/img/**/*.jpg` 生成 400 宽的 `public/img/_t/<同路径>.jpg`（跳过 pins / png / 本来就窄的图，按修改时间增量）；模板里网格 / 内联小图的 `:src` 包一层 `thumb()`（`src/utils/thumb.js`），**灯箱仍传原图**。`src/main.js` 有全局兜底：缩略图 404 时换回原图，所以漏跑脚本不会破图，但**加了新图后仍应跑一次 gen-thumbs 并提交**（CI 里没有 Python，缩略图是提交进仓库的）。
+- 实测（headless，390 宽首屏）：展位列表首屏 741 KB → 约 255 KB（另 133 KB 详情数据在空闲时预取）；详情页原图网格每张 150–200 KB → 40–50 KB。
+
 ## 5.1 开发者模式（`#/dev`）
 
 平面图那套数据（热区 / 到达门 / 出入口 / 起点）是脚本识别 + 人工核对出来的，总会有偏差。
