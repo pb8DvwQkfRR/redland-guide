@@ -97,5 +97,5 @@ export default {
   C17: { f: ["hanghaiwangkapaiduizhan"], i: ["hhwkpdz"] },
   C18: { f: ["shanhun","shanhunshiningsoul","red","land"], i: ["sh","shs"] },
   C19: { f: ["gaodahuizhan","gundam","ganda","assemble"], i: ["gdhz","gd"] },
-  C20: { f: ["fuwenzhanchang"], i: ["fwzc"] },
+  C20: { f: ["fuwenzhanchang","yingxionglianmengduizhankapai","riftbound","akali"], i: ["fwzc","yxlmdzkp","akl"] },
 }

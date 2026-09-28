@@ -2001,6 +2001,8 @@ IP 官方笔记（2026-09-09 增补，均为 xhslink 短链，App 内打开）
 
 - https://xhslink.cn/o/3OGFxD2R2Ma （Sanrio三丽鸥 09/28「三丽鸥RED LAND「闯关攻略」速递！」，A21 三处关卡 + 存档碎片；另见 13.35 后补）
 
+- https://xhslink.cn/o/AcNMX1yBr0 （符文战场 09/27「REDLAND 2026｜符文战场参展情报公开」，C20 首份详情 + 账号；正文 C-10 为笔误，海报 C-20）
+
 ## 附录 B. 同目录素材说明
 
 - `assets/share_page/`：用户链接长图原图（origin_full.png）与 7 段切片、分享封面
