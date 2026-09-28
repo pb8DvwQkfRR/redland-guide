@@ -51,8 +51,10 @@ CROPS = {
     # 第五人格 REDLAND 存档碎片（黄 = B 区），入学指南图里只有 ~127px
     'B07': ('public/img/booths/B07/01.jpg', (477, 395, 604, 515), {'fileId': 'notes_pre_post/1040g3k83257fk4fekecg4bmt3euv0bijn2d33fg', 'upscale': True}),
     # ANIPLEX 孤独摇滚福袋里的「存档碎片」（橙 = A 区），图里只有 ~80px 且略微逆时针歪
-    'A25-1': ('public/img/booths/A25/second-00.jpg', (519, 445, 599, 527), {'fileId': 'spectrum/1040g34o3258kiftm46105oijm22418dael158p8', 'upscale': True, 'rotate': -5}),
-    'A25-2': ('public/img/booths/A25/second-00.jpg', (608, 547, 702, 624), {'fileId': 'spectrum/1040g34o3258kiftm46105oijm22418dael158p8', 'upscale': True, 'rotate': -5}),
+    # 9/28 用户提供了正面清晰图，public/img/pins/A25-1.jpg 已直接替换，不再从笔记图裁：
+    # 'A25-1': ('public/img/booths/A25/second-00.jpg', (519, 445, 599, 527), {'fileId': 'spectrum/1040g34o3258kiftm46105oijm22418dael158p8', 'upscale': True, 'rotate': -5}),
+    # 9/28 用户提供了正面清晰图，public/img/pins/A25-2.jpg 已直接替换，不再从笔记图裁：
+    # 'A25-2': ('public/img/booths/A25/second-00.jpg', (608, 547, 702, 624), {'fileId': 'spectrum/1040g34o3258kiftm46105oijm22418dael158p8', 'upscale': True, 'rotate': -5}),
     # 光·遇「存档碎片」（橙 = A 区），限定赠礼长图里只有 ~113px
     # 光与夜之恋《光与夜之恋》展台存档碎片（橙 = A 区；官方图里正面 / 背面并排，只裁左边正面那枚，303×303 够大不用放大）
     'A40': ('public/img/booths/A40/guide-16.jpg', (74, 347, 377, 650)),
