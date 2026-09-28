@@ -2,6 +2,20 @@
   <div class="page">
     <PageHeader title="PIN 图鉴" :sub="`冒险者拼图（冰箱贴）· 已收集 ${collectedCount} / ${totalKnown} 枚已公布`" />
 
+    <!-- 官方口径核对（按展位号）：发 PIN 展位 74 个 = 已有情报 + 待公布（用户 9/28） -->
+    <div class="pcard mt-10">
+      <div class="pcard-body">
+        <div class="pcard-title">📊 发 PIN 展位统计（按官方口径）</div>
+        <div class="row wrap mt-6" style="gap:6px">
+          <span class="pill">官方：总展位 {{ allNos.length }} · 发 PIN {{ OFFICIAL_PIN_BOOTHS }}</span>
+          <span class="pill hot">已放实图 {{ imageNos.size }}</span>
+          <span class="pill warm">有情报无图 {{ infoNos.size - imageNos.size }}</span>
+          <span class="pill">待公布 {{ pendingNos.length }}</span>
+        </div>
+        <div class="small muted mt-6">按展位号计：同一展位号的多个 IP 算一个展位，一个展位发两款 PIN 也算一个。{{ imageNos.size }} + {{ infoNos.size - imageNos.size }} + {{ pendingNos.length }} = {{ infoNos.size + pendingNos.length }}<template v-if="infoNos.size + pendingNos.length === OFFICIAL_PIN_BOOTHS">，与官方 {{ OFFICIAL_PIN_BOOTHS }} 个一致</template><template v-else>，与官方 {{ OFFICIAL_PIN_BOOTHS }} 个不一致（本站 {{ pinBoothCount }}），待核</template>；不发 PIN 的 {{ noPinNos.size }} 个展位（宝藏码头 / 补给点 / 赞助区 / 待解锁 / 光夜展陈）不列。</div>
+      </div>
+    </div>
+
     <!-- 三区开图进度（按已收集的区域 PIN 覆盖的展位数） -->
     <div class="pcard sand mt-10">
       <div class="pcard-body">
@@ -13,8 +27,8 @@
             <div class="bar mt-6"><i :style="{ width: Math.min(100, (zoneCollected(z.key) / z.need) * 100) + '%', background: z.color }" /></div>
           </div>
         </div>
-        <div class="small muted mt-6">* 编号为按展位号的占位编码（官方未给 PIN 编号）；灰色「?」软盘是<b>暂无 PIN 情报</b>的展位占位，公布后替换；宝藏码头 / 补给点 / 赞助区 / 待解锁展位本来就不发 PIN，不列。</div>
-        <div class="small muted mt-6">* <b>不是每个展位都发 PIN</b>：官方规则只要求每区集齐 4 / 2 / 2 枚就能兑换该区拼图，「?」卡不代表该展位一定会有。勾选「只看已公布」可只看实图已公布的 PIN。</div>
+        <div class="small muted mt-6">* 编号为按展位号的占位编码（官方未给 PIN 编号）；灰色「?」软盘是<b>还没公布 PIN 情报</b>的展位（一个展位号一张），公布后替换。</div>
+        <div class="small muted mt-6">* 官方说 74 个展位发 PIN，每区集齐 4 / 2 / 2 枚即可兑换该区拼图。勾选「只看已公布」可只看实图已公布的 PIN。</div>
       </div>
     </div>
 
@@ -80,12 +94,27 @@ function openPin(p) {
 // 区域信息（名称 / 颜色 / 兑换所需 PIN 数）直接用 booths.js zones
 const zones = boothZones
 
-// 未公布 PIN 的展位 → 占位卡（一个展位一枚）；booths.js 标了 noPin 的（宝藏码头 / 补给点 / 赞助区 / 待解锁 / 展陈）本来就不发 PIN，不出占位卡（用户 9/27）
-const knownBooths = new Set(pins.flatMap((p) => [p.booth, ...(p.alsoBooths || [])]).filter(Boolean))  // alsoBooths：同一枚 PIN 多个展位 id 都发（阅文 A35a–d / Aniplex A25a–b）
-const placeholders = booths
-  .filter((b) => !knownBooths.has(b.id) && !b.noPin)
-  .map((b) => ({ id: 'booth:' + b.id, no: b.id, type: 'region', zone: b.zone, booth: b.id, name: `${b.ip}（暂无 PIN 情报）`, how: '还没公布 PIN，也可能本来就不发', thumb: null }))
-
+// 官方口径（RED LAND 9/25 预约日历正文）：总活动展位 81 个、发 PIN 展位 74 个——按「展位号」算，不是按展位行 / PIN 张数算（用户 9/28）。
+// 同号多 IP（A01 / A03 / A14 / A29 / C03 / A35）只算一个展位；一个展位发两款 PIN 也只算一个展位
+const OFFICIAL_PIN_BOOTHS = 74
+const nosOf = (b) => String(b.no).split('/').map((x) => x.trim().replace('-', ''))
+const allNos = [...new Set(booths.flatMap(nosOf))]
+const rowsOf = (no) => booths.filter((b) => nosOf(b).includes(no))
+// 某展位号下所有行都标了 noPin（宝藏码头 / 补给点 / 赞助区 / 待解锁 / 展陈）才算不发 PIN；A35 阅文好物 noPin 但同号其他 IP 发，展位号仍算
+const noPinNos = new Set(allNos.filter((no) => rowsOf(no).every((b) => b.noPin)))
+const pinIdsOf = (p) => [p.booth, ...(p.alsoBooths || [])].filter(Boolean)
+const regionPins = pins.filter((p) => p.type === 'region')
+const nosWith = (list) => new Set(booths.filter((b) => list.some((p) => pinIdsOf(p).includes(b.id))).flatMap(nosOf))
+const infoNos = nosWith(regionPins)                              // 已有 PIN 情报（含只有文字、没放图的）
+const imageNos = nosWith(regionPins.filter((p) => p.thumb))       // 已放出实图
+const pendingNos = allNos.filter((no) => !noPinNos.has(no) && !infoNos.has(no)).sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
+const pinBoothCount = allNos.length - noPinNos.size
+// 未公布 PIN 的展位号 → 一个展位号一张占位卡（同号多 IP 合成一张）
+const placeholders = pendingNos.map((no) => {
+  const rows = rowsOf(no).filter((b) => !b.noPin)
+  const zone = no[0]
+  return { id: 'booth:' + no, no, type: 'region', zone, booth: rows[0].id, name: `${rows.map((b) => b.ip).join(' / ')}（暂无 PIN 情报）`, how: '还没公布 PIN 情报', thumb: null }
+})
 const all = computed(() => {
   const region = [...pins.filter((p) => p.type === 'region'), ...placeholders].sort((a, b) => a.no.localeCompare(b.no, 'en', { numeric: true }))
   const others = pins.filter((p) => p.type !== 'region')
