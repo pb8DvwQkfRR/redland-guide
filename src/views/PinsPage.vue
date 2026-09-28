@@ -81,7 +81,7 @@ function openPin(p) {
 const zones = boothZones
 
 // 未公布 PIN 的展位 → 占位卡（一个展位一枚）；booths.js 标了 noPin 的（宝藏码头 / 补给点 / 赞助区 / 待解锁 / 展陈）本来就不发 PIN，不出占位卡（用户 9/27）
-const knownBooths = new Set(pins.filter((p) => p.booth).map((p) => p.booth))
+const knownBooths = new Set(pins.flatMap((p) => [p.booth, ...(p.alsoBooths || [])]).filter(Boolean))  // alsoBooths：同一枚 PIN 多个展位 id 都发（阅文 A35a–d / Aniplex A25a–b）
 const placeholders = booths
   .filter((b) => !knownBooths.has(b.id) && !b.noPin)
   .map((b) => ({ id: 'booth:' + b.id, no: b.id, type: 'region', zone: b.zone, booth: b.id, name: `${b.ip}（暂无 PIN 情报）`, how: '还没公布 PIN，也可能本来就不发', thumb: null }))

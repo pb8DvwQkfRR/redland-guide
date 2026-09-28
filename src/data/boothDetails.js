@@ -736,6 +736,10 @@ const aniplex = {
     publishedAt: '2026-08-21',
   },
   moreSources: [
+    { title: '轻松小熊合影会，限定开启！', url: 'https://xhslink.cn/o/5UFWvygPCqt', noteId: '6ab9e6f8000000001801655c', author: 'Aniplex', publishedAt: '2026-09-28' },
+    { title: '心动情境，现场演绎！（加油吧！中村君！！）', url: 'https://xhslink.cn/o/87GSffhnGyT', noteId: '6ab9d868000000001b0308b5', author: 'Aniplex', publishedAt: '2026-09-28' },
+    { title: 'STARRY开门！纽带乐队登场！', url: 'https://xhslink.cn/o/6shLbzkUGRt', noteId: '6ab50994000000001a032042', author: 'Aniplex', publishedAt: '2026-09-27' },
+    { title: '鬼杀队呼吸法训练课开课啦', url: 'https://xhslink.cn/o/6hVWnIWOi09', noteId: '6ab503d1000000001c02c71f', author: 'Aniplex', publishedAt: '2026-09-26' },
     { title: 'ANIPLEX无料第一弹！鬼灭周边免费领！', url: 'https://xhslink.cn/o/Ai030WmTEie', noteId: '6aab864d000000000b0359bb', author: 'Aniplex', publishedAt: '2026-09-20' },
     { title: 'ANIPLEX无料第二弹！速来拿孤独摇滚福袋！', url: 'https://xhslink.cn/o/6yofUspXwHU', noteId: '6aad03860000000029019145', author: 'Aniplex', publishedAt: '2026-09-20' },
     { title: 'ANIPLEX无料第三弹！快速通道拿了就走！', url: 'https://xhslink.cn/o/ALtxXtYSpnP', noteId: '6ab09dd1000000002601d22e', author: 'Aniplex', publishedAt: '2026-09-21' },
@@ -756,11 +760,19 @@ const aniplex = {
       title: '轻松小熊合影会',
       desc: '和可爱的轻松小熊人偶合影，还能得到来自小熊配发的下午茶饼干。',
       needBooking: true,
-      note: '来自 RED LAND 官方 9/25 预约日历（ANIPLEX 展位，活动类型「展台互动」），Aniplex 自己尚未发笔记；预约走 RED LAND 主会场，9 月 29 日开约（RED LAND 主会场「活动广场」9/27 显示下一场预约时间 9 月 29 日 12:00）',
+      note: 'Aniplex 9/28「轻松小熊合影会，限定开启！」：每日场次 1 15:00–15:15 / 场次 2 16:00–16:15，完成合影得茶会限定点心；预约走 RED LAND 主会场，9 月 29 日 12:00 开约（官方日历 + 活动广场）',
       rewards: ['下午茶饼干'],
     },
   ],
-  stage: [],
+  stage: [
+    {
+      title: '每日特别活动（A-25 展台）',
+      desc: '鬼杀队呼吸法训练课：炭治郎、祢豆子、善逸、伊之助人偶陪你一起训练；纽带乐队见面会：后藤独、伊地知虹夏、山田凉、喜多郁代角色 COSER 现场互动、应援，还有自由 Pose 时间（COSER @阿璇学妹 / @辞季 / @景三 / @钉宫草莓）；【加油吧！中村君！！】COSER 互动：现场还原动画里的心动情境（COSER @一茶 / @辈歌）；轻松小熊合影会需提前线上预约。时间均为官方「预定」。',
+      schedule: [
+        { day: '每日', times: ['中村君 COSER 互动 14:00 – 14:30', '轻松小熊合影会 15:00 – 15:15', '轻松小熊合影会 16:00 – 16:15', '鬼杀队呼吸法训练课 17:00 – 17:15', '纽带乐队见面会 18:30 – 19:00', '鬼杀队呼吸法训练课 19:30 – 19:45'], guests: ['炭治郎 / 祢豆子 / 善逸 / 伊之助 人偶', '纽带乐队 COSER', '中村君 COSER', '轻松小熊（需预约）'] },
+      ],
+    },
+  ],
   tasks: [
     {
       title: '入队流程（5 步）',
@@ -840,6 +852,10 @@ const aniplex = {
     { src: 'img/booths/A25/00.jpg', caption: '次元管理局入队指南（Aniplex 8/21）' },
     { src: 'img/booths/A25/first-00.jpg', caption: '限定特典第一弹 · 鬼灭之刃福袋与日 / 夜两款存档碎片（Aniplex 9/20）' },
     { src: 'img/booths/A25/second-00.jpg', caption: '限定特典第二弹 · 孤独摇滚福袋与日 / 夜两款存档碎片（Aniplex 9/20）' },
+    { src: 'img/booths/A25/daily-00.jpg', caption: '每日特别活动 1 · 鬼杀队呼吸法训练课（日场 17:00 / 夜场 19:30，Aniplex 9/26）' },
+    { src: 'img/booths/A25/daily-01.jpg', caption: '每日特别活动 2 · 纽带乐队见面会（18:30–19:00）' },
+    { src: 'img/booths/A25/daily-02.jpg', caption: '每日特别活动 3 ·【加油吧！中村君！！】COSER 互动（14:00–14:30）' },
+    { src: 'img/booths/A25/daily-03.jpg', caption: '每日特别活动 4 · 轻松小熊合影会（15:00 / 16:00，需预约）' },
     { src: 'img/booths/A25/third-00.jpg', caption: '限定特典第三弹 · 「俺没偷袜子」袜子 +「俺要上头了」发带（Aniplex 9/21）' },
   ],
 }
@@ -1304,6 +1320,37 @@ const yuewen = {
     { src: 'img/booths/A35/huyao.jpg', caption: '子页 · 狐妖小红娘「出游吧，狐妖小红娘」' },
     { src: 'img/booths/A35/haowu.jpg', caption: '子页 · 阅文好物「好物集结登岛纪」' },
   ],
+}
+
+// ---- 阅文 A35 拆成各 IP 展位（用户 9/28：「全放在一个里太乱了」）----
+// A35 保留为「阅文好物」（id 不改，本机打卡记录不丢），全职高手 / 诡秘之主 / 一人之下 / 道诡异仙 / 狐妖小红娘 为 A35a–e；
+// 数据仍只维护上面一份 yuewen（活动 / 任务按 ip 字段分，舞台按标题前缀分，奖励 / 图片按文字里的 IP 名分），这里按 IP 过滤
+const yuewenHub = { ...yuewen.source }
+const ywPart = (ip, extra = {}) => {
+  const d = ywBase(ip, extra)
+  return { ...d, moreSources: d.moreSources.filter((m) => m.noteId !== d.source.noteId) }
+}
+const ywBase = (ip, extra = {}) => ({
+  ...yuewen,
+  accounts: [],
+  notes: [`《${ip}》与阅文其他 IP（全职高手 / 诡秘之主 / 一人之下 / 道诡异仙 / 狐妖小红娘 / 阅文好物）同在 A-35 阅文展位，各 IP 在展位列表里单独一行。`, ...(extra.notes || [])],
+  activities: yuewen.activities.filter((a) => a.ip === ip).map(({ ip: _i, ...a }) => a),
+  tasks: yuewen.tasks.filter((a) => a.ip === ip).map(({ ip: _i, ...a }) => a),
+  stage: yuewen.stage.filter((x) => x.title.startsWith(ip) || (x.title.startsWith('各 IP') && x.desc.includes(ip + '：'))),
+  rewards: yuewen.rewards.filter((r) => r.how.includes(ip) || r.name.includes(ip)),
+  images: yuewen.images.filter((m) => (m.caption || '').includes(ip)),
+  moreSources: [yuewenHub, ...yuewen.moreSources.filter((m) => m.title.includes(ip) || m.author === ip)],
+  ...Object.fromEntries(Object.entries(extra).filter(([k]) => k !== 'notes')),
+})
+const pinNote = '存档碎片是 RED LAND 2026 × 阅文集团同一枚暗红软盘，全职高手 / 诡秘之主 / 一人之下 / 道诡异仙 各有领法。'
+const ywSrc = (key) => yuewen.moreSources.find((m) => m.title.includes(key))
+const yuewenParts = {
+  A35: ywPart('阅文好物', { boothNo: 'A-35', source: yuewenHub, intro: '秋日降临，阅文好物带着惊喜互动和重磅新品登陆 RED LAND！' }),
+  A35a: ywPart('全职高手', { boothNo: 'A-35（阅文展位）', source: ywSrc('全职高手'), intro: '这一页，荣耀服务器在 REDLAND 点亮——荣耀大陆接入完毕，副本已就位，这一页荣耀，等你亲手翻开。', notes: [pinNote] }),
+  A35b: ywPart('诡秘之主', { boothNo: 'A-35（阅文展位）', source: ywSrc('诡秘之主'), intro: '十一黄金周✨小诡在 RED LAND 蹲你！快来贝克兰德的街巷，邂逅非凡者啦！', notes: [pinNote] }),
+  A35c: ywPart('一人之下', { boothNo: 'A-35（阅文展位）', source: ywSrc('异人登岛'), intro: '阳光、沙滩、海浪，这个假期和异人们一起登岛狂欢！经纪人宝儿姐携异人男团登陆 REDLAND，「被浪花打翻的偶像计划」正式开启！', notes: [pinNote, '10 月 2 日、10 月 5 日日场打卡礼发放及日场互动截止时间提前至 15:30（男团全员亮相 & 王也生日会）；展台无料与互动按现场人流动态截排限流。'] }),
+  A35d: ywPart('道诡异仙', { boothNo: 'A-35（阅文展位 · 坐忘麻将馆）', hours: '日场 12:30 – 17:30 · 夜场 17:30 – 21:30', source: ywSrc('坐忘麻将馆'), intro: '堕其肢体，黜遁聪智，离形去知，同于大通。何为坐忘？此谓坐忘！一起丢掉脑子，上岛开耍！', notes: [pinNote] }),
+  A35e: ywPart('狐妖小红娘', { boothNo: 'A-35（阅文展位）', source: yuewenHub, intro: '「情缘行至千年外，相思渡口待君来」涂山红线仙全员集结，登上这艘帷幔船，集齐属于你的缘分印记！' }),
 }
 
 // 新创华 SCLA：9 大 IP 共用展位（假面骑士 / 奥特曼 / 面包超人 / 超级战队 / 名侦探柯南 / 新世纪福音战士 / 初音未来 / 哥斯拉 / 犬夜叉）
@@ -5069,6 +5116,127 @@ const valorant = {
   ],
 }
 
+// 盛世天下（A-01，翻身时空港入口）：官方号 9/28「展台打卡攻略」——安检票检后进翻身时空港，入口即为展位；展区五处打卡 + 关注 / 集章 / 互动免费领周边
+const shengshi = {
+  source: { title: '《盛世天下》RED LAND的展台打卡攻略', url: 'https://xhslink.cn/o/5GSRpz7Vztf', noteId: '6ab9df9100000000180112e4', author: '盛世天下', publishedAt: '2026-09-28' },
+  boothNo: 'A-01',
+  location: '翻身时空港 A-01',
+  hours: '每日 12:30 – 21:30（以当日主办公告为准）',
+  intro: '好戏开场，共赴盛世之约！现场有超多免费周边、打卡点位、互动游戏……欢迎各位主子大人们前来赴约！',
+  notes: [
+    '从登陆点「入口」进行「安检票检」后，找到「翻身时空港」区域，入口即为《盛世天下》官方展位（与 A-01 王者荣耀同号）。',
+    '展位准备了冰凉贴、驱蚊液、雨衣、矿泉水等应急物资，可咨询展位工作人员领取。',
+    '周边每日数量有限，赠完即止，请勿重复领取。',
+  ],
+  activities: [
+    {
+      title: '展区速览',
+      items: [
+        { title: '盛世展台全景 · 打卡互动舞台', desc: '宫殿戏台造型主舞台。' },
+        { title: '鲜花鸡蛋榜互动', desc: '剧中角色的「鲜花鸡蛋榜」投票墙。' },
+        { title: '同人作品展示', desc: '同人作品展示墙。' },
+        { title: '自拍机互动', desc: '拍立方自拍机：创意大头贴（大头贴 / 亲子照 / 闺蜜照 / 情侣照 / 证件照）。' },
+        { title: '真人立绘合影板', desc: '四位主角真人立绘合影。' },
+      ],
+    },
+  ],
+  stage: [],
+  tasks: [
+    {
+      title: '免费领官方周边',
+      desc: '现场关注官方账号、打卡手册集章、参与展区互动，即可免费获得官方周边礼品。',
+      follow: [{ uid: '6535c98400000000060075e1', name: '盛世天下' }],
+      note: '每日数量有限，赠完即止，请勿重复领取；周边效果图仅为示意',
+      rewards: ['演员签名照（16 款）', '鲜花鸡蛋扇（2 款）', '手提袋（2 款）', '透卡（7 款）', '镭射卡（4 款）', '明信片 & 海报'],
+    },
+  ],
+  rewards: [{ name: '演员签名照 / 鲜花鸡蛋扇 / 手提袋 / 透卡 / 镭射卡 / 明信片 & 海报', how: '关注官方账号、打卡手册集章、参与展区互动免费领；每日限量' }],
+  footnote: '更多活动信息陆续解锁。',
+  images: [
+    { src: 'img/booths/A01b/00.jpg', caption: '展台打卡攻略 · 参展信息 10/2–10/6 翻身时空港 A-01，每日 12:30–21:30（盛世天下 9/28）' },
+    { src: 'img/booths/A01b/01.jpg', caption: '逛展指南 · 安检票检后进翻身时空港，入口即为展位' },
+    { src: 'img/booths/A01b/02.jpg', caption: '展区速览 · 盛世展台全景 / 打卡互动舞台' },
+    { src: 'img/booths/A01b/03.jpg', caption: '展区速览 · 鲜花鸡蛋榜互动 / 同人作品展示' },
+    { src: 'img/booths/A01b/04.jpg', caption: '展区速览 · 自拍机互动 / 真人立绘合影板' },
+    { src: 'img/booths/A01b/05.jpg', caption: '周边礼品 · 演员签名照 / 鲜花鸡蛋扇 / 手提袋' },
+    { src: 'img/booths/A01b/06.jpg', caption: '周边礼品 · 透卡 / 镭射卡 / 明信片 & 海报' },
+  ],
+}
+
+// 上海迪士尼度假区（A-20）：官方号 9/23「疯狂嚎叫节 城外海选登岛啦」——四站：嚎叫海选 / 演出后台打卡 / 指定互动领周边 / 10.6 晚夏奇羊与朱迪尼克亮相
+const disney = {
+  source: { title: '🌟玩法抢先看｜疯狂嚎叫节 城外海选登岛啦！', url: 'https://xhslink.cn/o/2pKVYU6CoTa', noteId: '6ab3785d000000001500e421', author: '上海迪士尼度假区', publishedAt: '2026-09-23' },
+  boothNo: 'A-20',
+  location: '翻身时空港 A-20',
+  intro: '十年一遇的嚎叫花大丰收，「疯狂嚎叫节」嚎叫队伍日益壮大！疯狂动物城首次向城外发起「疯狂嚎声音」嚎叫海选，等你来参加！',
+  notes: [
+    '打卡小贴士：穿上动物城元素的服装、配饰更出片。',
+    '周边为非卖品，一经发放不退不换；现场娱乐演出可能因天气等原因暂停或取消，以实际运营为准。',
+    '场外福利：持 RED LAND 通行证可验证票号享上海迪士尼午后入园优惠（疯狂动物城嚎叫节 10/4–11/1），详见原笔记。',
+  ],
+  activities: [
+    { title: '第一站 · 参与嚎叫海选互动', desc: '海选舞台准备就绪，请各位动物城居民大胆登台，秀出疯狂「嚎」声音和精彩舞步，摘得「嚎叫新星」荣誉！有活儿你就 show！' },
+    { title: '第二站 · 打卡动物城多元场景', desc: '近距离拍照打卡疯狂动物城城外海选现场演出后台（夏奇羊化妆间），还有更多惊喜彩蛋等你来探索。' },
+    { title: '第三站 · 完成指定互动，领取限定惊喜', desc: '跟随疯狂动物城海选志愿者，参加现场指定互动，就有机会获得城外海选限定款惊喜周边。', rewards: ['「嚎叫新星」冰箱贴（伴嚎款 / 舞蹈款随机，每日 300）', '限量贴纸（每日 800）', '特别徽章（每日 1000）'] },
+  ],
+  stage: [
+    { title: '第四站 · 嚎叫推广大使惊喜亮相', desc: '10 月 6 日晚，疯狂动物城「嚎叫推广大使」夏奇羊和朱迪尼克将惊喜亮相海选现场，与「嚎叫新星」们一起嗨！（具体时刻未公布）', schedule: [{ day: '10月6日', guests: ['夏奇羊', '朱迪', '尼克'] }] },
+  ],
+  tasks: [],
+  rewards: [
+    { name: '「嚎叫新星」冰箱贴（伴嚎款 / 舞蹈款随机）', how: '参与现场指定互动，每日限量 300' },
+    { name: '限量贴纸', how: '参与现场指定互动，每日限量 800' },
+    { name: '特别徽章', how: '参与现场指定互动，每日限量 1000（官方未说是否为存档碎片）' },
+  ],
+  footnote: '先到先得，发完即止。',
+  images: [
+    { src: 'img/booths/A20/00.jpg', caption: '上海迪士尼 疯狂嚎叫节 城外海选（上海迪士尼度假区 9/23）' },
+    { src: 'img/booths/A20/01.jpg', caption: '「疯狂嚎声音」即将开启 · 复兴岛 A-20 展位 10/2–10/6' },
+    { src: 'img/booths/A20/02.jpg', caption: '第一站 · 嚎叫海选现场' },
+    { src: 'img/booths/A20/03.jpg', caption: '第二站 · 疯狂动物城演出后台打卡' },
+    { src: 'img/booths/A20/04.jpg', caption: '第三站 · 限量贴纸 /「嚎叫新星」冰箱贴两款（每日限量说明）' },
+    { src: 'img/booths/A20/05.jpg', caption: '第四站 · 10 月 6 日晚夏奇羊与朱迪尼克惊喜亮相' },
+  ],
+}
+
+// hololive（C-12，与 MoeLive 同号）：hololive 官方号 9/27「hololive x REDLAND 即将开始！」——hololive Dreams 现场游玩完成任意一首歌曲 → 存档碎片（蓝 = C 区，两款）；中国限定 2026 夏季周边与日谷价目（商品价格不属票务，进 menu）
+const hololive = {
+  source: { title: 'hololive x REDLAND 即将开始！', url: 'https://xhslink.cn/o/4mvVAOuIrzO', noteId: '6ab8d684000000001203d5d4', author: 'hololive', publishedAt: '2026-09-27' },
+  boothNo: 'C-12',
+  location: '重生试炼场 C-12',
+  intro: '第一次参加 REDLAND，hololive 准备了丰富的游玩内容：精美的展台布置、多个拍照打卡点、中国限定周边以及日谷贩售，还有现场游玩活动！',
+  notes: ['部分日谷库存更新，先到先得。同号的 MoeLive 还没有发展台笔记。'],
+  activities: [
+    { title: '展台布置 · 多个拍照打卡点', desc: '精美的展台布置与多个拍照打卡点。' },
+    { title: '现场周边贩售', desc: '中国限定 2026 夏季周边（夏色祭 / 姬森璐娜 / 桃铃音音 / 音乃濑奏 / 一条莉莉华 / 儒乌风亭螺钿 / 轰一 七人）、日谷玩偶，以及往期中国限定周边返场，价目见下方菜单。' },
+  ],
+  stage: [],
+  tasks: [
+    { title: '现场任务 · hololive Dreams', desc: '参与【hololive Dreams】现场游玩活动完成主线任务：在活动中完成任意一首歌曲游玩，即可获得本摊位的「存档碎片」。', rewards: ['存档碎片（两款）'] },
+  ],
+  rewards: [
+    { name: 'hololive「存档碎片」（两款）', how: '参与 hololive Dreams 现场游玩，完成任意一首歌曲', pin: true, pinIds: ['C12-1', 'C12-2'] },
+  ],
+  menu: [
+    { name: '中国限定 2026 夏季周边 · 吧唧 58mm（7 款）', price: '25 CNY' },
+    { name: '中国限定 2026 夏季周边 · 亚克力挂件（人物长约 6cm，7 款）', price: '25 CNY' },
+    { name: '中国限定 2026 夏季周边 · 亚克力立牌（人物高约 10cm，7 款）', price: '58 CNY' },
+    { name: '中国限定 2026 夏季周边 · 亚克力砖（10×10cm，7 款）', price: '58 CNY' },
+    { name: '日谷 · friends with u 系列玩偶', price: '218 CNY / 款' },
+    { name: '日谷 · friends to Go 系列玩偶', price: '130 CNY / 款' },
+    { name: '返场 · holonatsu Paradise 打卡棒 / 亚克力拼图块', price: '58 / 68 CNY / 款' },
+    { name: '返场 · 动物朋友系列 亚克力 A4 版画 / 挂画 B2 / 吧唧 58mm', price: '88 / 108 / 25 CNY / 款' },
+    { name: '返场 · hololive 2025 新春 吧唧 / 立牌 / 挂画 / 亚克力流苏挂件 / 流沙麻将', price: '30 / 60 / 108 / 50 / 88 CNY / 款' },
+    { name: '返场 · hololive TGC 卡片', price: '270 CNY / 盒' },
+  ],
+  menuNote: '官方长图价目；部分日谷库存更新，先到先得',
+  footnote: '',
+  images: [
+    { src: 'img/booths/C12/guide-00.jpg', caption: 'hololive × 小红书 RED LAND 2026 KV（hololive 9/27）' },
+    { src: 'img/booths/C12/guide-01.jpg', caption: '现场周边贩售 · 现场任务 hololive Dreams → 存档碎片两款 / 中国限定 2026 夏季周边 / 日谷 / 往期返场价目' },
+  ],
+}
+
 const cyberpunk2077 = {
   source: {
     title: 'REDLAND 2026 | 《赛博朋克 2077》展台介绍',
@@ -5747,30 +5915,41 @@ const adol = {
 }
 
 const unionpay = {
-  source: {
-    title: '终于！我们要见面了',
-    url: 'https://xhslink.cn/o/5W9sUOArKp9',
-    noteId: '6ab24781000000003100c13c',
-    author: '中国银联',
-    publishedAt: '2026-09-23',
-  },
+  source: { title: '银联 x REDLAND 登岛福利速通攻略', url: 'https://xhslink.cn/o/3zDOIcttjx3', noteId: '6ab8c43e000000000a025d85', author: '中国银联', publishedAt: '2026-09-28' },
+  moreSources: [
+    { title: '终于！我们要见面了（登岛确认函）', url: 'https://xhslink.cn/o/5W9sUOArKp9', noteId: '6ab24781000000003100c13c', author: '中国银联', publishedAt: '2026-09-23' },
+  ],
   boothNo: 'B-21',
   location: '黄金海岸线 B-21（赞助区）',
-  intro: '@ 所有主角们，请查收这份来自 REDLAND 的登岛确认函 —— 这一次，中国银联不再只是你身边的支付搭子，更是你们的次元冒险合伙人！',
-  notes: [
-    '9 月 28 日 线上福利通道、登岛出行优惠将全面开启，具体内容官方写「将持续更新」；10 月 2 日记得带上你的银联卡。',
-  ],
+  intro: '银圆圆已经先一步登岛，带着三大次元的专属福利，等主角们来「联」结！带好银联卡，岛上见！',
+  notes: ['分享页没带标题，按正文首行记。线上 H5「红支付联结热爱」积分抽奖属线上活动，未收录。'],
   activities: [
     {
-      title: '银圆圆现场互动',
-      desc: '现场有一只软乎乎的银圆圆（银联吉祥物）「正在加载中」，可以线下来 rua、合影打卡。官方悄悄说：手感超好，记得轻点捏。',
+      title: 'REDLAND 登岛 · 银圆圆等你来碰头（B-21 展位）',
+      desc: '完成「守账次元、冒险次元、公益次元」三大次元冒险（互动任务打卡），即可在「次元结算站」抽取奖品；银圆圆准备了数千份好礼。',
+      items: [{ title: '守账次元', desc: '支付优惠从不缺席。' }, { title: '冒险次元', desc: '逛展解锁专属权益。' }, { title: '公益次元', desc: '每一笔都充满温度。' }],
+      rewards: ['「次元结算站」抽奖（数千份礼品）'],
     },
+    { title: '隐藏彩蛋 · 现场偶遇银圆圆', desc: 'REDLAND 现场偶遇银圆圆，记得与它合拍～可获得精美钥匙扣 1 个。', rewards: ['钥匙扣 ×1'] },
+    { title: '承包你的吃喝玩乐 · 岛内支付优惠', desc: '10 月 2 日–6 日，RED LAND 岛内多家商户用银联「碰一碰」完成支付，即有机会享受立减优惠。' },
+    { title: '银圆圆的犒赏 · 票根兑换上海吃喝玩乐优惠券（场外福利）', desc: '9 月 30 日–10 月 31 日，主角登岛通行证可兑换上海地区吃喝玩乐优惠券：STEP1 大麦「我的票夹 → 票详情」提前截图保存电子票根；STEP2 打开云闪付搜「玩赚中心」，找到「REDLAND 票根活动」点「去上传」。' },
   ],
   stage: [],
   tasks: [],
-  rewards: [],
-  footnote: '福利与出行优惠的细节 9 月 28 日开启后再补。',
-  images: [{ src: 'img/booths/B21c/00.jpg', caption: '银联确认登岛 ·「红支付 联结热爱 · 带上银圆圆去冒险」（中国银联 9/23）' }],
+  rewards: [
+    { name: '三大次元抽奖奖品', how: 'B-21 完成守账 / 冒险 / 公益三大次元互动任务，到「次元结算站」抽取' },
+    { name: '银圆圆钥匙扣', how: '现场偶遇银圆圆并合拍' },
+    { name: '上海吃喝玩乐优惠券', how: '云闪付「玩赚中心」上传 REDLAND 票根，9/30–10/31' },
+  ],
+  footnote: '',
+  images: [
+    { src: 'img/booths/B21c/guide-00.jpg', caption: '红支付 联结热爱 · 带上银圆圆去冒险（中国银联 9/28）' },
+    { src: 'img/booths/B21c/guide-01.jpg', caption: '银圆圆已登岛 · 云端冒险（线上）/ REDLAND 登岛三大次元互动' },
+    { src: 'img/booths/B21c/guide-02.jpg', caption: '现场与银圆圆岛上碰面 · 三大次元 → 次元结算站抽奖；隐藏彩蛋合拍得钥匙扣；展位效果图' },
+    { src: 'img/booths/B21c/guide-03.jpg', caption: '银圆圆的犒赏 · 票根兑换上海吃喝玩乐优惠券（9/30–10/31）' },
+    { src: 'img/booths/B21c/guide-04.jpg', caption: '承包你的吃喝玩乐 · 岛内商户银联碰一碰立减' },
+    { src: 'img/booths/B21c/00.jpg', caption: '银联确认登岛（中国银联 9/23）' },
+  ],
 }
 
 
@@ -5875,6 +6054,9 @@ export default {
   B01: eggy,
   C05: p4r,
   A18: yimo,
+  A01b: shengshi,
+  A20: disney,
+  C12: hololive,
   B06: valorant,
   A05: xindong,
   A23: onepiece,
@@ -5891,7 +6073,7 @@ export default {
   A15: swordsOfLegends,
   B22: shenbuyan,
   A24: scla,
-  A35: yuewen,
+  ...yuewenParts,
   A34: minecraft,
   A25a: aniplex,
   A25b: { ...aniplex, boothNo: 'A-25（孤独摇滚，与鬼灭之刃共用 Aniplex 展位）' },
@@ -6043,6 +6225,7 @@ A28: {
     publishedAt: '2026-09-17',
   },
   moreSources: [
+    { title: '《代号香》｜RED LAND2026活动及预约说明', url: 'https://xhslink.cn/o/3hv9IXZkyhf', noteId: '6ab8d0780000000013019f4d', author: '代号：香', publishedAt: '2026-09-27' },
     { title: '【代号香】REDLAND2026·调香活动', url: 'https://xhslink.cn/o/4EoG8oVwUBU', noteId: '6aafab4e0000000027008d3d', author: '代号：香', publishedAt: '2026-09-20' },
     { title: '【代号香】REDLAND2026·角色互动', url: 'https://xhslink.cn/o/1rdTmmplu21', noteId: '6aafaeeb0000000027009b79', author: '代号：香', publishedAt: '2026-09-20' },
   ],
@@ -6051,7 +6234,11 @@ A28: {
   notes: [
     '无料领取采取「整理券」发放形式，每天限量 1500 张，发完即止',
     '未领到整理券的调香师女士也可领取伸手礼🎁',
-    '调香活动与角色互动都需提前预约（场次见下方）；RED LAND 官方 9/25 预约日历把两项都列在 9 月 28 日开约（RED LAND 主会场「活动广场」9/27 显示下一场预约时间 9 月 28 日 17:15）',
+    '9/27「活动及预约说明」：四个活动 ——【凝香成愿】调香活动、【故「香」初遇】角色互动（两项需预约）、【神遗片羽】无料领取、【旧墟留影】展台打卡。',
+    '预约开启时间（按活动日期）：调香活动 10/2 场 9 月 28 日 17:15 · 10/3 场 17:30 · 10/4 场 17:45 · 10/5 场 18:00 · 10/6 场 18:15；角色互动 10/2 场 18:30 · 10/3 场 18:45 · 10/4 场 19:00 · 10/5 场 19:15 · 10/6 场 19:30。',
+    '预约活动仅限 18 周岁以上女性用户；现场严格核对预约信息与身份证明，勿用他人证件和手机截图；同一时间段只能参与一个活动（如同一天 13:00–14:00 同时约了阿波罗互动和调香，只能二选一）。',
+    'PIN：成功预约并完成【凝香成愿】或【故「香」初遇】即可获得；参与【神遗片羽】后有机会在奖品中随机获得。',
+    '【神遗片羽】整理券现场 12:30 开展后发放、发完即止，券上标时间段（12:30 起每小时一档至 21:30），按券上时间到展台领无料。',
   ],
   activities: [
     {
@@ -6112,12 +6299,17 @@ A28: {
     },
   ],
   rewards: [
+    { name: '《代号香》存档碎片（样式待公布）', how: '完成预约活动【凝香成愿】或【故「香」初遇】即得；【神遗片羽】无料奖品中随机', pin: true, pinId: 'A28' },
     { name: '票根 + 小卡十连', how: '凭整理券入队，完成现场打卡并发布带话题 #代号香 #代号香REDLAND2026 的图文 / 视频后领取；整理券每日限 1500 张' },
     { name: '抽奖：S 香水全套（10 瓶）/ A 吧唧全套（10 个）/ B 随机香水 1 瓶 / C 随机香囊 1 个 / D 纸袋 / E 随机吧唧 1 个', how: '到达展台后，每位调香师女士可参与一次抽奖' },
     { name: '伸手礼', how: '未领到整理券的调香师女士也可领取' },
   ],
   footnote: '整理券每日限量 1500 张，发完即止。',
   images: [
+    { src: 'img/booths/A28/yuyue-00.jpg', caption: '活动及预约说明 KV · 展台 A28（代号：香 9/27）' },
+    { src: 'img/booths/A28/yuyue-01.jpg', caption: '凝香成愿 9/28 17:15 / 故「香」初遇 9/28 18:30 开约 / 神遗片羽现场领整理券' },
+    { src: 'img/booths/A28/yuyue-02.jpg', caption: '无料领取 · 整理券 12:30 起发放，9 个时段' },
+    { src: 'img/booths/A28/yuyue-03.jpg', caption: '预约开启时间表（调香 / 角色互动 × 5 天）' },
     { src: 'img/booths/A28/00.jpg', caption: '代号香 × RED LAND 2026 无料领取海报（代号：香 9/17）' },
     { src: 'img/booths/A28/01.jpg', caption: '无料领取流程与抽奖奖品一览（代号：香 9/17）' },
     { src: 'img/booths/A28/tiaoxiang-00.jpg', caption: 'Scentheon 调香活动主视觉 · 展台 A28（代号：香 9/20）' },
