@@ -1999,6 +1999,8 @@ IP 官方笔记（2026-09-09 增补，均为 xhslink 短链，App 内打开）
 - https://xhslink.cn/o/2pKVYU6CoTa （上海迪士尼度假区 09/23 疯狂嚎叫节 城外海选，A20 首份详情）
 - https://xhslink.cn/o/4mvVAOuIrzO （hololive 09/27「hololive x REDLAND 即将开始！」，C12 首份详情 + PIN）
 
+- https://xhslink.cn/o/3OGFxD2R2Ma （Sanrio三丽鸥 09/28「三丽鸥RED LAND「闯关攻略」速递！」，A21 三处关卡 + 存档碎片；另见 13.35 后补）
+
 ## 附录 B. 同目录素材说明
 
 - `assets/share_page/`：用户链接长图原图（origin_full.png）与 7 段切片、分享封面

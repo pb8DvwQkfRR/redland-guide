@@ -670,6 +670,25 @@ const sanrio = {
   stage: [],
   tasks: [
     {
+      title: '三丽鸥 星际登陆 · 闯关攻略（集齐三枚印章领存档碎片）',
+      desc: '通过三处关卡，在登陆卡片上集齐三枚印章，即可前往兑换处领取你的登陆存档碎片。',
+      items: [
+        {
+          title: '任务一 · 星航停靠站',
+          desc: 'STEP 1 10 月 2 日–10 月 6 日发布小红书笔记带话题 #三丽鸥REDLAND2026；STEP 2 晒出在 REDLAND 现场拍下的三丽鸥展台可爱瞬间，关注并 @Sanrio三丽鸥 和 @三丽鸥的新朋友；STEP 3 成功发布笔记后寻找星航停靠站的 NPC 进行趣味问答，成功后即可在登陆卡片上刻印本区印章并获得限定编织袋一个。',
+          follow: [{ uid: '5ba9dd7953c4f60001664591', name: 'Sanrio三丽鸥' }, { name: '三丽鸥的新朋友', via: '小红书，uid 未知' }],
+          tags: ['#三丽鸥REDLAND2026'],
+          post: '在 RED LAND 2026 的 A-21 三丽鸥星际登陆现场拍下了超可爱的一幕，大明星们都在星航停靠站等你贴贴！@Sanrio三丽鸥 @三丽鸥的新朋友\n\n#三丽鸥REDLAND2026',
+          note: '笔记须 @Sanrio三丽鸥 和 @三丽鸥的新朋友；编织袋每日数量有限，送完即止',
+          rewards: ['星航停靠站印章', '限定编织袋 ×1'],
+        },
+        { title: '任务二 · 飞船登陆点', desc: 'STEP 1 挑选飞船登陆点内任意角色，解锁同款姿势；STEP 2 拍下你的复刻大片交给该区域 NPC 验收，相似度在线即可在登陆卡片上刻印本区印章，以及获得限定贴纸一张。', note: '每日数量有限，送完即止', rewards: ['飞船登陆点印章', '限定贴纸 ×1'] },
+        { title: '任务三 · 星尘捕集舱', desc: 'STEP 1 关注「三丽鸥的新朋友」小红书账号，进入星尘捕集舱排队区；STEP 2 向星尘靶心框抛出三颗球，成功命中两颗即视为完成挑战，登陆卡片将刻印本区印章，以及获得限定扇子一把。', follow: [{ name: '三丽鸥的新朋友', via: '小红书，uid 未知' }], note: '每日数量有限，送完即止', rewards: ['星尘捕集舱印章', '限定扇子 ×1'] },
+      ],
+      note: '存档碎片日场发放 12:30–17:30、夜场发放 17:30–21:30，数量有限先到先得',
+      rewards: ['登陆存档碎片（集齐三枚印章，兑换处领取）'],
+    },
+    {
       title: '领取补给号码牌',
       desc: '每日 17:30 前到补给站门口指定处排队领号，凭号入站用餐。',
       rewards: ['补给号码牌（用餐唯一凭证）'],
@@ -707,6 +726,8 @@ const sanrio = {
   ],
   menuNote: '每人每款限购一件；「食材」为三丽鸥角色造型玩偶',
   rewards: [
+    { name: '三丽鸥「存档碎片」· 星际登陆款', how: '闯关三处（星航停靠站 / 飞船登陆点 / 星尘捕集舱）集齐三枚印章，到兑换处领取；日场 12:30–17:30 / 夜场 17:30–21:30 发放', pin: true, pinId: 'A21' },
+    { name: '限定编织袋 / 限定贴纸 / 限定扇子', how: '闯关三处各得其一，每日限量' },
     { name: '餐盒 + 6 款食材小卡（随购附赠）', how: '打包区由主厨打包并系上蝴蝶结与食材小卡；数量有限，送完即止' },
     { name: '亚克力挂件（咪咪沐沐 / 四叶茸茸 2 款随机）', how: '场贩 · 会员任意消费赠一份，数量有限送完即止（9/17）' },
     { name: '三丽鸥大明星合影名额', how: '场贩 · 10 月 2–3 日会员单笔消费满 229 元，当日付款顺序前 40 位' },
@@ -714,6 +735,10 @@ const sanrio = {
   ],
   footnote: '数量有限，送完即止；营业信息以现场为准。场贩福利详细规则以官方后续动态为准。',
   images: [
+    { src: 'img/booths/A21/guide-00.jpg', caption: '三丽鸥 星际登陆 闯关攻略 · 三处关卡集齐三枚印章领存档碎片（白天 / 夜晚效果，Sanrio三丽鸥 9/28）' },
+    { src: 'img/booths/A21/guide-01.jpg', caption: '任务一 星航停靠站 · 带话题发笔记 + NPC 问答 → 限定编织袋' },
+    { src: 'img/booths/A21/guide-02.jpg', caption: '任务二 飞船登陆点 · 复刻角色姿势 → 限定贴纸' },
+    { src: 'img/booths/A21/guide-03.jpg', caption: '任务三 星尘捕集舱 · 三球中两 → 限定扇子' },
     { src: 'img/booths/A21/00.jpg', caption: '深夜食光能量补给站（Sanrio三丽鸥 9/4）' },
     { src: 'img/booths/A21/01.jpg', caption: '补给站排队 / 打包流程（Sanrio三丽鸥 9/4）' },
     { src: 'img/booths/A21/sale-00.jpg', caption: '人气热卖商品 · 咪咪沐沐系列（Sanrio三丽鸥 9/17）' },
@@ -722,6 +747,7 @@ const sanrio = {
     { src: 'img/booths/A21/sale-03.jpg', caption: '场贩福利三档 + 场贩规则（Sanrio三丽鸥 9/17）' },
   ],
   moreSources: [
+    { title: '🎮三丽鸥RED LAND「闯关攻略」速递！', url: 'https://xhslink.cn/o/3OGFxD2R2Ma', noteId: '6ab9a3ea000000001301b2e7', author: 'Sanrio三丽鸥', publishedAt: '2026-09-28' },
     { title: '三丽鸥RED LAND「人气热卖商品」返场来袭！（场贩三系列 + 会员消费福利）', url: 'https://xhslink.cn/o/3leUehNnhzu', noteId: '6aab53840000000011036fe1', author: 'Sanrio三丽鸥', publishedAt: '2026-09-17' },
   ],
 }
