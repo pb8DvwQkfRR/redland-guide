@@ -90,19 +90,20 @@ CROPS = {
     'C09': ('public/img/booths/C09/08.jpg', (487, 782, 635, 920), {'fileId': 'notes_pre_post/1040g3k8325hifdaq4ee05oi6o5kod20po0l5th0', 'upscale': True}),
     # 阅文集团存档碎片（暗红软盘，五 IP Q 版）：诡秘之主 9/26 图 05（存为 guimi-03）左边那枚正面，810 图上 ~230px，用 fileId 拉原图
     # 9/27 这批：心动小镇（橙，04 右下两枚叠放取前面那枚）/ 遗忘之海（黄，03 互动周边格）/ PlayStation（橙，04 奖品图，略斜不转）
-    'A05': ('public/img/booths/A05/04.jpg', (496, 918, 612, 1026), {'fileId': 'spectrum/1040g34o325iuuosf4a2g5o72jfro57l6900loto', 'upscale': True}),
+    'A05': ('public/img/booths/A05/04.jpg', (498, 912, 606, 1024), {'fileId': 'spectrum/1040g34o325iuuosf4a2g5o72jfro57l6900loto', 'upscale': True, 'rotate': -9}),
     'B08': ('public/img/booths/B08/03.jpg', (365, 410, 455, 499), {'fileId': 'spectrum/1040g34o325gn1o4ik4b05oon0dd4g8ara8oticg', 'upscale': True}),
-    'A13': ('public/img/booths/A13/04.jpg', (169, 517, 300, 638), {'fileId': 'spectrum/1040g34o325ghc5df4a5g5q2ssop2773g7ts3fv0', 'upscale': True}),
+    'A13': ('public/img/booths/A13/04.jpg', (178, 518, 298, 638), {'fileId': 'spectrum/1040g34o325ghc5df4a5g5q2ssop2773g7ts3fv0', 'upscale': True, 'rotate': -11}),
     'A30': ('public/img/booths/A30/guide-04.jpg', (516, 700, 660, 838), {'fileId': 'spectrum/1040g0k0325f1eat2k61g5p52ojnl7cnv0tgm78o', 'upscale': True}),
     # 航海王 9/27 攻略 III 长图（6288 高）里的路飞款橙软盘，810 基准 ~450px、用 fileId 拉原图
     'A23': ('public/img/booths/A23/iii-01.jpg', (172, 2222, 646, 2696), {'fileId': 'spectrum/1040g34o325gfc9sq4a005pve4n72ngff7d4fbi0'}),
     # hololive 9/27 长图（810 宽 4072 高）里并排两枚蓝软盘，略斜不转
-    'C12-1': ('public/img/booths/C12/guide-01.jpg', (166, 918, 392, 1182), {'fileId': 'spectrum/1040g0k0325k5ntmak4005p9ltvlgrijbcm0r1rg', 'upscale': True}),
-    'C12-2': ('public/img/booths/C12/guide-01.jpg', (388, 914, 648, 1190), {'fileId': 'spectrum/1040g0k0325k5ntmak4005p9ltvlgrijbcm0r1rg', 'upscale': True}),
+    'C12-1': ('public/img/booths/C12/guide-01.jpg', (170, 926, 398, 1190), {'fileId': 'spectrum/1040g0k0325k5ntmak4005p9ltvlgrijbcm0r1rg', 'upscale': True, 'rotate': -10.5}),
+    'C12-2': ('public/img/booths/C12/guide-01.jpg', (396, 946, 642, 1196), {'fileId': 'spectrum/1040g0k0325k5ntmak4005p9ltvlgrijbcm0r1rg', 'upscale': True, 'rotate': 11.5}),
     'A21-1': ('public/img/booths/A21/guide-00.jpg', (448, 800, 561, 913), {'fileId': 'spectrum/1040g0k0325kveuo6ka004b5cv6enihchqbu7vdo', 'upscale': True}),  # 三丽鸥 9/28 闯关攻略，日场款（橙，官方图注「白天效果」）
     'A21-2': ('public/img/booths/A21/guide-00.jpg', (585, 801, 697, 913), {'fileId': 'spectrum/1040g0k0325kveuo6ka004b5cv6enihchqbu7vdo', 'upscale': True}),  # 夜场款（绿，官方图注「夜晚效果」，用户 9/29 指出是两枚）
     'B05': ('public/img/booths/B05/hub-00.jpg', (105, 4405, 358, 4657), {'upscale': True}),  # 漫威专题页长图，黄软盘
     'A36': ('public/img/booths/A36/rl-00.jpg', (329, 596, 494, 763), {'fileId': 'spectrum/1040g0k0325f09d4pka2g5q2ssop2773g2199gh0', 'upscale': True}),  # 如鸢日 / 夜两款共用这张实图（官方只放了一张，夜场款可夜光）
+    'A22': ('public/img/booths/A22/guide-03.jpg', (494, 315, 700, 522), {'fileId': 'spectrum/1040g0k0324u39rqr2u0g5okbabvocip484kb3g8', 'upscale': True}),  # 火影 9/16 互动赢好礼图，橙软盘
     'A35': ('public/img/booths/A35/guimi-03.jpg', (159, 403, 390, 623), {'fileId': 'spectrum/1040g34o325gknpeekc105p13ojukc96miismp2g', 'upscale': True}),
     'B02-1': ('public/img/booths/B02/04.jpg', (555, 335, 710, 480), {'upscale': True}),
     'B02-2': ('public/img/booths/B02/04.jpg', (555, 485, 710, 630), {'upscale': True}),

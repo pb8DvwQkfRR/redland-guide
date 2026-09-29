@@ -96,7 +96,7 @@ export const booths = [
   { id: 'C02', zone: 'C', no: 'C02', ip: '灰烬之国 Cinderia', blurb: '童话世界沾染灰烬，你我一同改写宿命', xhs: { uid: '6769561a000000001801633e', name: '灰烬之国Cinderia' } },
   { id: 'C03a', zone: 'C', no: 'C03', ip: '乌合之众', blurb: '滴！通仙楼一日贵客体验卡，里边请~', xhs: { uid: '68caedd30000000021022e20', name: '南斋工作室' } },
   { id: 'C03b', zone: 'C', no: 'C03', ip: '沉星之序', blurb: '四大世界千种谜题！来 REDLAND 现场，推最极致的箱子。', xhs: { uid: '6094d88e0000000001002acf', name: 'Gamirror Games' } },
-  { id: 'C04', zone: 'C', no: 'C04', ip: '独立游戏试玩区', alias: '独立游戏 联想 ROG 西昊 傲风 雷蛇', blurb: '独立游戏大食堂：各有独门一手，等你大试一口。' },
+  { id: 'C04', zone: 'C', no: 'C04', noPin: true, ip: '独立游戏试玩区', alias: '独立游戏 联想 ROG 西昊 傲风 雷蛇', blurb: '独立游戏大食堂：各有独门一手，等你大试一口。' },
   { id: 'C05', zone: 'C', no: 'C05', ip: '女神异闻录4 Revival', blurb: '制作人空降，特别搜查队集结，一起重返八十稻羽！', xhs: { uid: '66ece7e1000000001d0319d7', name: 'ATLUS' } },
   { id: 'C06', zone: 'C', no: 'C06', ip: 'Servant of the Lake 湖之仆从', alias: '湖之仆从 VANDERBOOM', blurb: 'VANDERBOOM 宅邸的铁门已然推开——欢迎就任，湖之仆从', xhs: { uid: '64f80e6300000000040268c1', name: 'RustyLake_official' } },
   { id: 'C07', zone: 'C', no: 'C07', ip: '苏丹的游戏', blurb: '来舍馆与猛男一饭封神，备欢宴赢苏丹的赏赐！', xhs: { uid: '66b9b97c000000001d03351f', name: '双头龙工作室' } },

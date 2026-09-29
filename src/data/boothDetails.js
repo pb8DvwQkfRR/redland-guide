@@ -558,6 +558,8 @@ const naruto = {
     { uid: '600244330000000001006e4e', name: 'EAKi亿奇' },
   ],
   moreSources: [
+    { title: '2026 RED LAND 火影忍者逛展攻略来啦！（集章三步 + RED LAND 专属 pin）', url: 'https://xhslink.cn/o/3FJlcIF5TZv', noteId: '6aa0bf1f00000000260197f0', author: '皮乐动漫', publishedAt: '2026-09-16' },
+    { title: '2026 RED LAND火影忍者分会场已上线！', url: 'https://xhslink.cn/o/5qAN2qdHJ5R', noteId: '6a9a29f2000000002701732b', author: '皮乐动漫', publishedAt: '2026-09-20' },
     { title: '《魔法天使小甜甜》确认登岛RED LAND2026', url: 'https://xhslink.cn/o/A026qQzkJth', noteId: '6a9a91d7000000002601caa8', author: '皮乐动漫', publishedAt: '2026-09-04' },
     { title: '魔法降临RED LAND《魔法天使小甜甜》确认登岛', url: 'https://xhslink.cn/o/5UgfX15dHc3', noteId: '6aaa40cf0000000029010e68', author: '魔法天使小甜甜（皮乐中国）', publishedAt: '2026-09-16' },
     { title: '《蓬蓬狗》确认登岛RED LAND2026', url: 'https://xhslink.cn/o/3zHFWBFuPSB', noteId: '6a9a92280000000028030554', author: '蓬蓬狗潮玩品牌', publishedAt: '2026-09-04' },
@@ -601,12 +603,17 @@ const naruto = {
     },
   ],
   rewards: [
+    { name: '火影忍者「存档碎片」· 卡卡西 & 鸣人款', how: '成为一日村民领兑换卡，完成拉面店 NPC 对话 / 教室忍者测试 / 生日祝福墙三处集章即得 RED LAND 专属 pin；每日限定 400 个', pin: true, pinId: 'A22' },
     { name: '定制火影忍者户外斜挎包（RED LAND 限定）', how: '集齐三章兑换；每日限定 180 个，先到先得' },
     { name: '礼品抽奖（拼欧气 TIME）', how: '集齐三章可选抽奖：手办 / 立牌或吧唧组合 / 色纸或文件夹 / 单个吧唧 / 拍立得或透卡；周边每日限定 420 份' },
     { name: '敲章兑换卡（纪念卡）', how: '成为一日村民领取；每日限定 600 张' },
   ],
   footnote: '先到先得，发完即止。',
   images: [
+    { src: 'img/booths/A22/guide-00.jpg', caption: '集章点 1 · 拉面店 NPC 对话（简单，皮乐动漫 9/16）' },
+    { src: 'img/booths/A22/guide-01.jpg', caption: '集章点 2 · 教室忍者测试（中等，神秘老师随机监考）' },
+    { src: 'img/booths/A22/guide-02.jpg', caption: '集章点 3 · 祝福墙生日祝福（简单）' },
+    { src: 'img/booths/A22/guide-03.jpg', caption: '互动赢好礼 · 三章 → RED LAND 专属 pin（每日 400）+ 斜挎包（每日 180）或抽奖（每日 420）' },
     { src: 'img/booths/A22/00.jpg', caption: '火影忍者 NARUTO · 互动赢好礼（皮乐动漫 9/7）' },
     { src: 'img/booths/A22/xiaotiantian-00.jpg', caption: '《魔法天使小甜甜》确认登岛海报（皮乐动漫 9/4）' },
     { src: 'img/booths/A22/pengpenggou-00.jpg', caption: '蓬蓬狗 YEASTKEN 确认登岛海报（蓬蓬狗潮玩品牌 9/4）' },
@@ -2257,7 +2264,7 @@ const narutoMobile = {
   },
   boothNo: 'B18（笔记未写展位号，取自官方 IP 展位一览）',
   intro: '火影忍者手游即将登岛 RED LAND！向各位学员发出假期逛展邀请！速来 RED LAND 火影忍者手游展台集合~ 现场限定谷子也别错过！',
-  notes: ['更多惊喜玩法等你解锁，敬请期待（活动 / 任务详情待官方公布）'],
+  notes: ['9/24 皮乐动漫代发的展位图补了玩法：日间集章 6 处换周边，夜间「红月升起，木叶村进入夜间特别模式」。'],
   activities: [
     {
       title: '参与活动免费领限定周边',
@@ -2265,7 +2272,13 @@ const narutoMobile = {
     },
   ],
   stage: [],
-  tasks: [],
+  tasks: [
+    {
+      title: '日间常规玩法 · 参与互动集章，兑换周边',
+      items: [{ desc: '忍者学员登陆' }, { desc: '手里剑训练' }, { desc: '召唤通灵兽' }, { desc: '试炼挑战忍术结印' }, { desc: '火影办公室打卡' }, { desc: '决斗场 PK' }],
+      rewards: ['参与集章：篮球佐助手提袋 / 写轮眼发帖 / 吧唧 / 飞雷神发光发箍 / 鸣人佐助亚克力砖等', '打卡带话题：五星头像贴纸', '决斗场 PK：忍者海报，获胜额外得摸头气球'],
+    },
+    { title: '夜间特别企划', desc: '夜幕降临，红月升起，木叶村进入夜间特别模式。' },],
   rewards: [
     { name: '鸣佐亚克力砖（随机一款）', how: '参与展台活动免费领；鸣人 / 佐助两款随机' },
     { name: '摸头气球', how: '参与展台活动免费领' },
@@ -2274,7 +2287,8 @@ const narutoMobile = {
     { name: '飞雷神发光发箍（夜间模式特供）', how: '夜间模式特殊周边，参与展台活动免费领；发放时段待公布' },
   ],
   footnote: '以上为 9/10 预告，领取条件与限量待官方公布。',
-  images: ['img/booths/B18/00.jpg', 'img/booths/B18/01.jpg', 'img/booths/B18/02.jpg', 'img/booths/B18/03.jpg'],
+  moreSources: [{ title: 'RED LAND火影忍者手游 主角彩蛋福利来袭（皮乐动漫代发展位图）', url: 'https://xhslink.cn/o/9wilXWJL2C4', noteId: '6ab4ce88000000000a01f118', author: '皮乐动漫', publishedAt: '2026-09-24' }],
+  images: [{ src: 'img/booths/B18/pile-00.jpg', caption: '火影忍者手游 B-18 · 日间六项集章 / 夜间特别企划 / 周边大放送（9/24）' }, 'img/booths/B18/00.jpg', 'img/booths/B18/01.jpg', 'img/booths/B18/02.jpg', 'img/booths/B18/03.jpg'],
 }
 
 // 永劫无间（网易，B-04 与暴雪游戏同编号）：「好菜坞片场」五场大戏 → 杀青大礼包；糕手胡桃花车；宝藏码头 NO.13 场贩
@@ -4322,8 +4336,6 @@ const indieHall = {
     {
       name: '独立游戏大食堂存档碎片',
       how: '试玩（官方写「试吃」）3 道游戏后，凭出口结算处生成的「心选菜单小票」解锁；数量有限先到先得',
-      pin: true,
-      pinId: 'C04',
     },
     { name: '「福利加菜」神秘好礼（抽取）', how: '试玩 7 道游戏后触发，可抽取一次；数量有限先到先得' },
     { name: '独立游戏试玩打卡印章', how: '在各档口完成一款游戏的试玩即可获得' },

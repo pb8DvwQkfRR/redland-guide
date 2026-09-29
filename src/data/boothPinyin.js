@@ -69,7 +69,7 @@ export default {
   B14: { f: ["anyingchengshuang","xinshijieanyingchengshuang","red","land"], i: ["aycs","xsjaycs"] },
   B15: { f: ["nishuihan"], i: ["nsh"] },
   B16: { f: ["ip","fanshou","baozangmatou","ipfanshou","guzi","jishi","red","land","xiaoxiangdaeegm"], i: ["fs","bzmt","ifs","gz","js","xxdee"] },
-  B18: { f: ["huoyingrenzheshouyou","huoyingrenzheshouyouqingbaojun"], i: ["hyrzsy","hyrzsyqbj"] },
+  B18: { f: ["huoyingrenzheshouyou","huoyingrenzheshouyouqingbaojun","piledongman"], i: ["hyrzsy","hyrzsyqbj","pldm"] },
   B19: { f: ["clutch","lihehongxian"], i: ["lhhx"] },
   B20: { f: ["daijiesuo"], i: ["djs"] },
   B21a: { f: ["kangshifubinghongcha","binghongcha","yinliao","ditanggaoxian","digi"], i: ["ksfbhc","bhc","yl","dtgx","dg"] },

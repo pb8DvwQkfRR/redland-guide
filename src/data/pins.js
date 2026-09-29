@@ -28,7 +28,6 @@ export const pins = [
   // 官方原文也只写「徽章一份」而不是「存档碎片」，所以是否计入 A 区拼图结算待确认，已写在 name 里
   { id: 'A10', no: 'A10', type: 'region', zone: 'A', name: '原神「存档碎片」· 派蒙点赞款', booth: 'A10', how: '在 RED LAND 主会场页面预约后，参与展台【体验互动】领取（官方称「徽章」；软盘为蓝色、非 A 区橙，是否计入区域拼图待确认）', thumb: 'img/pins/A10.jpg', image: 'img/booths/A10/03.jpg' },
   // C-04 独立游戏大食堂（RED LAND 官方 9/21）：试玩 3 款游戏 + 出口结算处的「心选菜单小票」解锁，官方未放实物图
-  { id: 'C04', no: 'C04', type: 'region', zone: 'C', name: '独立游戏大食堂「存档碎片」· 款式待公布', booth: 'C04', how: '在食堂各档口试玩满 3 款游戏，到出口结算处核验、生成「心选菜单小票」后解锁；数量有限先到先得', thumb: null, image: 'img/booths/C04/hall-00.jpg' },
   { id: 'A27', no: 'A27', type: 'region', zone: 'A', name: '无限暖暖「存档碎片」· 暖暖拍立得款', booth: 'A27', how: '在展区旋转木马区域参与指定互动活动，限量 2000 份、发完即止', thumb: 'img/pins/A27.jpg', image: 'img/booths/A27/07.jpg' },
   { id: 'B10', no: 'B10', type: 'region', zone: 'B', name: '明日方舟「存档碎片」· 罗德厨房款', booth: 'B10', how: '领随机食谱、规定时间内集齐指定食材后抽奖，金牌 / 主管 / 助理三档都有；每人一次', thumb: 'img/pins/B10.jpg', image: 'img/booths/B10/03.jpg' },
   { id: 'B11', no: 'B11', type: 'region', zone: 'B', name: '明日方舟：终末地「存档碎片」· 钓鳞款', booth: 'B11', how: '完成钓鳞挑战后抽奖，金 / 银 / 铜三档都有；每人一次', thumb: 'img/pins/B11.jpg', image: 'img/booths/B11/03.jpg' },
@@ -43,6 +42,7 @@ export const pins = [
   { id: 'A03a', no: 'A03', type: 'region', zone: 'A', name: '王者万象棋「存档碎片」· 款式待公布', booth: 'A03a', how: '盲盒墙「盲盒寻宝三连抽」集章赢限定 PIN（9/28 参展情报）', thumb: null, image: 'img/booths/A03a/03.jpg' },
   { id: 'A05', no: 'A05', type: 'region', zone: 'A', name: '心动小镇「存档碎片」· 安妮款', booth: 'A05', how: '完成集章任务（入口领集章卡 → 2 个现场小游戏 + 展台拍摄发布 → 兑奖处）即可获得', thumb: 'img/pins/A05.jpg', image: 'img/booths/A05/04.jpg' },
   { id: 'A13', no: 'A13', type: 'region', zone: 'A', name: 'PlayStation「存档碎片」· 展台款', booth: 'A13', how: '关注 PlayStation 领街区挑战卡 + 2 张挑战券，参与互动 / 试玩 / NPC 问卷攒满 2 个印章即额外获得', thumb: 'img/pins/A13.jpg', image: 'img/booths/A13/04.jpg' },
+  { id: 'A22', no: 'A22', type: 'region', zone: 'A', name: '火影忍者「存档碎片」· 卡卡西 & 鸣人款', booth: 'A22', how: '成为一日村民领兑换卡，三处集章（拉面店 NPC 对话 / 教室忍者测试 / 生日祝福墙）即得 RED LAND 专属 pin；每日限定 400 个', thumb: 'img/pins/A22.jpg', image: 'img/booths/A22/guide-03.jpg' },
   { id: 'A23', no: 'A23', type: 'region', zone: 'A', name: '航海王「存档碎片」· 路飞款', booth: 'A23', how: '完成现场指示牌的任务即可获得，在「奖品发放咨询台」领取；「完成存档碎片的收集，据说能够获得特殊奖励」', thumb: 'img/pins/A23.jpg', image: 'img/booths/A23/iii-01.jpg' },
   { id: 'A21-1', no: 'A21-1', type: 'region', zone: 'A', name: '三丽鸥「存档碎片」· 日场款', booth: 'A21', how: '闯关三处（星航停靠站 / 飞船登陆点 / 星尘捕集舱）集齐三枚印章，到兑换处领取；日场 12:30–17:30 发放（橙，官方图注「白天效果」）', thumb: 'img/pins/A21-1.jpg', image: 'img/booths/A21/guide-00.jpg' },
   { id: 'A21-2', no: 'A21-2', type: 'region', zone: 'A', name: '三丽鸥「存档碎片」· 夜场款', booth: 'A21', how: '闯关三处（星航停靠站 / 飞船登陆点 / 星尘捕集舱）集齐三枚印章，到兑换处领取；夜场 17:30–21:30 发放（绿，官方图注「夜晚效果」）', thumb: 'img/pins/A21-2.jpg', image: 'img/booths/A21/guide-00.jpg' },
@@ -58,7 +58,7 @@ export const pins = [
   { id: 'A33', no: 'A33', type: 'region', zone: 'A', name: '光·遇「存档碎片」· 光之子花海款', booth: 'A33', how: '光遇「每日任务」（13:00–20:00）里的「直面冥龙」：击中冥龙身体，赢取存档碎片及限定周边；周边数量有限先到先得', thumb: 'img/pins/A33.jpg', image: 'img/booths/A33/guide-05.jpg' },
   { id: 'A34-pin-1', no: 'A34-1', type: 'region', zone: 'A', name: '我的世界「存档碎片」· 苦力怕款', booth: 'A34', how: '玩法 2 主世界生日派对：完成打卡后入座派对餐桌，整桌完成村民 NPC 抽取的挑战（哼生日歌 / 合成料理 / 全员拼图），每位自选存档碎片或生日立体贺卡 1 份；每日 400 份（日场 270 / 夜场 130），领完默认发另一款', thumb: 'img/pins/A34-1.jpg', image: 'img/booths/A34/guide-05.jpg' },
   { id: 'A36-1', no: 'A36-1', type: 'region', zone: 'A', name: '如鸢「存档碎片」· 日场款', booth: 'A36', how: '凭整理券在【如鸢无料兑换台】领伴手礼时同时领取；每日 13:30 – 17:30 发放，数量有限先到先得', thumb: 'img/pins/A36.jpg', image: 'img/booths/A36/rl-00.jpg' },
-  { id: 'A36-2', no: 'A36-2', type: 'region', zone: 'A', name: '如鸢「存档碎片」· 夜场款', booth: 'A36', how: '每日 17:30 – 21:30 发放；需同时出示整理券及绣衣楼爵位 35 级以上界面（截图无效）（夜场款可夜光）', thumb: 'img/pins/A36.jpg', image: 'img/booths/A36/rl-00.jpg' },
+  { id: 'A36-2', no: 'A36-2', type: 'region', zone: 'A', name: '如鸢「存档碎片」· 夜场款', booth: 'A36', how: '每日 17:30 – 21:30 发放；需同时出示整理券及绣衣楼爵位 35 级以上界面（截图无效）（夜场款可夜光）', thumb: 'img/pins/A36-2.jpg', image: 'img/booths/A36/rl-00.jpg' },
   { id: 'A38-pin', no: 'A38', type: 'region', zone: 'A', name: '剑网3「存档碎片」· 黄鸡大笑款', booth: 'A38', how: '展台【江湖笔记】留言寄语，每日限量先到先得（官方称「展台专属 PIN 卡」）', thumb: 'img/pins/A38.jpg', image: 'img/booths/A38/02.jpg' },
   { id: 'A34-pin-2', no: 'A34-2', type: 'region', zone: 'A', name: '我的世界「存档碎片」· 联名 LOGO 款', booth: 'A34', how: '9/4 图写「现场互动打卡领取」；9/27 详情的生日派对只提到苦力怕款存档碎片（官方称「徽章」；9/4 参展信息图有、9/27 展台详情只出现苦力怕款，是否发放待确认）', thumb: 'img/pins/A34-2.jpg', image: 'img/booths/A34/01.jpg' },
   { id: 'A17c-pin', no: 'A17c', type: 'region', zone: 'A', name: '命运扳机「存档碎片」· 展台款', booth: 'A17c', how: '预约游戏并关注命运扳机小红书账号；套装含「外包装 + 三 IP 合一内卡」成品一件，另附《命运扳机》单款内卡（官方称「存档碎片 PIN 套装」）', thumb: 'img/pins/A17c.jpg', image: 'img/booths/A17c/02.jpg' },
