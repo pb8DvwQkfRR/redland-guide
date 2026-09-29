@@ -27,7 +27,7 @@
             <div class="bar mt-6"><i :style="{ width: Math.min(100, (zoneCollected(z.key) / z.need) * 100) + '%', background: z.color }" /></div>
           </div>
         </div>
-        <div class="small muted mt-6">* 编号为按展位号的占位编码（官方未给 PIN 编号）；灰色「?」软盘是<b>还没公布 PIN 情报</b>的展位（一个展位号一张），公布后替换。</div>
+        <div class="small muted mt-6">* 编号为按展位号的占位编码（官方未给 PIN 编号）；灰色「?」软盘是<b>还没公布 PIN 情报</b>的 IP（同一展位号的多个 IP 各一张），公布后替换。黄色「需预约」= 这枚 PIN 要先在 RED LAND 主会场预约对应活动才能领。</div>
         <div class="small muted mt-6">* 官方说 74 个展位发 PIN，每区集齐 4 / 2 / 2 枚即可兑换该区拼图。勾选「只看已公布」可只看实图已公布的 PIN。</div>
       </div>
     </div>
@@ -47,7 +47,7 @@
           <div v-else class="q">?</div>
           <span class="tag" :class="tagClass(p)" style="position:absolute;left:4px;top:4px;font-size:8px">{{ p.no }}</span>
         </div>
-        <div class="pin-name">{{ p.name }}</div>
+        <div class="pin-name"><span v-if="p.booking" class="tag yellow text" style="font-size:10px;padding:1px 5px;margin-right:4px;vertical-align:1px">需预约</span>{{ p.name }}</div>
         <div class="small muted pin-how">{{ p.how }}</div>
         <div class="row between mt-6">
           <!-- 展位跳转做成蓝色标签按钮，点击面积更大（用户 9/24） -->
@@ -109,12 +109,16 @@ const infoNos = nosWith(regionPins)                              // 已有 PIN �
 const imageNos = nosWith(regionPins.filter((p) => p.thumb))       // 已放出实图
 const pendingNos = allNos.filter((no) => !noPinNos.has(no) && !infoNos.has(no)).sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
 const pinBoothCount = allNos.length - noPinNos.size
-// 未公布 PIN 的展位号 → 一个展位号一张占位卡（同号多 IP 合成一张）
-const placeholders = pendingNos.map((no) => {
-  const rows = rowsOf(no).filter((b) => !b.noPin)
-  const zone = no[0]
-  return { id: 'booth:' + no, no, type: 'region', zone, booth: rows[0].id, name: `${rows.map((b) => b.ip).join(' / ')}「存档碎片」· 暂无情报`, how: '还没公布 PIN 情报', thumb: null }
-})
+// 占位卡：一个 IP（展位行）一张（用户 9/29：A01 / A03 这种同号多 IP 不要合成一张，也不要因为同号另一家有 PIN 就把它藏掉）。
+// 顶部统计仍按展位号算（官方 74 口径不变）。只有一个 IP 的展位号沿用旧 id 'booth:<号>'，本机已勾的「已收集」不丢
+const pinnedIds = new Set(regionPins.flatMap(pinIdsOf))
+const placeholders = booths
+  .filter((b) => !b.noPin && !pinnedIds.has(b.id) && !nosOf(b).every((no) => noPinNos.has(no)))
+  .map((b) => {
+    const no = nosOf(b)[0]
+    const solo = rowsOf(no).filter((x) => !x.noPin).length === 1
+    return { id: solo ? 'booth:' + no : 'booth:' + b.id, no: solo ? no : b.id, type: 'region', zone: b.zone, booth: b.id, name: `${b.ip}「存档碎片」· 暂无情报`, how: '还没公布 PIN 情报', thumb: null }
+  })
 const all = computed(() => {
   const region = [...pins.filter((p) => p.type === 'region'), ...placeholders].sort((a, b) => a.no.localeCompare(b.no, 'en', { numeric: true }))
   const others = pins.filter((p) => p.type !== 'region')

@@ -19,16 +19,16 @@ export const zoneThumbs = { A: 'img/pins/zone-A.jpg', B: 'img/pins/zone-B.jpg', 
 export const pins = [
   // ---- 区域 IP PIN（已从各 IP 官方笔记确认的）----
   { id: 'A06-pin', no: 'A06', type: 'region', zone: 'A', name: '星布谷地「存档碎片」· 展台款', booth: 'A06', how: '集章满 4 个', thumb: 'img/pins/A06.jpg', image: 'img/booths/A06/07.jpg' },
-  { id: 'A11-1', no: 'A11-1', type: 'region', zone: 'A', name: '绝区零「存档碎片」· 日场款', booth: 'A11', how: '线上预约后到展位「布连邦」雕像完成现场互动领取（预约预计 9/28 开放）', thumb: 'img/pins/A11-1.jpg', image: 'img/booths/A11/03.jpg' },
-  { id: 'A11-2', no: 'A11-2', type: 'region', zone: 'A', name: '绝区零「存档碎片」· 夜场款', booth: 'A11', how: '线上预约后到展位「布连邦」雕像完成现场互动领取（预约预计 9/28 开放）', thumb: 'img/pins/A11-2.jpg', image: 'img/booths/A11/03.jpg' },
+  { id: 'A11-1', no: 'A11-1', type: 'region', booking: true, zone: 'A', name: '绝区零「存档碎片」· 日场款', booth: 'A11', how: '线上预约后到展位「布连邦」雕像完成现场互动领取（预约预计 9/28 开放）', thumb: 'img/pins/A11-1.jpg', image: 'img/booths/A11/03.jpg' },
+  { id: 'A11-2', no: 'A11-2', type: 'region', booking: true, zone: 'A', name: '绝区零「存档碎片」· 夜场款', booth: 'A11', how: '线上预约后到展位「布连邦」雕像完成现场互动领取（预约预计 9/28 开放）', thumb: 'img/pins/A11-2.jpg', image: 'img/booths/A11/03.jpg' },
   { id: 'A08-1', no: 'A08-1', type: 'region', zone: 'A', name: '代号如意「存档碎片」· 粉紫款', booth: 'A08', how: '行动一「关于他的特别调查」结算达 90 分获得（日场 12:30–17:00 / 夜场 17:30–21:30）；仅限女性探员', thumb: 'img/pins/A08-1.jpg', image: 'img/booths/A08/guide-01.jpg' },
   { id: 'A08-2', no: 'A08-2', type: 'region', zone: 'A', name: '代号如意「存档碎片」· 蓝紫款', booth: 'A08', how: '同粉紫款，两款对应关系官方未标', thumb: 'img/pins/A08-2.jpg', image: 'img/booths/A08/guide-01.jpg' },
-  { id: 'A09-pin-1', no: 'A09-1', type: 'region', zone: 'A', name: '崩坏：星穹铁道「存档碎片」· 角色款', booth: 'A09', how: '需预约「PIN 领取」（RED LAND 官方 9/25 预约日历，9/28 开约）：现场核验预约信息并答对星际和平公司相关提问；每日数量有限（官方称「联名徽章」）', thumb: 'img/pins/A09-1.jpg', image: 'img/booths/A09/01.jpg' },
-  { id: 'A09-pin-2', no: 'A09-2', type: 'region', zone: 'A', name: '崩坏：星穹铁道「存档碎片」· LOGO 款', booth: 'A09', how: '同角色款，需预约「PIN 领取」；两款对应关系官方未标（官方称「联名徽章」）', thumb: 'img/pins/A09-2.jpg', image: 'img/booths/A09/01.jpg' },
-  { id: 'A40', no: 'A40', type: 'region', zone: 'A', name: '光与夜之恋「存档碎片」· 蓝鸟窗台款', booth: 'A40', how: '完成【窗畔花影】互动 或【绮梦花园】打卡，由工作人员在出口处发放（两项都需提前预约）', thumb: 'img/pins/A40.jpg', image: 'img/booths/A40/guide-16.jpg' },
+  { id: 'A09-pin-1', no: 'A09-1', type: 'region', booking: true, zone: 'A', name: '崩坏：星穹铁道「存档碎片」· 角色款', booth: 'A09', how: '需预约「PIN 领取」（RED LAND 官方 9/25 预约日历，9/28 开约）：现场核验预约信息并答对星际和平公司相关提问；每日数量有限（官方称「联名徽章」）', thumb: 'img/pins/A09-1.jpg', image: 'img/booths/A09/01.jpg' },
+  { id: 'A09-pin-2', no: 'A09-2', type: 'region', booking: true, zone: 'A', name: '崩坏：星穹铁道「存档碎片」· LOGO 款', booth: 'A09', how: '同角色款，需预约「PIN 领取」；两款对应关系官方未标（官方称「联名徽章」）', thumb: 'img/pins/A09-2.jpg', image: 'img/booths/A09/01.jpg' },
+  { id: 'A40', no: 'A40', type: 'region', booking: true, zone: 'A', name: '光与夜之恋「存档碎片」· 蓝鸟窗台款', booth: 'A40', how: '完成【窗畔花影】互动 或【绮梦花园】打卡，由工作人员在出口处发放（两项都需提前预约）', thumb: 'img/pins/A40.jpg', image: 'img/booths/A40/guide-16.jpg' },
   // 原神的徽章是 RED LAND 软盘造型（灰条 + 小红书角标齐全），但软盘是蓝色——A 区已确认的存档碎片都是橙色（见 A11 / A17c / A25 / A33），
   // 官方原文也只写「徽章一份」而不是「存档碎片」，所以是否计入 A 区拼图结算待确认，已写在 name 里
-  { id: 'A10', no: 'A10', type: 'region', zone: 'A', name: '原神「存档碎片」· 派蒙点赞款', booth: 'A10', how: '在 RED LAND 主会场页面预约后，参与展台【体验互动】领取（官方称「徽章」；软盘为蓝色、非 A 区橙，是否计入区域拼图待确认）', thumb: 'img/pins/A10.jpg', image: 'img/booths/A10/03.jpg' },
+  { id: 'A10', no: 'A10', type: 'region', booking: true, zone: 'A', name: '原神「存档碎片」· 派蒙点赞款', booth: 'A10', how: '在 RED LAND 主会场页面预约后，参与展台【体验互动】领取（官方称「徽章」；软盘为蓝色、非 A 区橙，是否计入区域拼图待确认）', thumb: 'img/pins/A10.jpg', image: 'img/booths/A10/03.jpg' },
   // C-04 独立游戏大食堂（RED LAND 官方 9/21）：试玩 3 款游戏 + 出口结算处的「心选菜单小票」解锁，官方未放实物图
   { id: 'A27', no: 'A27', type: 'region', zone: 'A', name: '无限暖暖「存档碎片」· 暖暖拍立得款', booth: 'A27', how: '在展区旋转木马区域参与指定互动活动，限量 2000 份、发完即止', thumb: 'img/pins/A27.jpg', image: 'img/booths/A27/07.jpg' },
   { id: 'B10', no: 'B10', type: 'region', zone: 'B', name: '明日方舟「存档碎片」· 罗德厨房款', booth: 'B10', how: '领随机食谱、规定时间内集齐指定食材后抽奖，金牌 / 主管 / 助理三档都有；每人一次', thumb: 'img/pins/B10.jpg', image: 'img/booths/B10/03.jpg' },
@@ -50,8 +50,8 @@ export const pins = [
   { id: 'A21-1', no: 'A21-1', type: 'region', zone: 'A', name: '三丽鸥「存档碎片」· 日场款', booth: 'A21', how: '闯关三处（星航停靠站 / 飞船登陆点 / 星尘捕集舱）集齐三枚印章，到兑换处领取；日场 12:30–17:30 发放（橙，官方图注「白天效果」）', thumb: 'img/pins/A21-1.jpg', image: 'img/booths/A21/guide-00.jpg' },
   { id: 'A21-2', no: 'A21-2', type: 'region', zone: 'A', name: '三丽鸥「存档碎片」· 夜场款', booth: 'A21', how: '闯关三处（星航停靠站 / 飞船登陆点 / 星尘捕集舱）集齐三枚印章，到兑换处领取；夜场 17:30–21:30 发放（绿，官方图注「夜晚效果」）', thumb: 'img/pins/A21-2.jpg', image: 'img/booths/A21/guide-00.jpg' },
   { id: 'A30', no: 'A30', type: 'region', zone: 'A', name: '七界梦谭「存档碎片」· 戚戎款', booth: 'A30', how: '逛诡摊攒「诡市魂钱」换抽奖次数，完成 1 次展台互动抽奖即得；限量掉落', thumb: 'img/pins/A30.jpg', image: 'img/booths/A30/guide-04.jpg' },
-  { id: 'A28', no: 'A28', type: 'region', zone: 'A', name: '代号：香「存档碎片」· 款式待公布', booth: 'A28', how: '完成预约活动【凝香成愿】调香或【故「香」初遇】角色互动即得；【神遗片羽】无料奖品中随机（9/27 预约说明）', thumb: null, image: 'img/booths/A28/yuyue-01.jpg' },
-  { id: 'A32', no: 'A32', type: 'region', zone: 'A', name: '代号：在场证明「存档碎片」· 款式待公布', booth: 'A32', how: '预约男主互动（1V1 五场 13:30–18:30 / 1V5 19:00–20:00，9/28 19:00 起按门票日期开约），互动体验结束后二次核销领取；每人每日 1 次，仅限 18+ 女性玩家', thumb: null, image: 'img/booths/A32/05.jpg' },
+  { id: 'A28', no: 'A28', type: 'region', booking: true, zone: 'A', name: '代号：香「存档碎片」· 款式待公布', booth: 'A28', how: '完成预约活动【凝香成愿】调香或【故「香」初遇】角色互动即得；【神遗片羽】无料奖品中随机（9/27 预约说明）', thumb: null, image: 'img/booths/A28/yuyue-01.jpg' },
+  { id: 'A32', no: 'A32', type: 'region', booking: true, zone: 'A', name: '代号：在场证明「存档碎片」· 款式待公布', booth: 'A32', how: '预约男主互动（1V1 五场 13:30–18:30 / 1V5 19:00–20:00，9/28 19:00 起按门票日期开约），互动体验结束后二次核销领取；每人每日 1 次，仅限 18+ 女性玩家', thumb: null, image: 'img/booths/A32/05.jpg' },
   // 归环 / 阅文的「PIN 卡」：官方都没给 RED LAND 软盘造型的成品图，是否算冒险者拼图用的区域 PIN 待确认（名字里已注明）。
   // 归环 9/23 更正：奖品图里右上角黄色的 Q 版点赞卡才是 PIN 卡，之前抠的两张黑金「唱盘」卡片是透卡
   { id: 'A17b', no: 'A17b', type: 'region', zone: 'A', name: '归环「存档碎片」· PIN 卡款', booth: 'A17b', how: '在归环展位完成 1 项指定互动（开业免单大作战 / 开业好礼运送中 / 万物可归环）可得 1 个礼品，PIN 卡是「木剧场 / PIN 卡 / 透卡 / 立牌」四种礼品之一；同一互动重复参与只有首次给（官方称「PIN 卡」，是黄色 Q 版点赞卡片、非软盘造型，是否属区域 PIN 待确认）', thumb: 'img/pins/A17b.jpg', image: 'img/booths/A17b/04.jpg' },
@@ -83,19 +83,19 @@ export const pins = [
   { id: 'B14-1', no: 'B14-1', type: 'region', zone: 'B', name: '暗影成双「存档碎片」· 日场款', booth: 'B14', how: '三连关注 + 现场任意互动集 2 枚章 + 带 #新世界暗影成双 #双人电影 发笔记，到【书房】兑换处核验领取；12:30–17:30 发放，每人每日 1 枚、每日 800（软盘为橙色、非 B 区黄，是否计入区域拼图待确认）', thumb: 'img/pins/B14-1.jpg', image: 'img/booths/B14/guide-02.jpg' },
   { id: 'B14-2', no: 'B14-2', type: 'region', zone: 'B', name: '暗影成双「存档碎片」· 夜场款', booth: 'B14', how: '同日场款，17:30–21:30 发放', thumb: 'img/pins/B14-2.jpg', image: 'img/booths/B14/guide-02.jpg' },
   { id: 'B15-pin', no: 'B15', type: 'region', zone: 'B', name: '逆水寒「存档碎片」· 血河小狗款', booth: 'B15', how: '参与逆水寒展台现场趣味互动（官方称「REDLAND PIN」）', thumb: 'img/pins/B15.jpg', image: 'img/booths/B15/02.jpg' },
-  { id: 'B12-pin', no: 'B12', type: 'region', zone: 'B', name: '鸣潮「存档碎片」· 心有所归款', booth: 'B12', how: '在 RED LAND 主会场预约【心有所归】互动玩法，到门帘前敲敲桌子并与心完成互动即得 1 枚；每人限 1 次、每次限时 1 min，9/28 13:00 起按日开放预约（样式待公布）', thumb: null, image: 'img/booths/B12/08.jpg' },
+  { id: 'B12-pin', no: 'B12', type: 'region', booking: true, zone: 'B', name: '鸣潮「存档碎片」· 心有所归款', booth: 'B12', how: '在 RED LAND 主会场预约【心有所归】互动玩法，到门帘前敲敲桌子并与心完成互动即得 1 枚；每人限 1 次、每次限时 1 min，9/28 13:00 起按日开放预约（样式待公布）', thumb: null, image: 'img/booths/B12/08.jpg' },
   { id: 'C16-pin', no: 'C16', type: 'region', zone: 'C', name: '宝可梦卡牌「存档碎片」· 超梦 & 梦幻款', booth: 'C16', how: '卡牌体验营完成 3 个任务领取；日场款 12:30–17:30 每日 2000 个，夜场款（夜光）17:30–21:30 每日 1200 个，每人每次限领 1 个', thumb: 'img/pins/C16.jpg', image: 'img/booths/B02/card-03.jpg' },
   { id: 'C08-pin', no: 'C08', type: 'region', zone: 'C', name: '猛兽派对「存档碎片」· 柯基款', booth: 'C08', how: '完成《猛兽派对》手游试玩得限定贴纸后到吧台兑换；或与随机现身的猛兽主角合影互动有机会获得（官方称「REDLAND 官方 PIN」）（实图取自猛兽派对分会场页积分抽奖的「猛兽派对徽章」奖品图，用户 9/29 确认即 REDLAND 官方 PIN；软盘为红棕色、非 C 区蓝，是否计入区域拼图待确认）', thumb: 'img/pins/C08.jpg', image: 'img/booths/C08/lottery-00.jpg' },
   { id: 'C17-pin', no: 'C17', type: 'region', zone: 'C', name: '航海王卡牌对战「存档碎片」· 款式待公布', booth: 'C17', how: '集齐 3 枚航海王卡牌对战印章（SNS 打卡 / 策牌破局 / 互动游戏各 1 枚），扫码填问卷并下载万代卡牌 APP 后现场兑换；共限量 1600 枚（官方称「RED LAND 2026 限定徽章」）', thumb: null, image: 'img/booths/C17/00.jpg' },
-  { id: 'C07-pin', no: 'C07', type: 'region', zone: 'C', name: '苏丹的游戏「存档碎片」· 展台款', booth: 'C07', how: '预约后走完舍馆 → 集市 → 冒险者酒吧 → 哈比卜的厨房 → 苏丹的王座全流程，向苏丹献上美味大餐博得青睐即得；数量有限先到先得（夜场款可夜光）', thumb: 'img/pins/C07.jpg', image: 'img/booths/C07/02.jpg' },
+  { id: 'C07-pin', no: 'C07', type: 'region', booking: true, zone: 'C', name: '苏丹的游戏「存档碎片」· 展台款', booth: 'C07', how: '预约后走完舍馆 → 集市 → 冒险者酒吧 → 哈比卜的厨房 → 苏丹的王座全流程，向苏丹献上美味大餐博得青睐即得；数量有限先到先得（夜场款可夜光）', thumb: 'img/pins/C07.jpg', image: 'img/booths/C07/02.jpg' },
   { id: 'C13-pin', no: 'C13', type: 'region', zone: 'C', name: '啦嗒铛「存档碎片」· 展台款', booth: 'C13', how: 'GSE 展位试玩任何游戏后即得 1 个；日场 12:30–17:30 / 夜场 17:30–21:30，数量有限派完即止', thumb: 'img/pins/C13.jpg', image: 'img/booths/C13/hub-02.jpg' },
   { id: 'C12-1', no: 'C12-1', type: 'region', zone: 'C', name: 'hololive「存档碎片」· 宝钟玛琳 & 可波·卡娜艾露款', booth: 'C12', how: '参与 hololive Dreams 现场游玩，完成任意一首歌曲即得（两款）', thumb: 'img/pins/C12-1.jpg', image: 'img/booths/C12/guide-01.jpg' },
   { id: 'C12-2', no: 'C12-2', type: 'region', zone: 'C', name: 'hololive「存档碎片」· 舞台款', booth: 'C12', how: '同上', thumb: 'img/pins/C12-2.jpg', image: 'img/booths/C12/guide-01.jpg' },
   { id: 'C05-1', no: 'C05-1', type: 'region', zone: 'C', name: '女神异闻录4 Revival「存档碎片」· P4R 主视觉款', booth: 'C05', how: '完成展位内全部指定打卡任务后领取；日场发放 12:30–17:30 / 夜场发放 17:30–21:30（日 / 夜场对应哪款官方未标）', thumb: 'img/pins/C05-1.jpg', image: 'img/booths/C05/guide-00.jpg' },
   { id: 'C05-2', no: 'C05-2', type: 'region', zone: 'C', name: '女神异闻录4 Revival「存档碎片」· RED LAND 2026 × P4R logo 款', booth: 'C05', how: '同上', thumb: 'img/pins/C05-2.jpg', image: 'img/booths/C05/guide-00.jpg' },
-  { id: 'C09', no: 'C09', type: 'region', zone: 'C', name: '世界之外「存档碎片」· 黄金绮旅款', booth: 'C09', how: '预约或凭整理券进入「黄金绮旅空间」后，当前场次内到「无料领取处」凭导览手册领取，每人限一份；预约 9/28 开约', thumb: 'img/pins/C09.jpg', image: 'img/booths/C09/08.jpg' },
-  { id: 'C18-1', no: 'C18-1', type: 'region', zone: 'C', name: '闪魂「存档碎片」· 日场款', booth: 'C18', how: '白天灵魂试炼场（绝区零 / 纸嫁衣 / 闪魂三区）集齐 3 枚印章兑换；PIN 章共 2050 个、每日限量 410，换完即止（需预约领打卡册）', thumb: 'img/pins/C18-1.jpg', image: 'img/booths/C18/fb-06.jpg' },
-  { id: 'C18-2', no: 'C18-2', type: 'region', zone: 'C', name: '闪魂「存档碎片」· 夜场夜光款', booth: 'C18', how: '夜间副本「小小梦魇」集齐 3 枚不同印章兑换夜光版；共 650 个、每日限量 130，换完即止', thumb: 'img/pins/C18-2.jpg', image: 'img/booths/C18/fb-06.jpg' },
+  { id: 'C09', no: 'C09', type: 'region', booking: true, zone: 'C', name: '世界之外「存档碎片」· 黄金绮旅款', booth: 'C09', how: '预约或凭整理券进入「黄金绮旅空间」后，当前场次内到「无料领取处」凭导览手册领取，每人限一份；预约 9/28 开约', thumb: 'img/pins/C09.jpg', image: 'img/booths/C09/08.jpg' },
+  { id: 'C18-1', no: 'C18-1', type: 'region', booking: true, zone: 'C', name: '闪魂「存档碎片」· 日场款', booth: 'C18', how: '白天灵魂试炼场（绝区零 / 纸嫁衣 / 闪魂三区）集齐 3 枚印章兑换；PIN 章共 2050 个、每日限量 410，换完即止（需预约领打卡册）', thumb: 'img/pins/C18-1.jpg', image: 'img/booths/C18/fb-06.jpg' },
+  { id: 'C18-2', no: 'C18-2', type: 'region', booking: true, zone: 'C', name: '闪魂「存档碎片」· 夜场夜光款', booth: 'C18', how: '夜间副本「小小梦魇」集齐 3 枚不同印章兑换夜光版；共 650 个、每日限量 130，换完即止', thumb: 'img/pins/C18-2.jpg', image: 'img/booths/C18/fb-06.jpg' },
 
   // ---- 夜间 ----
   { id: 'night', no: 'N-01', type: 'night', name: '夜间「存档碎片」· 待解锁', how: '夜间发放，月下模式神秘变体', thumb: 'img/pins/night.jpg', image: 'img/rules/pin/01.jpg' },
