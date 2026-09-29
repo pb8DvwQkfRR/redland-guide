@@ -110,6 +110,7 @@ CROPS = {
     'A08-2': ('public/img/booths/A08/guide-01.jpg', (645, 664, 710, 730), {'fileId': 'oss-sg/notes/1040g3l0325h80l4634605p51i6u2qi4bbrlkek0', 'upscale': True}),
     'B14-1': ('public/img/booths/B14/guide-02.jpg', (557, 802, 671, 916), {'fileId': 'spectrum/1040g0k0325eu0ohq4c105ogv564k1ok41ddgfg8', 'upscale': True}),  # 日场（右）
     'B14-2': ('public/img/booths/B14/guide-02.jpg', (388, 802, 500, 914), {'fileId': 'spectrum/1040g0k0325eu0ohq4c105ogv564k1ok41ddgfg8', 'upscale': True}),  # 夜场（左）
+    'B04a': ('public/img/booths/B04a/guide-01.jpg', (186, 855, 280, 944), {'fileId': 'spectrum/1040g34o325l6gi6s4c0g5p0atmlqa5og00ft7io', 'upscale': True}),  # 永劫 9/28 进组通告奖品图左下黄软盘
     'A35': ('public/img/booths/A35/guimi-03.jpg', (159, 403, 390, 623), {'fileId': 'spectrum/1040g34o325gknpeekc105p13ojukc96miismp2g', 'upscale': True}),
     'B02-1': ('public/img/booths/B02/04.jpg', (555, 335, 710, 480), {'upscale': True}),
     'B02-2': ('public/img/booths/B02/04.jpg', (555, 485, 710, 630), {'upscale': True}),

@@ -120,12 +120,17 @@
       <!-- 菜单 / 售卖品（餐车型展位） -->
       <div v-if="detail.menu?.length" class="pcard mt-14">
         <div class="pcard-body">
-          <div class="pcard-title">🍱 菜单</div>
+          <div class="fold-head" @click="openMenu = !openMenu">
+            <div class="pcard-title">🍱 菜单 / 价目<small class="muted" style="font-size:12px;margin-left:6px">{{ detail.menu.length }} 项</small></div>
+            <span class="fold-arrow" :class="{ open: openMenu }">&gt;</span>
+          </div>
+          <template v-if="openMenu">
           <div v-for="m in detail.menu" :key="m.name" class="row between small" style="padding:6px 0;border-top:1.5px dashed #eadfc4">
             <span><b>{{ m.name }}</b><span v-if="m.note" class="muted" style="margin-left:6px">{{ m.note }}</span></span>
             <span class="tag yellow" style="font-size:9px">{{ m.price }}</span>
           </div>
           <div v-if="detail.menuNote" class="small muted mt-6">* {{ detail.menuNote }}</div>
+          </template>
         </div>
       </div>
 
@@ -343,6 +348,8 @@ const copied = ref(false)
 
 // 展台活动 / 舞台活动 / 展台任务的收起展开（默认展开；换展位时复位）
 const openAct = ref(true)
+// 菜单 / 价目表默认收起（用户 9/29：永劫无间 22 款价目太长）
+const openMenu = ref(false)
 const openStage = ref(true)
 const openTask = ref(true)
 watch(

@@ -68,6 +68,7 @@ export const pins = [
   { id: 'A24-pin-2', no: 'A24-2', type: 'region', zone: 'A', name: 'SCLA「存档碎片」· 犬夜叉 / 初音未来 / EVA / 面包超人 / 柯南款', booth: 'A24', how: 'BINGO 完成 2 条及以上连线；每日礼品兑换 14:00 开始，每人每日限领 1 枚（官方称「小红书 PIN 徽章（存档碎片）」）', thumb: 'img/pins/A24-2.jpg', image: 'img/booths/A24/02.jpg' },
   { id: 'B01-1', no: 'B01-1', type: 'region', zone: 'B', name: '蛋仔派对「存档碎片」· 日场款', booth: 'B01', how: '完成基础车间挑战（原胚生产 / 表情写入 / 外观装配）后前往盲盒机点位领取，12:30–17:30 发放，每日限量 800', thumb: 'img/pins/B01-1.jpg', image: 'img/booths/B01/guide-05.jpg' },
   { id: 'B01-2', no: 'B01-2', type: 'region', zone: 'B', name: '蛋仔派对「存档碎片」· 夜场款', booth: 'B01', how: '同日场款，17:30–21:30 发放夜场款，每日限量 400', thumb: 'img/pins/B01-2.jpg', image: 'img/booths/B01/guide-05.jpg' },
+  { id: 'B04a', no: 'B04a', type: 'region', zone: 'B', name: '永劫无间「存档碎片」· 好菜坞款', booth: 'B04a', how: '日间：走完好菜坞片场剧情后带话题发笔记即得；夜间：片场探班（每日 17:00–18:00）前 200 名完成互动赚 600 片酬兑换夜间存档碎片', thumb: 'img/pins/B04a.jpg', image: 'img/booths/B04a/guide-01.jpg' },
   { id: 'B04b-1', no: 'B04b-1', type: 'region', zone: 'B', name: '暴雪游戏「存档碎片」· RED LAND × BLIZZARD × 網易款', booth: 'B04b', how: '集齐全部展位印章后在暴雪游戏展台领取', thumb: 'img/pins/B04b-1.jpg', image: 'img/booths/B04b/guide-04.jpg' },
   { id: 'B04b-2', no: 'B04b-2', type: 'region', zone: 'B', name: '暴雪游戏「存档碎片」· BLIZZARD 蓝面款', booth: 'B04b', how: '集齐全部展位印章后在暴雪游戏展台领取', thumb: 'img/pins/B04b-2.jpg', image: 'img/booths/B04b/guide-04.jpg' },
   { id: 'B05', no: 'B05', type: 'region', zone: 'B', name: '漫威影业「存档碎片」· 复仇者联盟款', booth: 'B05', how: '五大阵营挑战集齐 5 枚印章换冰箱贴后，对限定暗号完成挑战解锁；每日限量', thumb: 'img/pins/B05.jpg', image: 'img/booths/B05/hub-00.jpg' },
@@ -115,5 +116,4 @@ export const pins = [
   { id: 'puzzle-A', no: 'R-A', type: 'reward', zone: 'A', name: '翻身时空港 冒险者拼图', how: '集齐 4 枚橙色 PIN 到区域结算点兑换', thumb: 'img/pins/puzzle-A.jpg', image: 'img/rules/pin/01.jpg' },
   { id: 'puzzle-B', no: 'R-B', type: 'reward', zone: 'B', name: '黄金海岸线 冒险者拼图', how: '集齐 2 枚黄色 PIN 到区域结算点兑换', thumb: 'img/pins/puzzle-B.jpg', image: 'img/rules/pin/01.jpg' },
   { id: 'puzzle-C', no: 'R-C', type: 'reward', zone: 'C', name: '重生试炼场 冒险者拼图', how: '集齐 2 枚蓝色 PIN 到区域结算点兑换', thumb: 'img/pins/puzzle-C.jpg', image: 'img/rules/pin/01.jpg' },
-  { id: 'puzzle-all', no: 'R-ALL', type: 'reward', name: 'RED LAND 2026 冒险岛拼图完整体', how: '三块区域拼图拼合', thumb: 'img/pins/puzzle-all.jpg', image: 'img/rules/pin/02.jpg' },
 ]
