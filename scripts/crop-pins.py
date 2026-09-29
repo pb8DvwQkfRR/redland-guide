@@ -99,7 +99,8 @@ CROPS = {
     # hololive 9/27 长图（810 宽 4072 高）里并排两枚蓝软盘，略斜不转
     'C12-1': ('public/img/booths/C12/guide-01.jpg', (166, 918, 392, 1182), {'fileId': 'spectrum/1040g0k0325k5ntmak4005p9ltvlgrijbcm0r1rg', 'upscale': True}),
     'C12-2': ('public/img/booths/C12/guide-01.jpg', (388, 914, 648, 1190), {'fileId': 'spectrum/1040g0k0325k5ntmak4005p9ltvlgrijbcm0r1rg', 'upscale': True}),
-    'A21': ('public/img/booths/A21/guide-00.jpg', (448, 800, 561, 913), {'fileId': 'spectrum/1040g0k0325kveuo6ka004b5cv6enihchqbu7vdo', 'upscale': True}),  # 三丽鸥 9/28 闯关攻略，白天效果那枚（橙）
+    'A21-1': ('public/img/booths/A21/guide-00.jpg', (448, 800, 561, 913), {'fileId': 'spectrum/1040g0k0325kveuo6ka004b5cv6enihchqbu7vdo', 'upscale': True}),  # 三丽鸥 9/28 闯关攻略，日场款（橙，官方图注「白天效果」）
+    'A21-2': ('public/img/booths/A21/guide-00.jpg', (585, 801, 697, 913), {'fileId': 'spectrum/1040g0k0325kveuo6ka004b5cv6enihchqbu7vdo', 'upscale': True}),  # 夜场款（绿，官方图注「夜晚效果」，用户 9/29 指出是两枚）
     'B05': ('public/img/booths/B05/hub-00.jpg', (105, 4405, 358, 4657), {'upscale': True}),  # 漫威专题页长图，黄软盘
     'A36': ('public/img/booths/A36/rl-00.jpg', (329, 596, 494, 763), {'fileId': 'spectrum/1040g0k0325f09d4pka2g5q2ssop2773g2199gh0', 'upscale': True}),  # 如鸢日 / 夜两款共用这张实图（官方只放了一张，夜场款可夜光）
     'A35': ('public/img/booths/A35/guimi-03.jpg', (159, 403, 390, 623), {'fileId': 'spectrum/1040g34o325gknpeekc105p13ojukc96miismp2g', 'upscale': True}),
