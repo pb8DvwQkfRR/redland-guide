@@ -21,6 +21,8 @@ export const pins = [
   { id: 'A06-pin', no: 'A06', type: 'region', zone: 'A', name: '星布谷地「存档碎片」· 展台款', booth: 'A06', how: '集章满 4 个', thumb: 'img/pins/A06.jpg', image: 'img/booths/A06/07.jpg' },
   { id: 'A11-1', no: 'A11-1', type: 'region', zone: 'A', name: '绝区零「存档碎片」· 日场款', booth: 'A11', how: '线上预约后到展位「布连邦」雕像完成现场互动领取（预约预计 9/28 开放）', thumb: 'img/pins/A11-1.jpg', image: 'img/booths/A11/03.jpg' },
   { id: 'A11-2', no: 'A11-2', type: 'region', zone: 'A', name: '绝区零「存档碎片」· 夜场款', booth: 'A11', how: '线上预约后到展位「布连邦」雕像完成现场互动领取（预约预计 9/28 开放）', thumb: 'img/pins/A11-2.jpg', image: 'img/booths/A11/03.jpg' },
+  { id: 'A08-1', no: 'A08-1', type: 'region', zone: 'A', name: '代号如意「存档碎片」· 粉紫款', booth: 'A08', how: '行动一「关于他的特别调查」结算达 90 分获得（日场 12:30–17:00 / 夜场 17:30–21:30）；仅限女性探员', thumb: 'img/pins/A08-1.jpg', image: 'img/booths/A08/guide-01.jpg' },
+  { id: 'A08-2', no: 'A08-2', type: 'region', zone: 'A', name: '代号如意「存档碎片」· 蓝紫款', booth: 'A08', how: '同粉紫款，两款对应关系官方未标', thumb: 'img/pins/A08-2.jpg', image: 'img/booths/A08/guide-01.jpg' },
   { id: 'A09-pin-1', no: 'A09-1', type: 'region', zone: 'A', name: '崩坏：星穹铁道「存档碎片」· 角色款', booth: 'A09', how: '需预约「PIN 领取」（RED LAND 官方 9/25 预约日历，9/28 开约）：现场核验预约信息并答对星际和平公司相关提问；每日数量有限（官方称「联名徽章」）', thumb: 'img/pins/A09-1.jpg', image: 'img/booths/A09/01.jpg' },
   { id: 'A09-pin-2', no: 'A09-2', type: 'region', zone: 'A', name: '崩坏：星穹铁道「存档碎片」· LOGO 款', booth: 'A09', how: '同角色款，需预约「PIN 领取」；两款对应关系官方未标（官方称「联名徽章」）', thumb: 'img/pins/A09-2.jpg', image: 'img/booths/A09/01.jpg' },
   { id: 'A40', no: 'A40', type: 'region', zone: 'A', name: '光与夜之恋「存档碎片」· 蓝鸟窗台款', booth: 'A40', how: '完成【窗畔花影】互动 或【绮梦花园】打卡，由工作人员在出口处发放（两项都需提前预约）', thumb: 'img/pins/A40.jpg', image: 'img/booths/A40/guide-16.jpg' },

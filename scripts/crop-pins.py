@@ -106,6 +106,8 @@ CROPS = {
     'A22': ('public/img/booths/A22/guide-03.jpg', (494, 315, 700, 522), {'fileId': 'spectrum/1040g0k0324u39rqr2u0g5okbabvocip484kb3g8', 'upscale': True}),  # 火影 9/16 互动赢好礼图，橙软盘
     'C18-1': ('public/img/booths/C18/fb-06.jpg', (226, 469, 371, 614), {'fileId': 'spectrum/1040g0k0325ik3c13583g5p5u4brapcrqj70dg6g', 'upscale': True}),  # 闪魂日场（棕）
     'C18-2': ('public/img/booths/C18/fb-06.jpg', (332, 792, 477, 937), {'fileId': 'spectrum/1040g0k0325ik3c13583g5p5u4brapcrqj70dg6g', 'upscale': True}),  # 闪魂夜场夜光（蓝）
+    'A08-1': ('public/img/booths/A08/guide-01.jpg', (572, 664, 638, 730), {'fileId': 'oss-sg/notes/1040g3l0325h80l4634605p51i6u2qi4bbrlkek0', 'upscale': True}),
+    'A08-2': ('public/img/booths/A08/guide-01.jpg', (645, 664, 710, 730), {'fileId': 'oss-sg/notes/1040g3l0325h80l4634605p51i6u2qi4bbrlkek0', 'upscale': True}),
     'A35': ('public/img/booths/A35/guimi-03.jpg', (159, 403, 390, 623), {'fileId': 'spectrum/1040g34o325gknpeekc105p13ojukc96miismp2g', 'upscale': True}),
     'B02-1': ('public/img/booths/B02/04.jpg', (555, 335, 710, 480), {'upscale': True}),
     'B02-2': ('public/img/booths/B02/04.jpg', (555, 485, 710, 630), {'upscale': True}),
