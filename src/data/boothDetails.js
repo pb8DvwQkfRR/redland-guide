@@ -3654,9 +3654,13 @@ const identityV = {
 }
 
 // 海绵宝宝（A29a）与忍者神龟（A29b）：尼克乐恩共用一张 RED LAND KV，两个官方号 9/11–9/12 各发一条
-// 「送门票」笔记，票务部分不收，只收正文里列出的现场项目与年龄限制
+// 「送门票」笔记，票务部分不收，只收正文里列出的现场项目与年龄限制。
+// 9/24 派拉蒙 ditto 专题页「开启尼克乐恩终极冒险！」升为两边主来源（送票笔记降 moreSources）：现场有打卡点、限定收藏品，有机会与海绵宝宝和忍者神龟见面；全网「水母狂欢舞挑战赛」是线上活动不收
+const nickSource = { title: '开启尼克乐恩终极冒险！（派拉蒙 REDLAND2026 登岛专题页，仅收录线下部分）', url: 'https://xhslink.com/m/6lLN1Z5VBLM', noteId: '9e35d1fb9b674e3f9cf6908d50e0a859', author: '尼克乐恩 × 小红书 RED LAND', publishedAt: '2026-09-24' }
+const nickImg = { src: 'img/booths/A29a/hub-00.jpg', caption: '开启尼克乐恩终极冒险！· 比奇堡欢乐海滩 / 忍者神龟秘密基地 / 解锁惊喜（派拉蒙专题页 9/24）' }
 const spongebob = {
-  source: { title: '比奇堡登陆上海！（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/AJixoCdtkUi', noteId: '6aa3e95100000000270144f6', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-11' },
+  source: nickSource,
+  moreSources: [{ title: '比奇堡登陆上海！（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/AJixoCdtkUi', noteId: '6aa3e95100000000270144f6', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-11' }],
   boothNo: 'A29',
   location: '翻身时空港 A29',
   intro: '谁懂啊——海绵宝宝真的来上海了！准备好和海绵宝宝一起，开启一场真正的比奇堡欢乐海滩冒险了吗？',
@@ -3671,16 +3675,18 @@ const spongebob = {
         { desc: '解锁水母狂欢舞挑战。' },
       ],
     },
+    { title: '解锁惊喜 · 打卡点 / 限定收藏品', desc: '现场还有超酷打卡点、限定收藏品，更有机会与海绵宝宝和忍者神龟见面！', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
   ],
   stage: [],
   tasks: [],
   rewards: [],
   footnote: '同一 A-29 展位还有忍者神龟（同属尼克乐恩）。',
-  images: [{ src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' }],
+  images: [nickImg, { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' }],
 }
 
 const tmnt = {
-  source: { title: '想闯上海忍者神龟秘密基地的举手（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/8VNWQPJDq23', noteId: '6aa3ef1a000000002803615d', author: '忍者神龟官方', publishedAt: '2026-09-12' },
+  source: nickSource,
+  moreSources: [{ title: '想闯上海忍者神龟秘密基地的举手（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/8VNWQPJDq23', noteId: '6aa3ef1a000000002803615d', author: '忍者神龟官方', publishedAt: '2026-09-12' }],
   boothNo: 'A29',
   location: '翻身时空港 A29',
   intro: '爷青回！忍者神龟秘密基地空降上海。这一次，不只是来打卡——真正的半壳英雄，准备好接受挑战了吗？',
@@ -3694,12 +3700,13 @@ const tmnt = {
         { desc: '一路闯关升级，成为真正的半壳英雄。' },
       ],
     },
+    { title: '解锁惊喜 · 打卡点 / 限定收藏品', desc: '现场还有超酷打卡点、限定收藏品，更有机会与海绵宝宝和忍者神龟见面！', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
   ],
   stage: [],
   tasks: [],
   rewards: [],
   footnote: '同一 A-29 展位还有海绵宝宝（同属尼克乐恩）。',
-  images: [{ src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' }],
+  images: [nickImg, { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' }],
 }
 
 // MARD 马尔德（C-11，重生试炼场）：官方号 9/26「小红书redland展位活动指南」为主来源——奇境拼豆工坊（需预约：每天 3 场 × 1.5 小时 × 20 人，9/30 按门票日期分档开约）、
