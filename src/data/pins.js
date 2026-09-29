@@ -41,6 +41,7 @@ export const pins = [
   { id: 'A12-2', no: 'A12-2', type: 'region', zone: 'A', name: '超自然行动组「存档碎片」· 夜场款', booth: 'A12', how: '夜间场 17:30–21:30 参与展台互动领取，与投影手电筒一同放送', thumb: 'img/pins/A12-2.jpg', image: 'img/booths/A12/02.jpg' },
   { id: 'A39', no: 'A39', type: 'region', zone: 'A', name: '粒粒的小人国「存档碎片」· 「粒?」款', booth: 'A39', how: '互动区完成「摇粒乡交房仪式」（12:30–20:30），随摇粒乡入住礼包发放，每日限量先到先得', thumb: 'img/pins/A39.jpg', image: 'img/booths/A39/guide-05.jpg' },
   { id: 'A37', no: 'A37', type: 'region', zone: 'A', name: '奇遇动物城「存档碎片」· 记忆款', booth: 'A37', how: '任务二：关注 @奇遇动物城 并带 #奇遇动物城 #奇遇动物城REDLAND 在小红书发现场照片（贴纸套装 / 合影透卡 / 存档碎片三者之一）；或 任务三 舞台活动；每日限量先到先得（官方称「记忆存档碎片」）', thumb: 'img/pins/A37.jpg', image: 'img/booths/A37/06.jpg' },
+  { id: 'A01a', no: 'A01a', type: 'region', zone: 'A', name: '王者荣耀「存档碎片」· 小王款', booth: 'A01a', how: '到 A-01 冒险碰头点画出你的本命英雄即可领取', thumb: 'img/pins/A01a.jpg', image: 'img/booths/A01a/05.jpg' },
   { id: 'A03a', no: 'A03', type: 'region', zone: 'A', name: '王者万象棋「存档碎片」· 款式待公布', booth: 'A03a', how: '盲盒墙「盲盒寻宝三连抽」集章赢限定 PIN（9/28 参展情报）', thumb: null, image: 'img/booths/A03a/03.jpg' },
   { id: 'A05', no: 'A05', type: 'region', zone: 'A', name: '心动小镇「存档碎片」· 安妮款', booth: 'A05', how: '完成集章任务（入口领集章卡 → 2 个现场小游戏 + 展台拍摄发布 → 兑奖处）即可获得', thumb: 'img/pins/A05.jpg', image: 'img/booths/A05/04.jpg' },
   { id: 'A13', no: 'A13', type: 'region', zone: 'A', name: 'PlayStation「存档碎片」· 展台款', booth: 'A13', how: '关注 PlayStation 领街区挑战卡 + 2 张挑战券，参与互动 / 试玩 / NPC 问卷攒满 2 个印章即额外获得', thumb: 'img/pins/A13.jpg', image: 'img/booths/A13/04.jpg' },

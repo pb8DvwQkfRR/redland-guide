@@ -111,6 +111,7 @@ CROPS = {
     'B14-1': ('public/img/booths/B14/guide-02.jpg', (557, 802, 671, 916), {'fileId': 'spectrum/1040g0k0325eu0ohq4c105ogv564k1ok41ddgfg8', 'upscale': True}),  # 日场（右）
     'B14-2': ('public/img/booths/B14/guide-02.jpg', (388, 802, 500, 914), {'fileId': 'spectrum/1040g0k0325eu0ohq4c105ogv564k1ok41ddgfg8', 'upscale': True}),  # 夜场（左）
     'B04a': ('public/img/booths/B04a/guide-01.jpg', (186, 855, 280, 944), {'fileId': 'spectrum/1040g34o325l6gi6s4c0g5p0atmlqa5og00ft7io', 'upscale': True}),  # 永劫 9/28 进组通告奖品图左下黄软盘
+    'A01a': ('public/img/booths/A01a/05.jpg', (500, 807, 663, 969), {'fileId': 'spectrum/1040g0k0325mluph046ng5noekeu0bhq26ugh9to', 'upscale': True, 'rotate': 12}),  # 王者荣耀 9/29 互动得好礼右下橙软盘
     'A35': ('public/img/booths/A35/guimi-03.jpg', (159, 403, 390, 623), {'fileId': 'spectrum/1040g34o325gknpeekc105p13ojukc96miismp2g', 'upscale': True}),
     'B02-1': ('public/img/booths/B02/04.jpg', (555, 335, 710, 480), {'upscale': True}),
     'B02-2': ('public/img/booths/B02/04.jpg', (555, 485, 710, 630), {'upscale': True}),

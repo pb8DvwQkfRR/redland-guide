@@ -49,7 +49,7 @@ export const stageDays = [
       { performer: '犬舍乐队', songs: ['星之火～awake～'], ip: '大王饶命' },
       { performer: '犬舍乐队', songs: ['未归人'], ip: '狐妖小红娘' },
       { performer: '犬舍乐队', songs: ['决斗场见'], ip: '《火影忍者》手游' },
-      { performer: '夏句Natsuki', songs: ['一舞翩翩', '与我对望的光', '逆光之上'], ip: '王者荣耀' },
+      { performer: '夏旬Natsuki', songs: ['一舞翩翩', '与我对望的光', '逆光之上'], ip: '王者荣耀' },
       { performer: '钱润玉', songs: ['待春归'], ip: '鸣潮' },
       { performer: '钱润玉', songs: ['妄梦', '向黑夜发问'], ip: '第五人格' },
       { performer: 'i-Link 心跳连结女团', songs: ['冒险岛版·庄园女团出道'], ip: '第五人格' },
