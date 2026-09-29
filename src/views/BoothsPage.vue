@@ -367,7 +367,11 @@
         <a class="sticker" :href="boothSource.url" target="_blank" rel="noopener" @click="openPage($event, boothSource.url)">IP 展位一览</a>
         <span class="small" style="color:#fff;text-shadow:1px 1px 0 var(--navy);text-align:right">点击展位看活动 / 任务 / 奖励<br />📕 跳转该 IP 小红书主页</span>
       </div>
-      <input v-model.trim="q" class="search" placeholder="搜索 IP 名 / 拼音 / 编号，如 星布谷地、xbgd、A06" />
+      <!-- 搜索框右侧一键清空（用户 9/29） -->
+      <div class="search-wrap">
+        <input ref="searchEl" v-model.trim="q" class="search" placeholder="搜索 IP 名 / 拼音 / 编号，如 星布谷地、xbgd、A06" />
+        <button v-if="q" type="button" class="search-clear" aria-label="清空搜索" @click="q = ''; $refs.searchEl.focus()">✕</button>
+      </div>
       <div class="chips mt-10">
         <button class="chip" :class="{ on: zone === 'ALL' }" @click="zone = 'ALL'">全部<small>{{ booths.length }}</small></button>
         <button v-for="z in zones" :key="z.key" class="chip" :class="{ on: zone === z.key }" @click="zone = z.key">
@@ -465,7 +469,9 @@ import { useRouter } from 'vue-router'
 import PageHeader from '../components/PageHeader.vue'
 import Lightbox from '../components/Lightbox.vue'
 import { thumb } from '../utils/thumb.js'
-import { booths, zones } from '../data/booths.js'
+import { booths as allBooths, zones } from '../data/booths.js'
+// 平面图上标「待解锁」、还没 IP 的展位（A04 / A26 / B20）不在展位列表里占位（用户 9/29）；数据仍留在 booths.js 给地图与官方数量统计用
+const booths = allBooths.filter((b) => b.ip !== '待解锁')
 import boothIndex from '../data/boothIndex.js'  // 构建期生成的轻量索引，首屏不加载完整的 boothDetails.js
 import boothPinyin from '../data/boothPinyin.js'
 import { event, venueNav, mainline, eggs, places, dailySchedule, venueMap, venueMapRef, venueFacilities, equipPack, booking, dining, mallDeals } from '../data/rules.js'
@@ -501,7 +507,7 @@ const planResult = computed(() => (planNos.value.length ? planRoute(planNos.valu
 const pickedOf = (no) => boothsOf(no).filter((b) => inPlan(b.id))
 // 「B02 / B17」这类共用编号在地图上是同一个点，一律取第一个编号
 const noOf = (b) => String(b.no).split(/\s*\/\s*/)[0]
-const boothsOf = (no) => booths.filter((b) => String(b.no).split('/').some((s) => s.trim() === no))
+const boothsOf = (no) => allBooths.filter((b) => String(b.no).split('/').some((s) => s.trim() === no))
 
 const base = import.meta.env.BASE_URL
 // 多图灯箱：items 为 { src, caption } 或路径，左右滑动翻页

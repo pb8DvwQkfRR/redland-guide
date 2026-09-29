@@ -115,6 +115,6 @@ export const booths = [
   { id: 'C20', zone: 'C', no: 'C20', ip: '符文战场', alias: '英雄联盟对战卡牌 Riftbound 阿卡丽', blurb: '英雄联盟对战卡牌 1 周年：限定周边、战场打卡与本命增益卡定制屋', xhs: { uid: '6731c907000000001c0186eb', name: '符文战场' } },
 ]
 
-for (const z of zones) z.count = booths.filter((b) => b.zone === z.key).length
+for (const z of zones) z.count = booths.filter((b) => b.zone === z.key && b.ip !== '待解锁').length  // 待解锁展位不在列表里显示，也不计数（用户 9/29）
 
 export const boothMap = Object.fromEntries(booths.map((b) => [b.id, b]))

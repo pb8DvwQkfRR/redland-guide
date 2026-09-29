@@ -177,6 +177,8 @@ docs/                         总资料底稿：REDLAND2026_信息汇总.md + as
 - `dailySchedule[].kind` 会直接作为 `.tl-item` 的附加 class，取值只能是 `parade / stage / night / ip`，**不要用 `booth`**（与展位卡 `.booth` 类撞名会打乱布局）。新增 kind 前先 grep style.css 确认没有同名类。
 - 列表页用 `keep-alive`，组件必须有 `name`（单独 `<script>` 导出），否则筹选状态会丢。
 - **PIN 图鉴卡片左下角的展位跳转是蓝色标签按钮**（`.tag.blue.text.btn`「展位 A01a →」，用户 9/24 要求「用蓝色的标志框起来方便跳转」），不要改回一行小字链接。
+- **待解锁展位（A04 / A26 / B20，`ip: '待解锁'`）不在展位列表里显示、也不计入区域数量**（用户 9/29），数据仍留在 booths.js 给平面图热区与官方 81 / 74 统计用；官方公布 IP 后改 `ip` 即自动出现。
+- 展位列表搜索框右侧有「✕」一键清空（`.search-clear`，有输入时才出现）。
 - 本机状态只用 localStorage（打卡 `rl26.checked`、当前 DAY `rl26.day`、PIN 已收集 `rl26.pins`），不引入登录 / 云同步。
 - 中文与英文 / 数字之间留一个空格；官方专有名词不改写（「存档碎片」「冒险者营地」「月下模式」等）。
 

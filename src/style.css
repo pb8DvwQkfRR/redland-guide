@@ -251,6 +251,14 @@ img { max-width: 100%; display: block; }
   background: var(--paper); color: var(--ink); outline: none; box-shadow: 3px 3px 0 var(--navy);
 }
 .search::placeholder { color: #a5a8b8; }
+.search-wrap { position: relative; }
+.search-wrap .search { padding-right: 40px; }
+.search-clear {
+  position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+  width: 28px; height: 28px; border: 2px solid var(--navy); border-radius: 50%;
+  background: var(--paper); color: var(--navy); font-size: 13px; font-weight: 900; line-height: 1; padding: 0; cursor: pointer;
+}
+.search-clear:active { transform: translateY(-50%) scale(0.92); }
 
 /* 时刻条 */
 .timeline { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 6px; scrollbar-width: none; }
