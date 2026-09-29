@@ -47,7 +47,7 @@ export default {
   A35b: { f: ["guimizhizhu","yuewen","kelaien","taojinji","yuewenjituan","xiaohongshu","red","land"], i: ["gmzz","yw","kle","tjj","ywjt","xhs"] },
   A35c: { f: ["yirenzhixia","yuewen","yirennantuan","wangye","fengbaobao","yuewenjituan","xiaohongshu","red","land"], i: ["yrzx","yw","yrnt","wy","fbb","ywjt","xhs"] },
   A35d: { f: ["daoguiyixian","yuewen","zuowangmajiangguan","lihuowang","yuewenjituan","xiaohongshu","red","land"], i: ["dgyx","yw","zwmjg","lhw","ywjt","xhs"] },
-  A35e: { f: ["huyaoxiaohongniang","yuewen","tushan","hongxianxian","huyaoxiaohongniangguanfang"], i: ["hyxhn","yw","ts","hxx","hyxhngf"] },
+  A35e: { f: ["huyaoxiaohongniang","yuewen","tushan","hongxianxian","huyaoxiaohongniangguanfang","yuewenjituan","xiaohongshu","red","land"], i: ["hyxhn","yw","ts","hxx","hyxhngf","ywjt","xhs"] },
   A36: { f: ["ruyuan","red","land"], i: ["ry"] },
   A37: { f: ["qiyudongwucheng","dongwuchengmonishenghuoxinyou","partopia"], i: ["qydwc","dwcmnshxy"] },
   A38: { f: ["jianwang3"], i: ["jw3"] },
