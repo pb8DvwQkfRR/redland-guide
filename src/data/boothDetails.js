@@ -5299,6 +5299,126 @@ const runeterra = {
   ],
 }
 
+// 王者万象棋（A-03，与王者荣耀世界同号）：官方号 9/28「REDLAND参展情报」——入口领打卡手册，四处点位集章，集齐 4 章抽周边；盲盒墙集章赢限定 PIN（样式未公布）；棋手闺蜜团 Coser 按日
+const wanxiangqi = {
+  source: { title: '王者万象棋 REDLAND参展情报', url: 'https://xhslink.cn/o/2Q8hQ33S8Wt', noteId: '6ab9cfd8000000001803ac2d', author: '王者万象棋', publishedAt: '2026-09-28' },
+  boothNo: 'A-03（与王者荣耀世界同号）',
+  location: '翻身时空港 A-03',
+  intro: '王者万象棋的「闺蜜团」准备就绪：棋手安琪拉、小妲己、昭君闺蜜团携手登岛～还有闹闹作为特别嘉宾，随时准备搞个大新闻！',
+  notes: ['入口领取打卡手册，出口在展台另一侧。'],
+  activities: [
+    {
+      title: '与闺蜜团贴贴 · 一站式解锁牌面福利（入口领打卡手册）',
+      items: [
+        { title: '盲盒墙里藏惊喜，安琪拉等你来偶遇', desc: '邂逅安琪拉，盲盒寻宝三连抽，集章赢限定 PIN。' },
+        { title: '「冻」人昭君等你破冰', desc: '挑战昭君笑点，讲笑话猜谜赢盖章。' },
+        { title: '邂逅万象闺蜜团，定格心动瞬间', desc: '闺蜜团涂鸦墙打卡，集互动章。' },
+        { title: '魔力按钮，小妲己助你幸运加倍', desc: '按下心动按钮，解锁意外惊喜。' },
+      ],
+    },
+  ],
+  stage: [
+    {
+      title: '共赴登岛之约 · Coser（A-03 展台）',
+      desc: '10 月 3 日特别嘉宾 莽麦圈；AO青崖 10/2、10/4–6 到场；其余全程。',
+      schedule: [
+        { day: '10月2日', guests: ['弥音音', '听霜', '卿卿草', '蓝佑', '苏米EDLYNNE', 'AO青崖', '绝情小土豆'] },
+        { day: '10月3日', guests: ['小丑沐沐', '烟火.', 'sg政', '莽麦圈（特别嘉宾）', '弥音音', '听霜', '卿卿草', '蓝佑', '苏米EDLYNNE', '绝情小土豆'] },
+        { day: '10月4日 – 10月6日', guests: ['弥音音', '听霜', '卿卿草', '蓝佑', '苏米EDLYNNE', 'AO青崖', '绝情小土豆'] },
+      ],
+    },
+  ],
+  tasks: [
+    { title: '闺蜜团送周边好礼 · 集齐 4 个印章抽奖', desc: '来展区游玩，集齐 4 个印章即可获得 1 次周边抽奖机会。', rewards: ['抽奖 1 次：安琪拉显眼包 / 飞行器气球 / 透扇 / 反光板折扇 / 闺蜜团刘海贴 / 击杀表情吧唧盲袋 / REDLAND 惊喜联名徽章'] },
+  ],
+  rewards: [
+    { name: '王者万象棋「存档碎片」· 款式待公布', how: '盲盒墙「盲盒寻宝三连抽」集章赢限定 PIN；抽奖奖品里的「REDLAND 惊喜联名徽章」官方只放了「?」图', pin: true, pinId: 'A03a' },
+    { name: '周边抽奖（安琪拉显眼包 / 飞行器气球 / 透扇 / 反光板折扇 / 刘海贴 / 吧唧盲袋 / 联名徽章）', how: '集齐 4 个印章抽 1 次' },
+  ],
+  footnote: '',
+  images: [
+    { src: 'img/booths/A03a/00.jpg', caption: '棋手闺蜜团登岛炸场（王者万象棋 9/28）' },
+    { src: 'img/booths/A03a/01.jpg', caption: '展位信息 · A03 展区位置指引（与王者荣耀世界同号）' },
+    { src: 'img/booths/A03a/02.jpg', caption: '与闺蜜团一起闪耀全场 · 展台效果图' },
+    { src: 'img/booths/A03a/03.jpg', caption: '四处点位：盲盒墙（集章赢限定 PIN）/ 昭君猜谜 / 涂鸦墙 / 小妲己魔力按钮' },
+    { src: 'img/booths/A03a/04.jpg', caption: '集齐 4 个印章抽周边 · 七款奖品' },
+    { src: 'img/booths/A03a/05.jpg', caption: '10 月 3 日 小丑沐沐 / 烟火. / sg政' },
+    { src: 'img/booths/A03a/06.jpg', caption: 'Coser 按日到场 · 10 月 3 日特别嘉宾 莽麦圈' },
+  ],
+}
+
+// 王者荣耀世界（A-03）：官方号 9/28「RED LAND活动情报」——日场 / 夜场两套布景五处打卡、5 组嘉宾全程合影、打卡互动领透卡与贴纸；无 PIN 情报
+const kingsworld = {
+  source: { title: '王者荣耀世界 RED LAND活动情报', url: 'https://xhslink.cn/o/4uHMq6OPNFa', noteId: '6aba20d90000000015002697', author: '王者荣耀世界', publishedAt: '2026-09-28' },
+  boothNo: 'A-03（与王者万象棋同号）',
+  location: '翻身时空港 A-03',
+  hours: '日场 12:30 – 17:30 · 夜场 17:30 – 21:30',
+  intro: '这一次，我们把世界里的风景带进现实，让熟悉的英雄来到你的身边，还有限定版多层组合透卡现场发放。在 A-03 展区，每一位世民都是世界里的风景。',
+  notes: ['进入场地沿冒险者大道向前，左转就能找到师姐。', '找到师姐（Q 版立牌）记得和她合影。'],
+  activities: [
+    {
+      title: '你是世界的风景 · 五处打卡（日场阳光 / 夜场灯光两套氛围）',
+      items: [
+        { title: '欢迎入镜，热心世民', desc: '从这里开始，走进世界的风景。' },
+        { title: '流光泊月，英雄同框', desc: '与王者英雄合影，留下专属你和英雄的一瞬。' },
+        { title: '垂纱幻梦，与鲲游', desc: '鲲游天际，游进你的镜头。' },
+        { title: '把这一刻，留在世界', desc: '世界内外，拼出我们相遇的风景。' },
+        { title: '在世界，留下你的色彩', desc: '世民共创，为世界添上你的颜色。' },
+      ],
+    },
+  ],
+  stage: [
+    { title: '与王者英雄同行（A-03 展区）', desc: '10 月 2 日–10 月 6 日，以下嘉宾全程在展区内与世民合影互动，具体出场时间以现场为准。', schedule: [{ day: '10月2日 – 10月6日', guests: ['捞捞捞面', '顾言bb', '北羽Kaname', '齐溪白宇', '香香女团'] }] },
+  ],
+  tasks: [
+    { title: '现场打卡互动领周边', desc: '透卡、贴纸等周边奖励将通过完成现场打卡互动等形式发放；多层可组合透卡可叠放组成你的世界风景。', note: '奖品数量有限，实际发放以现场活动规则为准，先到先得', rewards: ['【元流之子】透卡（6 款）', '【世界风景】透卡（3 款）', '贴纸（13 款）'] },
+  ],
+  rewards: [{ name: '【元流之子】透卡 / 【世界风景】透卡 / 贴纸', how: '完成现场打卡互动' }],
+  footnote: '',
+  images: [
+    { src: 'img/booths/A03b/00.jpg', caption: '王者荣耀世界展区活动情报 · A-03（王者荣耀世界 9/28）' },
+    { src: 'img/booths/A03b/01.jpg', caption: '世界请你入镜 · 12:30–21:30，沿冒险者大道左转' },
+    { src: 'img/booths/A03b/02.jpg', caption: '日场 / 夜场展台效果图' },
+    { src: 'img/booths/A03b/03.jpg', caption: '五处打卡点' },
+    { src: 'img/booths/A03b/04.jpg', caption: '与王者英雄同行 · 5 组嘉宾全程' },
+    { src: 'img/booths/A03b/05.jpg', caption: '多层可组合透卡' },
+    { src: 'img/booths/A03b/06.jpg', caption: '周边：元流之子透卡 / 世界风景透卡 / 贴纸' },
+    { src: 'img/booths/A03b/07.jpg', caption: '师姐出没，找到记得合影' },
+  ],
+}
+
+// 漫威影业（B-05，黄金海岸线）：ditto 专题页「漫威空降REDLAND」（4e6ab587…，9/24）——五大阵营挑战集 5 章换复联5 英雄阵营冰箱贴（4 款随机），再对暗号解锁小红书限定存档碎片（黄 = B 区）；复联4 重映观影笔记等线上部分不收
+const marvel = {
+  source: { title: '漫威空降REDLAND（官方专题页，仅收录线下部分）', url: 'https://xhslink.com/m/p05bo0c9CL', noteId: '4e6ab5877b074a56b5d9517ac84ef0ca', author: '漫威影业 × 小红书 RED LAND', publishedAt: '2026-09-24' },
+  boothNo: 'B-05',
+  location: '黄金海岸线 B-05',
+  intro: '通向漫威电影宇宙的大门已开启，请查收你的打卡攻略：五大漫威主题装置，专属打卡好礼。',
+  notes: ['每日礼品数量有限，先到先得，送完即止。'],
+  activities: [],
+  stage: [],
+  tasks: [
+    {
+      title: '#1 集章领好礼 · 五大阵营挑战',
+      desc: '集齐 5 枚神秘印章，即可兑换「复仇者联盟5」限量好礼。',
+      items: [
+        { title: '01 复仇者联盟', desc: '完成 3 种美国队长经典动作，挑战成功即可获得一枚印章。' },
+        { title: '02 X 战警', desc: '有关 X 战警趣味问答共 5 题，答对 3 题及以上即可获得一枚印章。' },
+        { title: '03 神奇四侠', desc: '将弹力绳拉伸至指定长度 80cm，即可获得一枚印章。' },
+        { title: '04 瓦坎达', desc: '完整复刻标准版「Wakanda Forever」手势——双臂于胸前交叉，成功即可获得一枚印章。' },
+        { title: '05 毁灭博士', desc: '与毁灭博士雕像合影，并发布至小红书，带话题 #漫威影业，即可获得一枚印章。', tags: ['#漫威影业'], post: '在 RED LAND 2026 的 B-05 和毁灭博士雕像合影了！五大漫威阵营挑战全部通关，复联 5 冲！\n\n#漫威影业' },
+      ],
+      rewards: ['「复仇者联盟5」英雄阵营冰箱贴（共四款，款式随机）'],
+    },
+    { title: '#2 解锁额外奖励', desc: '冰箱贴兑换成功后，对限定暗号，完成挑战，即可解锁额外奖励——小红书限定存档碎片一份。', rewards: ['小红书限定存档碎片 ×1'] },
+  ],
+  rewards: [
+    { name: '漫威影业「存档碎片」· 复仇者联盟款', how: '集齐 5 章换冰箱贴后，对限定暗号完成挑战解锁；每日限量', pin: true, pinId: 'B05' },
+    { name: '「复仇者联盟5」英雄阵营冰箱贴（4 款随机）', how: '五大阵营挑战集齐 5 枚印章' },
+  ],
+  footnote: '',
+  images: [{ src: 'img/booths/B05/hub-00.jpg', caption: '漫威空降 REDLAND · B-05 五大阵营挑战 / 冰箱贴 / 小红书限定存档碎片（官方专题页 9/24）' }],
+}
+
 const cyberpunk2077 = {
   source: {
     title: 'REDLAND 2026 | 《赛博朋克 2077》展台介绍',
@@ -6116,6 +6236,9 @@ export default {
   B01: eggy,
   C05: p4r,
   A18: yimo,
+  A03a: wanxiangqi,
+  A03b: kingsworld,
+  B05: marvel,
   C20: runeterra,
   A01b: shengshi,
   A20: disney,

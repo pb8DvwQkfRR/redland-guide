@@ -2003,6 +2003,10 @@ IP 官方笔记（2026-09-09 增补，均为 xhslink 短链，App 内打开）
 
 - https://xhslink.cn/o/AcNMX1yBr0 （符文战场 09/27「REDLAND 2026｜符文战场参展情报公开」，C20 首份详情 + 账号；正文 C-10 为笔误，海报 C-20）
 
+- https://xhslink.cn/o/4uHMq6OPNFa （王者荣耀世界 09/28「RED LAND活动情报」，A03b 首份详情）
+- https://xhslink.cn/o/2Q8hQ33S8Wt （王者万象棋 09/28「REDLAND参展情报」，A03a 首份详情）
+- https://xhslink.com/m/p05bo0c9CL （ditto 4e6ab587…「漫威空降REDLAND」，B05 首份详情 + 存档碎片）
+
 ## 附录 B. 同目录素材说明
 
 - `assets/share_page/`：用户链接长图原图（origin_full.png）与 7 段切片、分享封面

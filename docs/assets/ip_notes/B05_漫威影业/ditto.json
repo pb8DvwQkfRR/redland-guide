@@ -1,0 +1,121 @@
+{
+  "pageId": "4e6ab5877b074a56b5d9517ac84ef0ca",
+  "finalUrl": "https://ditto.xiaohongshu.net/ditto/vincent/4e6ab5877b074a56b5d9517ac84ef0ca/dynpath5a85510c?sourceId=push.external&eid=eid.6ab5f1c51662aa001597d470&fullscreen=true&xhs_channel=applepush_5abb83f168b6e344b9e6fe1d&resource_instance_id=328320&naviHidden=yes&source=share&countryCode=CN&lang=zh_cn&xhs-statusbar-height=47&instance_id=4e6ab5877b074a56b5d9517ac84ef0ca&page_instance=2683&countryCode=CN&lang=zh_cn&xhs-statusbar-height=47",
+  "pageName": "漫威h5",
+  "shareTitle": "漫威空降REDLAND",
+  "shareDesc": "线下打卡复联展区，大银幕复联4加码重映！",
+  "lastEditTime": "2026-09-24 19:29:18",
+  "startTime": "2026-08-09T16:00:00.000Z",
+  "endTime": "2026-10-10T15:59:59.000Z",
+  "follow": [],
+  "images": [
+    {
+      "file": "00.png",
+      "component": "OnixDittoBanner",
+      "remark": "自定义图片-1",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gfl4a95006il4de8jpk0000000001u3fheq",
+      "width": 1125,
+      "height": 1319,
+      "links": []
+    },
+    {
+      "file": "01.png",
+      "component": "OnixDittoBanner",
+      "remark": "自定义图片-7",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gdh1sekq06il4de8jpk0000000007pec7hm",
+      "width": 1125,
+      "height": 1140,
+      "links": []
+    },
+    {
+      "file": "02.png",
+      "component": "OnixDittoBanner",
+      "remark": "自定义图片-2",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gdh4qk5e06il4de8jpk0000000004r2amgs",
+      "width": 1125,
+      "height": 800,
+      "links": []
+    },
+    {
+      "file": "03.png",
+      "component": "OnixDittoBanner",
+      "remark": "自定义图片-9",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gdh9ucle06il4de8jpk00000000054tidpk",
+      "width": 1125,
+      "height": 1620,
+      "links": []
+    },
+    {
+      "file": "04.png",
+      "component": "OnixDittoBanner",
+      "remark": "自定义图片-10",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gdhea2kq06il4de8jpk00000000077tums4",
+      "width": 1125,
+      "height": 980,
+      "links": []
+    },
+    {
+      "file": "05.png",
+      "component": "OnixDittoBanner",
+      "remark": "自定义图片-11",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gdhim95e06il4de8jpk00000000014ufvo2",
+      "width": 1125,
+      "height": 920,
+      "links": []
+    },
+    {
+      "file": "06.png",
+      "component": "OnixDittoBanner",
+      "remark": "自定义图片-3",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gfken5l606il4de8jpk0000000002qkuuti",
+      "width": 1125,
+      "height": 521,
+      "links": []
+    },
+    {
+      "file": "07.png",
+      "component": "OnixDittoHotArea",
+      "remark": "热区图-2",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325geophi4e06il4de8jpk00000000025o77s0",
+      "width": 1125,
+      "height": 370,
+      "links": [
+        {
+          "id": "0c622e",
+          "left": 288,
+          "top": 32,
+          "width": 59,
+          "height": 59,
+          "link": "xhsdiscover://circle/home?circleId=7689002306330312704"
+        }
+      ]
+    },
+    {
+      "file": "08.png",
+      "component": "OnixDittoBanner",
+      "remark": "自定义图片-5",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gf27htl006il4de8jpk0000000004sooo64",
+      "width": 1125,
+      "height": 1200,
+      "links": []
+    },
+    {
+      "file": "09.png",
+      "component": "OnixDittoHotArea",
+      "remark": "热区图-3",
+      "url": "https://growth-img.xhscdn.com/ditto/104100n0325gf2hko4q06il4de8jpk0000000003ctl30k",
+      "width": 1125,
+      "height": 1141,
+      "links": [
+        {
+          "id": "te3se1",
+          "left": 92,
+          "top": 79,
+          "width": 187,
+          "height": 55
+        }
+      ]
+    }
+  ],
+  "keptOnly": "10 张 ditto 图竖拼成 1 张长图，只留前半（展位信息 / 五大阵营挑战 / 冰箱贴 / 存档碎片）存 hub-00；后半复联4 重映观影笔记征集、话题获赞 TOP30、聊天室都是线上活动，不收。"
+}

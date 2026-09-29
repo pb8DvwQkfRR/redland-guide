@@ -100,6 +100,7 @@ CROPS = {
     'C12-1': ('public/img/booths/C12/guide-01.jpg', (166, 918, 392, 1182), {'fileId': 'spectrum/1040g0k0325k5ntmak4005p9ltvlgrijbcm0r1rg', 'upscale': True}),
     'C12-2': ('public/img/booths/C12/guide-01.jpg', (388, 914, 648, 1190), {'fileId': 'spectrum/1040g0k0325k5ntmak4005p9ltvlgrijbcm0r1rg', 'upscale': True}),
     'A21': ('public/img/booths/A21/guide-00.jpg', (448, 800, 561, 913), {'fileId': 'spectrum/1040g0k0325kveuo6ka004b5cv6enihchqbu7vdo', 'upscale': True}),  # 三丽鸥 9/28 闯关攻略，白天效果那枚（橙）
+    'B05': ('public/img/booths/B05/hub-00.jpg', (105, 4405, 358, 4657), {'upscale': True}),  # 漫威专题页长图，黄软盘
     'A35': ('public/img/booths/A35/guimi-03.jpg', (159, 403, 390, 623), {'fileId': 'spectrum/1040g34o325gknpeekc105p13ojukc96miismp2g', 'upscale': True}),
     'B02-1': ('public/img/booths/B02/04.jpg', (555, 335, 710, 480), {'upscale': True}),
     'B02-2': ('public/img/booths/B02/04.jpg', (555, 485, 710, 630), {'upscale': True}),
