@@ -4653,7 +4653,10 @@ const zaichang = {
 // 9/25 官方日历的「灵魂试炼场 / 暗夜追踪」两项仍按日历记（calSource 降 moreSources）
 const shanhun = {
   source: { title: 'RED LAND登岛指南｜这份路线请提前收好！', url: 'https://xhslink.cn/o/5xjO0LHrZLm', noteId: '6ab7e5de000000000b004ba0', author: '闪魂ShiningSoul', publishedAt: '2026-09-27' },
-  moreSources: [calSource],
+  moreSources: [
+    { title: '登岛速报！和小闪一起开启REDLAND新副本（三重试炼集章 / PIN 兑换规则）', url: 'https://xhslink.cn/o/2hTz20v7rIf', noteId: '6ab73a79000000000a027d50', author: '闪魂ShiningSoul', publishedAt: '2026-09-26' },
+    calSource,
+  ],
   boothNo: 'C-18',
   location: '重生试炼场 C-18',
   hours: '每日 12:30 – 21:30',
@@ -4692,16 +4695,40 @@ const shanhun = {
     },
   ],
   tasks: [
+    {
+      title: '灵魂试炼场 · 白日三重试炼集章（凭预约码领打卡册 + 随机初始皮肤）',
+      items: [
+        { title: '社交值试炼区 · 绝区零', desc: '与现场 COSER 互动，盖章参与拍照活动，即可获得绝区零主角卡 ×1（款式随机）。', rewards: ['绝区零主角卡 ×1'] },
+        { title: '勇气值考验区 · 纸嫁衣', desc: '与八不郎互动即可盖章；猜中卡牌获随机 PR 透卡 ×1 张 + 1 弹卡包 ×1 包。', rewards: ['随机 PR 透卡 + 1 弹卡包'] },
+        { title: '幸运值认证区 · 闪魂', desc: '与小闪互动选扇面即可盖章，扇子同画面获对错扇 ×1。', rewards: ['对错扇 ×1'] },
+      ],
+      note: '打卡册共 2700 个，每日限量 540 个（白天 410、夜场 130）；各项物料每日限量、先到先得',
+      rewards: ['集齐 3 枚印章 → 存档碎片（日场款）'],
+    },
+    {
+      title: '夜间副本 · 小小梦魇，邀你入梦',
+      desc: '参与梧溪游戏，通过荧光提示寻找印章，集齐 3 枚不同印章可兑换存档碎片夜光版；关注闪魂官方、带 #闪魂小小梦魇稚魇永锢 发打卡笔记，可获荧光气球 ×1。彩蛋：邀小六拆卡（每人限 1 包），当场拆出 XR / HR / GP / SP 获专属卡砖 ×1，拆出 SP 加赠夜光 PIN ×1 + 荧光气球 ×1。',
+      tags: ['#闪魂小小梦魇稚魇永锢'],
+      rewards: ['存档碎片夜光版（集齐 3 枚不同印章）', '荧光气球 ×1（关注 + 带话题发笔记）', '专属卡砖（拆出高罕）'],
+    },
     { title: '10 月 2 日 · 直播间暗语找小六', desc: '凭借当日闪魂官方小红书直播间暗语，在展台找到小六（Coser 强大的小e），可获 PR 卡一张。', note: '共 500 张，先到先得，送完即止', rewards: ['PR 卡 ×1'] },
   ],
   rewards: [
-    { name: 'PIN / 存档碎片（闪魂，样式待公布）', how: '预约「暗夜追踪」，凭打卡册集齐 3 枚不同印章兑换；无打卡册无法兑换', pin: true, pinId: 'C18-pin' },
+    { name: '闪魂「存档碎片」· 日场款（棕）/ 夜场夜光款（蓝）', how: '白天：灵魂试炼场集齐 3 枚印章兑换（PIN 章共 2050 个、每日 410）；夜晚：夜间副本集齐 3 枚不同印章兑换夜光版（共 650 个、每日 130）；凭 PIN 章按现场规则打卡可额外领主角卡套', pin: true, pinIds: ['C18-1', 'C18-2'] },
     { name: '克拉蕾·弗林特 / 洛克茜 / 弗林特工坊 活动卡', how: '绝区零特别企划：老玩家邀新 / 回流玩家各得 1 张随机；13 张 E-强敌卡换弗林特工坊活动卡；每款 2700 张' },
     { name: 'PR 卡（10 月 2 日）', how: '凭当日直播间暗语找到小六，共 500 张' },
     { name: '宝藏码头 NO.02 满赠（侠缘卡 / 杯垫 / CDK 或群像 PR 卡 / PR 卡 / 荧光吧唧 / 卡砖 / 摩诺纸袋）', how: '购买收藏卡按档满赠 + 关注打卡带话题' },
   ],
   footnote: '所有物料数量有限，先到先得，送完即止；物料均为效果图，仅供参考。',
   images: [
+    { src: 'img/booths/C18/fb-00.jpg', caption: '活动时间 / 地点 / 灵魂试炼场（凭预约码领打卡册 + 随机初始皮肤）（闪魂 9/26）' },
+    { src: 'img/booths/C18/fb-01.jpg', caption: '社交值试炼区 · 绝区零' },
+    { src: 'img/booths/C18/fb-02.jpg', caption: '勇气值考验区 · 纸嫁衣' },
+    { src: 'img/booths/C18/fb-03.jpg', caption: '幸运值认证区 · 闪魂' },
+    { src: 'img/booths/C18/fb-04.jpg', caption: '夜间副本 · 小小梦魇' },
+    { src: 'img/booths/C18/fb-05.jpg', caption: '符文战场（C-20）' },
+    { src: 'img/booths/C18/fb-06.jpg', caption: 'PIN 兑换规则 · 日场棕 / 夜场夜光蓝两枚存档碎片' },
+    { src: 'img/booths/C18/fb-07.jpg', caption: '非预约玩家候补 + 首发预告' },
     { src: 'img/booths/C18/00.jpg', caption: '穿越次元裂缝 觉醒主角之魂 · 预约时间 9/28–9/30（闪魂ShiningSoul 9/27）' },
     { src: 'img/booths/C18/01.jpg', caption: '闪魂展位 C-18 · 活动时间 10.02 12:30 – 10.06 21:30 · 路线指引' },
     { src: 'img/booths/C18/02.jpg', caption: '嘉宾正营业 · 白天试炼 magic倍尔 / 小小皮，夜间副本 强大的小e；10/2 直播间暗语找小六领 PR 卡' },

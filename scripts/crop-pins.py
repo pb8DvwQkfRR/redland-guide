@@ -70,8 +70,8 @@ CROPS = {
     'A27': ('public/img/booths/A27/07.jpg', (308, 538, 494, 724), {'fileId': 'spectrum/1040g0k0325dsisbjk6hg5oq6aam65v73p15sido', 'upscale': True}),
     'B10': ('public/img/booths/B10/03.jpg', (494, 1478, 584, 1568), {'fileId': 'spectrum/1040g0k0325b1qso4kc005nsdhqcg85448fnd0k0', 'upscale': True}),
     'B11': ('public/img/booths/B11/03.jpg', (542, 1294, 673, 1424), {'fileId': 'spectrum/1040g0k0325dsd06p581g5p9hsuoaja0bogarnqo', 'upscale': True}),
-    'C01-1': ('public/img/booths/C01/00.jpg', (583, 954, 671, 1043), {'fileId': 'spectrum/1040g0k0325dnfnbs58005qhq95m36204i0762k8', 'upscale': True}),
-    'C01-2': ('public/img/booths/C01/00.jpg', (664, 946, 748, 1043), {'fileId': 'spectrum/1040g0k0325dnfnbs58005qhq95m36204i0762k8', 'upscale': True}),
+    'C01-1': ('public/img/booths/C01/00.jpg', (584, 952, 686, 1054), {'fileId': 'spectrum/1040g0k0325dnfnbs58005qhq95m36204i0762k8', 'upscale': True, 'rotate': -4}),
+    'C01-2': ('public/img/booths/C01/00.jpg', (684, 948, 748, 1034), {'fileId': 'spectrum/1040g0k0325dnfnbs58005qhq95m36204i0762k8', 'upscale': True, 'rotate': 2}),
     # 蛋仔派对 9/22 第二弹周边图鉴：存档碎片日 / 夜两款并排（810 基准各 ~80px，用 fileId 拉 1080 原图放大）
     'B01-1': ('public/img/booths/B01/guide-05.jpg', (146, 466, 231, 549), {'fileId': 'spectrum/1040g0k0325e1qh2o4a2g5n305p34lh64i4ba4eg', 'upscale': True}),
     'B01-2': ('public/img/booths/B01/guide-05.jpg', (240, 465, 325, 549), {'fileId': 'spectrum/1040g0k0325e1qh2o4a2g5n305p34lh64i4ba4eg', 'upscale': True}),
@@ -104,13 +104,15 @@ CROPS = {
     'B05': ('public/img/booths/B05/hub-00.jpg', (105, 4405, 358, 4657), {'upscale': True}),  # 漫威专题页长图，黄软盘
     'A36': ('public/img/booths/A36/rl-00.jpg', (329, 596, 494, 763), {'fileId': 'spectrum/1040g0k0325f09d4pka2g5q2ssop2773g2199gh0', 'upscale': True}),  # 如鸢日 / 夜两款共用这张实图（官方只放了一张，夜场款可夜光）
     'A22': ('public/img/booths/A22/guide-03.jpg', (494, 315, 700, 522), {'fileId': 'spectrum/1040g0k0324u39rqr2u0g5okbabvocip484kb3g8', 'upscale': True}),  # 火影 9/16 互动赢好礼图，橙软盘
+    'C18-1': ('public/img/booths/C18/fb-06.jpg', (226, 469, 371, 614), {'fileId': 'spectrum/1040g0k0325ik3c13583g5p5u4brapcrqj70dg6g', 'upscale': True}),  # 闪魂日场（棕）
+    'C18-2': ('public/img/booths/C18/fb-06.jpg', (332, 792, 477, 937), {'fileId': 'spectrum/1040g0k0325ik3c13583g5p5u4brapcrqj70dg6g', 'upscale': True}),  # 闪魂夜场夜光（蓝）
     'A35': ('public/img/booths/A35/guimi-03.jpg', (159, 403, 390, 623), {'fileId': 'spectrum/1040g34o325gknpeekc105p13ojukc96miismp2g', 'upscale': True}),
     'B02-1': ('public/img/booths/B02/04.jpg', (555, 335, 710, 480), {'upscale': True}),
     'B02-2': ('public/img/booths/B02/04.jpg', (555, 485, 710, 630), {'upscale': True}),
     'C16': ('public/img/booths/B02/card-03.jpg', (428, 600, 652, 842), {'fileId': 'spectrum/1040g0k0324vi29ubj2005pel9ok5qgj2bg30r70', 'upscale': True, 'rotate': 15}),
     # 夜间 PIN 在官方图里是斜 45° 摆的菱形，转正后框才收得紧
-    'night': ('public/img/rules/pin/01.jpg', (144, 781, 221, 856), {'fileId': 'notes_pre_post/1040g3k83248ou79sgma05q2ssop2773g385jvfg', 'upscale': True, 'rotate': 45}),
-    'veteran': ('public/img/rules/pin-npc/01.jpg', (220, 375, 560, 685), {'rotate': -8}),
+    'night': ('public/img/rules/pin/01.jpg', (144, 781, 221, 856), {'fileId': 'notes_pre_post/1040g3k83248ou79sgma05q2ssop2773g385jvfg', 'upscale': True, 'rotate': 34.5}),
+    'veteran': ('public/img/rules/pin-npc/01.jpg', (220, 375, 560, 685), {'rotate': -14}),
     'npc-1': ('public/img/rules/pin-npc/02.jpg', (150, 380, 440, 680), {'rotate': -15}),
     'npc-2': ('public/img/rules/pin-npc/02.jpg', (390, 375, 660, 695), {'rotate': 20}),
     'npc-3': ('public/img/rules/pin-npc/03.jpg', (115, 400, 415, 695), {'rotate': -16}),
