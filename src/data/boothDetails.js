@@ -1964,6 +1964,7 @@ const partyAnimals = {
   images: [
     { src: 'img/booths/C08/00.jpg', caption: '登岛秘籍 · 展台四大亮点（先开一局 / 猛兽出片 / 猛兽出没 / 彩蛋掉落）' },
     { src: 'img/booths/C08/01.jpg', caption: '线上投稿 · 带 #猛兽派对 #REDLAND 发笔记' },
+    { src: 'img/booths/C08/lottery-00.jpg', caption: '猛兽派对徽章 = REDLAND 官方 PIN（柯基款，分会场页积分抽奖奖品图）' },
     { src: 'img/booths/C08/info-00.jpg', caption: '活动信息 · 每日 13:00 – 22:00，重生试炼场 C-08（猛兽派对 9/22）' },
   ],
 }

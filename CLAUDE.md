@@ -183,6 +183,7 @@ docs/                         总资料底稿：REDLAND2026_信息汇总.md + as
 - PIN 缩略图转正（9/29）：hololive C12-1 / C12-2、心动小镇 A05、PlayStation A13 在 crop-pins.py 里加了 `rotate`（-10.5 / 11.5 / -9 / -11，颜色掩膜投影扫出）。
 - 详情页「🍱 菜单 / 价目」卡是 `.fold-head` 折叠、**默认收起**（用户 9/29），标题后显示项数。
 - PIN 图鉴的冒险者拼图只有 3 块（翻身时空港 / 黄金海岸线 / 重生试炼场，用户 9/29），已删 `puzzle-all`「完整体」。
+- C08 猛兽派对 PIN（9/29）：分会场 ditto `ad27d2c5…` 的积分抽奖组件是接口渲染，`fetch-ditto.mjs` 抓不到，用 headless Chrome `--dump-dom` 拿到奖品图，「猛兽派对徽章」即 REDLAND 官方 PIN（用户确认），红棕软盘柯基款，存 `C08/lottery-00.jpg`。积分抽奖本身是线上活动不收。
 - 本机状态只用 localStorage（打卡 `rl26.checked`、当前 DAY `rl26.day`、PIN 已收集 `rl26.pins`），不引入登录 / 云同步。
 - 中文与英文 / 数字之间留一个空格；官方专有名词不改写（「存档碎片」「冒险者营地」「月下模式」等）。
 
