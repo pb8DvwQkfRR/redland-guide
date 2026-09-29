@@ -3712,6 +3712,9 @@ const mard = {
 // 每天 18:00 点灯仪式 + 三时段玩偶巡场 / 鸢影伴手礼走整理券（需绣衣楼爵位 22 级）/ 存档碎片日夜两款（夜场款要 35 级）
 const ruyuan = {
   source: { title: '🕊特别鸢报 | 小红书REDLAND展会前瞻', url: 'https://xhslink.cn/o/5rLDvWPx7SZ', noteId: '6aaf5af9000000002601b790', author: '如鸢', publishedAt: '2026-09-20' },
+  moreSources: [
+    { title: '主角请就位！如鸢A36「展位玩法」大揭秘（RED LAND 官方号，含存档碎片实图）', url: 'https://xhslink.cn/o/RNJg4xKL7m', noteId: '6ab38620000000001203bb64', author: 'RED LAND', publishedAt: '2026-09-23' },
+  ],
   boothNo: 'A36',
   location: '翻身时空港 A36',
   hours: '每日 12:30 – 21:30',
@@ -3780,6 +3783,7 @@ const ruyuan = {
     { src: 'img/booths/A36/02.jpg', caption: '活动规则 · 入场规则（每日 12:30–21:30，每轮场内上限 10 分钟）' },
     { src: 'img/booths/A36/03.jpg', caption: '活动规则 · 游戏区互动（盗贼哪里逃 / 鸢鸢投投乐）与速通 tips' },
     { src: 'img/booths/A36/04.jpg', caption: '活动规则 · 每天 18:00 点灯仪式与玩偶三时段巡场' },
+    { src: 'img/booths/A36/rl-00.jpg', caption: '存档碎片领取规则 + 实图（橙；夜场款可夜光，需爵位 35 级；RED LAND 官方号 9/23）' },
     { src: 'img/booths/A36/05.jpg', caption: '无料领取 · 鸢影伴手礼四件（纸袋 / 衍射卡 / 对错牌 / 折叠打光扇）' },
     { src: 'img/booths/A36/06.jpg', caption: '无料领取 · 整理券发放规则与伴手礼领取规则' },
     { src: 'img/booths/A36/07.jpg', caption: '无料领取 · 存档碎片领取规则（日场 / 夜场，夜场需爵位 35 级）' },
