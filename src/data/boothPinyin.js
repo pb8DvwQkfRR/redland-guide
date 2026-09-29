@@ -81,7 +81,7 @@ export default {
   C02: { f: ["huijinzhiguo","cinderia","huijinzhiguocinderia"], i: ["hjzg","hjzgc"] },
   C03a: { f: ["wuhezhizhong","nanzhaigongzuoshi"], i: ["whzz","nzgzs"] },
   C03b: { f: ["chenxingzhixu","gamirror","games"], i: ["cxzx"] },
-  C04: { f: ["duliyouxishiwanqu","duliyouxi","lianxiang","rog","xihao","aofeng","leishe","lushenghaidanlandunijiushiayi","luorishanqiusunsethills","wobushipanghuxiaodaodadangjia","pangbudingyouxiluorishanqiu","wobushipanghu","yuzhouguaitan2","faxing","mulanzhougongzuoshitanggongshiyumou","red","land","guanfang","lushenghaidanlanduni","pangbudingyouxi","mulanzhougongzuoshi"], i: ["dlyxswq","dlyx","lx","xh","af","ls","lshdljsay","lrsqs","wbsphxdddj","pbdyxlrsq","wbsph","yzgt2","fx","mlzgzstgsym","gf","lshdl","pbdyx","mlzgzs"] },
+  C04: { f: ["duliyouxishiwanqu","duliyouxi","lianxiang","rog","xihao","aofeng","leishe","lushenghaidanlandunijiushiayi","luorishanqiusunsethills","wobushipanghuxiaodaodadangjia","pangbudingyouxiluorishanqiu","wobushipanghu","yuzhouguaitan2","faxing","mulanzhougongzuoshitanggongshiyumou","shenquexiguanfang","red","land","guanfang","lushenghaidanlanduni","pangbudingyouxi","mulanzhougongzuoshi"], i: ["dlyxswq","dlyx","lx","xh","af","ls","lshdljsay","lrsqs","wbsphxdddj","pbdyxlrsq","wbsph","yzgt2","fx","mlzgzstgsym","sqxgf","gf","lshdl","pbdyx","mlzgzs"] },
   C05: { f: ["nvshenyiwenlu4","revival","atlus"], i: ["nsywl4"] },
   C06: { f: ["servant","of","the","lake","huzhipucong","vanderboom","rustylakeofficial"], i: ["hzpc"] },
   C07: { f: ["sudandeyouxi","shuangtoulonggongzuoshi"], i: ["sddyx","stlgzs"] },

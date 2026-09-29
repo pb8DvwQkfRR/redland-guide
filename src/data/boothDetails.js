@@ -4319,7 +4319,7 @@ const indieHall = {
   notes: [
     '官方写「80 款独立游戏」，聚合页名单是 84 款（见下方试玩名单），以现场档口为准。',
     '「愿望单」指该游戏的愿望单加入记录，领无料时需现场出示。',
-    '各摊位号（救世阿姨 Z34～Z35 / 落日山丘 C01～C02 / 我不是胖虎 C24～C25 / 宇宙怪谈2 C22～C23 / 唐宫诗与谋 沉浸区 C03～C04）是独游区内部编号，与 C01 刺客信条展位无关。',
+    '各摊位号（救世阿姨 Z34～Z35 / 落日山丘 C01～C02 / 我不是胖虎 C24～C25 / 宇宙怪谈2 C22～C23 / 唐宫诗与谋 沉浸区 C03～C04 / 神缺席 C31～C33）是独游区内部编号，与 C01 刺客信条展位无关。',
     '「主创小圆桌见面会」需在 RED LAND 主会场预约（RED LAND 官方 9/25 预约日历，9 月 27 日开约，是最早开约的一批）。',
   ],
   activities: [
@@ -4349,6 +4349,16 @@ const indieHall = {
       ip: '唐宫诗与谋',
       title: '摊位位置与试玩',
       desc: '摊位在 C-04 独立游戏大食堂「沉浸区」C03、C04（独游区内部编号）。现场可以试玩游戏（Steam 商店页面已开放 Playtest）。',
+    },
+    {
+      ip: '神缺席',
+      title: '摊位位置与线下试玩（C31～C33）',
+      desc: '摊位在 C-04 独立游戏大食堂 C31～C33 摊（独游区内部编号），每日 13:00–21:00。现场三台电脑分别服务线上预约、现场预约券与机动候补。',
+      items: [
+        { title: '线上预约（主页进群）', desc: '20 分钟 / 场，9 月 27 日公布预约表；请提前 2 分钟等候，超过开始时间 5 分钟未到则预约失效，需再次现场领券。' },
+        { title: '现场预约券', desc: '10–20 分钟 / 场，每天 13:00、18:00 分两批发放当天场次的券，凭券排队试玩；提前 2 分钟等候，超时 5 分钟失效。' },
+        { title: '特殊活动', desc: '等候区可用网页端体验信徒捏脸并导出图片；现场打卡游戏社区可领无料明信片；可与游戏主策面对面分享建议和锐评。', rewards: ['无料明信片'] },
+      ],
     },
     {
       ip: '救世阿姨',
@@ -4464,6 +4474,7 @@ const indieHall = {
     { uid: '6853da70000000001b020c82', name: '我不是胖虎：小岛大当家' },
     { uid: '60efd17e0000000001002cd4', name: '胖布丁游戏（落日山丘 / 我不是胖虎 / 宇宙怪谈2 发行）' },
     { uid: '662b4bf10000000007004559', name: '木兰舟工作室（唐宫诗与谋）' },
+    { uid: '68e88082000000003201982d', name: '神缺席官方' },
   ],
   moreSources: [
     {
@@ -4483,6 +4494,7 @@ const indieHall = {
     { title: '落日山丘登岛情报到！快把可爱尼柯带回家', url: 'https://xhslink.cn/o/7xQe1mppeQm', noteId: '6ab39f1c000000001b02c8fd', author: '落日山丘SunsetHills', publishedAt: '2026-09-23' },
     { title: '国庆上岛情报来啦！快找胖虎领限定好礼🐯', url: 'https://xhslink.cn/o/6s8KXDtj6zo', noteId: '6ab3a2800000000015014f05', author: '我不是胖虎：小岛大当家', publishedAt: '2026-09-23' },
     { title: '国庆上岛！Redland集合啦！（落日山丘 / 我不是胖虎 / 宇宙怪谈2 三家摊位）', url: 'https://xhslink.cn/o/4dlsB9pwcIb', noteId: '6ab47fc400000000130198dd', author: '胖布丁游戏', publishedAt: '2026-09-24' },
+    { title: 'REDLAND x 神缺席「线下试玩登岛指南」', url: 'https://xhslink.cn/o/5e9mctY9A2y', noteId: '6ab691a0000000001a02b3ea', author: '神缺席官方', publishedAt: '2026-09-25' },
     { title: '诗局开席｜《唐宫诗与谋》Redland试玩指南', url: 'https://xhslink.cn/o/5IJYe0AMzjQ', noteId: '6ab74ce4000000000a0267c8', author: '木兰舟工作室', publishedAt: '2026-09-26' },
   ],
   images: [
@@ -4494,6 +4506,8 @@ const indieHall = {
     { src: 'img/booths/C04/luorishanqiu-00.jpg', caption: '落日山丘 · 线下专属好礼（限定角色立牌 / 尼柯玩偶每日 2 个），摊位 C01～C02（落日山丘SunsetHills 9/23）' },
     { src: 'img/booths/C04/panghu-00.jpg', caption: '我不是胖虎：小岛大当家 · 三步免费领限定解压捏捏游戏机 / 小虎森邻盲盒每日 2 个，摊位 C24～C25（9/23）' },
     { src: 'img/booths/C04/yuzhouguaitan-00.jpg', caption: '宇宙怪谈2 · 关注 + 入群 + Steam 愿望单领限定角色夹子（5 款实物展示），摊位 C22～C23（胖布丁游戏 9/24）' },
+    { src: 'img/booths/C04/shenquexi-00.jpg', caption: '神缺席 · Redland 线下试玩登岛指南（神缺席官方 9/25）' },
+    { src: 'img/booths/C04/shenquexi-01.jpg', caption: '神缺席 · C04 独游区 C31–33 摊位置' },
     { src: 'img/booths/C04/tanggong-00.jpg', caption: '唐宫诗与谋 · 两项打卡活动（关注抽贴纸 / 愿望单 + 试玩领宣纸扇子），沉浸区 C03～C04（木兰舟工作室 9/26）' },
   ],
 }
