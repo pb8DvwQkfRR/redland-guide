@@ -100,6 +100,8 @@ export const pins = [
   { id: 'C05-1', no: 'C05-1', type: 'region', zone: 'C', name: '女神异闻录4 Revival「存档碎片」· P4R 主视觉款', booth: 'C05', how: '完成展位内全部指定打卡任务后领取；日场发放 12:30–17:30 / 夜场发放 17:30–21:30（日 / 夜场对应哪款官方未标）', thumb: 'img/pins/C05-1.jpg', image: 'img/booths/C05/guide-00.jpg' },
   { id: 'C05-2', no: 'C05-2', type: 'region', zone: 'C', name: '女神异闻录4 Revival「存档碎片」· RED LAND 2026 × P4R logo 款', booth: 'C05', how: '同上', thumb: 'img/pins/C05-2.jpg', image: 'img/booths/C05/guide-00.jpg' },
   { id: 'C09', no: 'C09', type: 'region', booking: true, zone: 'C', name: '世界之外「存档碎片」· 黄金绮旅款', booth: 'C09', how: '预约或凭整理券进入「黄金绮旅空间」后，当前场次内到「无料领取处」凭导览手册领取，每人限一份；预约 9/28 开约', thumb: 'img/pins/C09.jpg', image: 'img/booths/C09/08.jpg' },
+  { id: 'C10-1', no: 'C10-1', type: 'region', zone: 'C', name: 'FINAL FANTASY RESONANCE「存档碎片」· 日场款', booth: 'C10', how: '完成「共鸣印记卡」上 3/3 枚主印记（幻兵水晶共鸣 / 经典对战再现 / 许下冒险心愿），日场 12:30–17:30 发放；蓝色软盘，数量有限送完即止', thumb: 'img/pins/C10-1.jpg', image: 'img/booths/C10/guide-06.jpg' },
+  { id: 'C10-2', no: 'C10-2', type: 'region', zone: 'C', name: 'FINAL FANTASY RESONANCE「存档碎片」· 夜场款', booth: 'C10', how: '同上，夜场 17:30–21:30 发放；绿色软盘、夜光，数量有限送完即止', thumb: 'img/pins/C10-2.jpg', image: 'img/booths/C10/guide-06.jpg' },
   { id: 'C18-1', no: 'C18-1', type: 'region', booking: true, zone: 'C', name: '闪魂「存档碎片」· 日场款', booth: 'C18', how: '白天灵魂试炼场（绝区零 / 纸嫁衣 / 闪魂三区）集齐 3 枚印章兑换；PIN 章共 2050 个、每日限量 410，换完即止（需预约领打卡册）', thumb: 'img/pins/C18-1.jpg', image: 'img/booths/C18/fb-06.jpg' },
   { id: 'C18-2', no: 'C18-2', type: 'region', booking: true, zone: 'C', name: '闪魂「存档碎片」· 夜场夜光款', booth: 'C18', how: '夜间副本「小小梦魇」集齐 3 枚不同印章兑换夜光版；共 650 个、每日限量 130，换完即止', thumb: 'img/pins/C18-2.jpg', image: 'img/booths/C18/fb-06.jpg' },
 

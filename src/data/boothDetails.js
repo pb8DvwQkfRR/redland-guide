@@ -1989,6 +1989,87 @@ const opcg = {
 
 // 猛兽派对（C-08，重生试炼场）：官方 ditto 分会场页「绝密！猛兽登岛攻略泄露」
 // 展台是「猛兽小屋」，四个亮点里有两处能拿 REDLAND 官方 PIN
+// FINAL FANTASY RESONANCE（C-10，重生试炼场）：SQUARE ENIX ASIA 9/29「FFRS × RED LAND2026 登岛攻略来了！」
+// 四个任务都收在「共鸣印记卡」上，完成主印记换日 / 夜两款存档碎片（蓝 / 绿软盘）
+const ffrs = {
+  source: {
+    title: '💎FFRS × RED LAND2026 登岛攻略来了！',
+    url: 'https://xhslink.cn/o/9l4waM4OK4t',
+    noteId: '6abbb2970000000019026eb9',
+    author: 'SQUARE ENIX ASIA',
+    publishedAt: '2026-09-29',
+  },
+  boothNo: 'C-10',
+  location: '重生试炼场 C-10',
+  intro: '这个国庆，来复兴岛寻找属于你的「共鸣印记」吧！',
+  notes: [
+    '「共鸣印记卡」在展台「入口区域」领取，四个任务都记在这张卡上',
+    '现场另有游戏试玩区与菲娜 & 魔人 COSER 互动',
+    '奖品数量有限，送完即止',
+  ],
+  activities: [
+    {
+      title: '「共鸣印记」任务',
+      desc: '在「入口区域」领取「共鸣印记卡」，完成卡上的任务即可获得对应的主印记，集齐主印记兑换限定奖励。',
+      items: [
+        {
+          no: 'TASK 01',
+          title: '幻兵水晶共鸣',
+          desc: '前往「幻兵水晶区域」，触发幻兵水晶，与历代主角产生共鸣，完成任务获得「幻兵水晶」主印记 ×1（1/3）。',
+        },
+        {
+          no: 'TASK 02',
+          title: '经典对战再现',
+          desc: '前往「经典对战区域」，打卡对战场景发布小红书，并带话题，@ 并关注官方小红书账号，完成任务获得「经典对战」主印记 ×1（2/3）。',
+          tags: ['#FFRS', '#REDLAND2026'],
+          follow: [{ uid: '6a859028000000000301c941', name: 'SQUARE ENIX ASIA' }],
+        },
+        {
+          no: 'TASK 03',
+          title: '许下冒险心愿',
+          desc: '前往「心愿单区域」，添加本作至 STEAM 心愿单，完成任务获得「冒险心愿」主印记 ×1（3/3）。',
+        },
+      ],
+    },
+    {
+      title: 'HIDDEN TASK · 寻找仙人掌',
+      desc: '熟悉的仙人掌，又藏进了这次冒险。找到 20 只编号仙人掌中的 10 只，记下对应的当日密码，即可解锁隐藏奖励。',
+      note: '与主印记奖励叠加：完成 ≥2 枚主印记 + 10 组仙人掌密码，额外获得共鸣镭射卡 ×1',
+    },
+    {
+      title: '现场游戏试玩',
+      desc: '展台设有四机位试玩区，可现场体验《FINAL FANTASY RESONANCE》。',
+    },
+  ],
+  stage: [
+    {
+      title: '菲娜 & 魔人 COSER 互动',
+      desc: '两位 COSER「小虎牙」（饰 菲娜）与「名莺莺」（饰 魔人）在展台迎接主角。官方未公布具体场次，以现场为准。',
+    },
+  ],
+  rewards: [
+    { name: '存档碎片 · 日场款（蓝色软盘）', how: '集齐 3/3 枚主印记，日场 12:30–17:30 发放；数量有限送完即止', pin: true, pinId: 'C10-1' },
+    { name: '存档碎片 · 夜场款（绿色夜光软盘）', how: '集齐 3/3 枚主印记，夜场 17:30–21:30 发放；数量有限送完即止', pin: true, pinId: 'C10-2' },
+    { name: '吧唧盲袋（内含随机主角吧唧 ×1）', how: '完成 2/3 枚主印记即可领取' },
+    { name: '共鸣镭射卡', how: '完成 ≥2 枚主印记 + 10 组仙人掌密码，额外获得；数量有限送完即止' },
+  ],
+  footnote: '奖励数量有限，送完即止。主印记卡在展台「入口区域」领取。',
+  images: [
+    { src: 'img/booths/C10/guide-00.jpg', caption: '展位示意图 · 重生试炼场 C-10，活动时间 10.02–10.06' },
+    { src: 'img/booths/C10/guide-01.jpg', caption: '「共鸣印记」任务总览 · 入口领卡，四项任务 + 共鸣奖励' },
+    { src: 'img/booths/C10/guide-02.jpg', caption: 'TASK 01 幻兵水晶共鸣' },
+    { src: 'img/booths/C10/guide-03.jpg', caption: 'TASK 02 经典对战再现' },
+    { src: 'img/booths/C10/guide-04.jpg', caption: 'TASK 03 许下冒险心愿' },
+    { src: 'img/booths/C10/guide-05.jpg', caption: 'HIDDEN TASK · 寻找仙人掌（20 只中找 10 只）' },
+    { src: 'img/booths/C10/guide-06.jpg', caption: '共鸣奖励 · 吧唧盲袋 / 存档碎片日场（蓝）夜场（绿） / 共鸣镭射卡' },
+    { src: 'img/booths/C10/guide-07.jpg', caption: '现场游戏试玩区（四机位）' },
+    { src: 'img/booths/C10/guide-08.jpg', caption: '菲娜 & 魔人 COSER 互动（小虎牙 / 名莺莺）' },
+    { src: 'img/booths/C10/kv-00.jpg', caption: '主视觉 KV' },
+  ],
+}
+
+// 猛兽派对（C-08，重生试炼场）：官方 ditto 分会场页「绝密！猛兽登岛攻略泄露」
+// 展台是「猛兽小屋」，四个亮点里有两处能拿 REDLAND 官方 PIN
 const partyAnimals = {
   source: {
     title: '绝密！猛兽登岛攻略泄露（官方专题页）',
@@ -6786,6 +6867,7 @@ export default {
   B14: anying,
   B09: reverse1999,
   C17: opcg,
+  C10: ffrs,
   C08: partyAnimals,
   A15: swordsOfLegends,
   B22: shenbuyan,
