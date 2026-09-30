@@ -2068,6 +2068,70 @@ const ffrs = {
   ],
 }
 
+// CLUTCH（B-19，黄金海岸线）：官方账号 9/30「CLUTCH 展台玩法大公开！」
+// 赛车主题展台，两枚章（极速 / 竞速）换存档碎片
+const clutch = {
+  source: {
+    title: 'Red Land 2026｜CLUTCH 展台玩法大公开！',
+    url: 'https://xhslink.cn/o/4wjpoaBvtfo',
+    noteId: '6abcfb77000000001401dfdb',
+    author: 'CLUTCH | 离合：红线',
+    publishedAt: '2026-09-30',
+  },
+  boothNo: 'B-19',
+  location: '黄金海岸线 B-19',
+  intro: '各位车手，久等啦！在本次 Red Land 展上，我们为大家精心准备了丰富的赛车主题游戏及 demo 试玩。',
+  notes: [
+    '出口兑换纪念品，需凭当日盖章的核销章；日间章留住，夜间返场还有额外好礼',
+  ],
+  activities: [
+    {
+      title: '入口签到',
+      desc: '在展台入口签到，可免费领取 Paddock Pass。',
+    },
+    {
+      title: '极速挑战',
+      desc: '两项挑战任选一项完成，即可盖「极速」章。',
+      items: [
+        { no: '01', title: '掉落反应挑战', desc: '在模拟驾驶位上对突然的下落作出反应。' },
+        { no: '02', title: '熄灯反应挑战', desc: '起跑灯熄灭的瞬间作出反应，比快。' },
+      ],
+    },
+    {
+      title: '赛道竞速',
+      desc: '完成 CLUTCH 试玩，即可盖「竞速」章。展台设四机位试玩区。',
+      note: '活动期间试玩成绩总榜前三，可获《CLUTCH》签名版游戏卡带',
+    },
+    {
+      title: '出口兑换',
+      desc: '凭盖章到出口兑换纪念品。',
+      items: [
+        { title: '任意 1 枚「极速」章', desc: '兑换「存档碎片」×1 枚。' },
+        { title: '1 枚「竞速」章 + 任意 1 枚「极速」章', desc: '兑换赛车主题魔术贴 ×1 份 + 「存档碎片」×1 枚。' },
+      ],
+    },
+    {
+      title: '天黑以后，再来一趟',
+      desc: '留好日间核销章，夜间返场参与涂鸦互动，还有额外好礼。',
+      note: '夜场涂鸦互动的具体规则与额外好礼内容官方未公布',
+    },
+  ],
+  rewards: [
+    { name: 'CLUTCH「存档碎片」', how: '任意 1 枚「极速」章即可兑换；1 枚「竞速」章 + 任意 1 枚「极速」章则额外加赠赛车主题魔术贴 ×1（款式待公布）', pin: true, pinId: 'B19-pin' },
+    { name: '赛车主题魔术贴', how: '1 枚「竞速」章 + 任意 1 枚「极速」章，与存档碎片一并兑换' },
+    { name: '《CLUTCH》签名版游戏卡带', how: '活动期间试玩成绩总榜前三' },
+    { name: 'Paddock Pass', how: '入口签到免费领取' },
+  ],
+  footnote: '纪念品凭当日盖章核销，日间章请保留，夜间返场另有额外好礼。',
+  images: [
+    { src: 'img/booths/B19/guide-00.jpg', caption: '入口签到 · 免费领取 Paddock Pass' },
+    { src: 'img/booths/B19/guide-01.jpg', caption: '极速挑战 · 掉落反应挑战 / 熄灯反应挑战，任选一项盖「极速」章' },
+    { src: 'img/booths/B19/guide-02.jpg', caption: '赛道竞速 · 完成 CLUTCH 试玩盖「竞速」章；总榜前三得签名版游戏卡带' },
+    { src: 'img/booths/B19/guide-03.jpg', caption: '出口兑换 · 两档兑奖规则与纪念品实物' },
+    { src: 'img/booths/B19/guide-04.jpg', caption: '天黑以后再来一趟 · 夜间涂鸦返场' },
+  ],
+}
+
 // 猛兽派对（C-08，重生试炼场）：官方 ditto 分会场页「绝密！猛兽登岛攻略泄露」
 // 展台是「猛兽小屋」，四个亮点里有两处能拿 REDLAND 官方 PIN
 const partyAnimals = {
@@ -6868,6 +6932,7 @@ export default {
   B09: reverse1999,
   C17: opcg,
   C10: ffrs,
+  B19: clutch,
   C08: partyAnimals,
   A15: swordsOfLegends,
   B22: shenbuyan,
