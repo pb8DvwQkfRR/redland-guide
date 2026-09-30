@@ -900,7 +900,7 @@ const ratatan = {
     title: '《啦嗒铛》登陆REDLAND！（GSE 官方专题页）',
     url: 'https://xhslink.com/m/3wxCPwedz6K',
     noteId: 'c34d413cc89d4c80bef6f3aeae92c3d9',
-    author: 'GSE（Game Source Entertainment）',
+    author: '香港 GSE 官方',
     publishedAt: '2026-09-23',
   },
   boothNo: 'C13（GSE 展位）',
