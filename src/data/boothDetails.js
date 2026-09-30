@@ -6400,6 +6400,42 @@ const assassins = {
   ],
 }
 
+const wuhezhizhong = {
+  source: {
+    title: '森正学惊现REDLAND2026《乌合之众》展台？',
+    url: 'https://xhslink.cn/o/ArN0JpE9rki',
+    noteId: '6abc7c7a00000000180147fe',
+    author: 'Gamirror Games',
+    publishedAt: '2026-09-30',
+  },
+  boothNo: 'C-03',
+  location: '重生试炼场 C-03（乌合之众 · 沉星之序）',
+  intro: 'REDLAND2026《乌合之众》登岛攻略来啦！重生试炼场 C-03 展台将迎来一位重磅嘉宾——乌山县陶瓷造像协会会长森正学。',
+  notes: ['展位号 C-03 在展位一览里是「乌合之众 / 沉星之序」两个 IP 共用；本条是乌合之众（Gamirror Games）自己的登岛攻略。'],
+  activities: [
+    {
+      title: '指定时间与森正学互动领存档碎片',
+      desc: '指定时间在展台与森正学互动，即可获得存档碎片！夜场彩蛋等待你的发撅。',
+      items: [
+        { no: '（日）', desc: '13:30 – 14:30' },
+        { no: '（日）', desc: '15:30 – 17:30' },
+        { no: '（夜）', desc: '18:30 – 20:30' },
+      ],
+    },
+  ],
+  stage: [],
+  tasks: [],
+  rewards: [
+    { name: 'RED LAND 2026 存档碎片（2 款）', how: '指定时段与森正学互动；蓝色为日场款、绿色夜光为夜场款，官方未逐款标名', pin: true, pinIds: ['C03a-1', 'C03a-2'] },
+    { name: '乌合之众周边（便利贴 / 手型支架 / 亚克力立牌 / 徽章等）', how: '官方只写「还有其他周边等你赢取」，具体玩法未公布' },
+  ],
+  footnote: '存档碎片每日每轮数量有限，发完即止，先到先得。',
+  images: [
+    { src: 'img/booths/C03a/00.jpg', caption: '重生试炼场 C-03 展位位置 · 互动时段 · 存档碎片日 / 夜两款（Gamirror Games 9/30）' },
+    { src: 'img/booths/C03a/01.jpg', caption: '其他周边：便利贴 / 手型支架 / 亚克力立牌 / 徽章（Gamirror Games 9/30）' },
+  ],
+}
+
 const adol = {
   source: {
     title: 'a豆在复兴岛发礼物啦🎁',
@@ -6410,8 +6446,8 @@ const adol = {
   },
   boothNo: 'B21',
   location: '黄金海岸线 B-21（赞助区）',
-  intro: '「豆」来领好礼——叮～多款专属好礼正在登岛中，现场互动把快乐带回家！',
-  notes: ['官方只写「现场参与互动」，互动形式与各款好礼的领取条件未公布'],
+  intro: '「豆」来领好礼——全岛寻宝！a 豆贩卖机免费领周边，神秘任务已加载🐾',
+  notes: ['6 台 a 豆贩卖机散布全岛，导览图上的三处「神秘点位」只标了大致位置、没有到场坐标，官方说关注 @华硕a豆 后任务地图随时发布。'],
   activities: [
     {
       title: '现场互动领专属好礼',
@@ -6419,12 +6455,27 @@ const adol = {
     },
   ],
   stage: [],
-  tasks: [],
+  tasks: [
+    {
+      title: '全岛搜寻 a 豆贩卖机',
+      desc: '全岛搜寻 a 豆贩卖机，做神秘打卡任务免费领周边好礼。',
+      items: [
+        { no: 'Step1', desc: '寻找岛上的华硕贩卖机，与贩卖机拍照合影' },
+        { no: 'Step2', desc: '带话题 #华硕a豆、#豆来快乐岛 发布小红书笔记' },
+        { no: 'Step3', desc: '前往 B21 展位服务台凭发布笔记兑换周边好礼' },
+      ],
+      tags: ['#华硕a豆', '#豆来快乐岛'],
+    },
+  ],
   rewards: [
+    { name: 'a 豆周边好礼（凭发布笔记兑换）', how: '完成全岛寻宝三步，到 B21 展位服务台兑换；具体款式未公布' },
     { name: '氮化镓充电器 / 毛绒挂件 / 串珠手链 / 小熊玩偶 等', how: '现场参与互动领取；具体互动与数量未公布' },
   ],
   footnote: '',
-  images: [{ src: 'img/booths/B21d/00.jpg', caption: '「豆」来领好礼 · 展位 B21（华硕 a豆 9/24）' }],
+  images: [
+    { src: 'img/booths/B21d/machine-00.jpg', caption: '全岛搜寻 a 豆贩卖机 · 三处神秘点位与打卡三步（华硕 a豆 9/30）' },
+    { src: 'img/booths/B21d/00.jpg', caption: '「豆」来领好礼 · 展位 B21（华硕 a豆 9/24）' },
+  ],
 }
 
 const unionpay = {
@@ -6526,6 +6577,7 @@ export default {
     location: '翻身时空港 A16',
     notes: ['A-16 是《光与夜之恋》的公共立牌展陈（五位男主亚克力立牌 + 花艺拱门），由 RED LAND2026 组委会统一管理，无需预约、不设打卡拍照限时；下面的预约制活动、无料与存档碎片都在 A40 主展台，公共展位出现的内容物不会出现在主展台。', ...lightAndNight.notes],
   },
+  C03a: wuhezhizhong,
   A27: nikki,
   B10: arknights,
   B11: endfield,

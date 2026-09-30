@@ -31,6 +31,9 @@ CROPS = {
     # 改成按软盘本身的正方形轮廓取整枚（112×112），底部因此会带一点官方红标与邻枚的黄边 —— 形状完整优先（用户 9/22）
     'B09-1': ('public/img/booths/B09/05.jpg', (98, 393, 210, 505), {'fileId': 'spectrum/1040g34o3253i1j3m30b05obic3kgkjin8ofehvo', 'upscale': True}),
     'B09-2': ('public/img/booths/B09/05.jpg', (159, 461, 270, 571), {'fileId': 'spectrum/1040g34o3253i1j3m30b05obic3kgkjin8ofehvo', 'upscale': True}),
+    # 乌合之众 C03a：两枚软盘在原图里约 207×208（蓝色日场 / 绿色夜场）
+    'C03a-1': ('public/img/booths/C03a/00.jpg', (272, 1282, 478, 1490), {'upscale': True}),
+    'C03a-2': ('public/img/booths/C03a/00.jpg', (574, 1286, 776, 1488), {'upscale': True}),
     'A09-2': ('public/img/booths/A09/01.jpg', (425, 730, 698, 1008)),
     'A24-1': ('public/img/booths/A24/02.jpg', (516, 608, 702, 792)),
     'A24-2': ('public/img/booths/A24/02.jpg', (516, 784, 702, 966)),
