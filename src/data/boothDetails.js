@@ -4067,53 +4067,102 @@ const nickSource = { title: '开启尼克乐恩终极冒险！（派拉蒙 REDLA
 const nickImg = { src: 'img/booths/A29a/hub-00.jpg', caption: '开启尼克乐恩终极冒险！· 比奇堡欢乐海滩 / 忍者神龟秘密基地 / 解锁惊喜（派拉蒙专题页 9/24）' }
 const spongebob = {
   source: nickSource,
-  moreSources: [{ title: '比奇堡登陆上海！（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/AJixoCdtkUi', noteId: '6aa3e95100000000270144f6', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-11' }],
+  moreSources: [
+    { title: '请收好！RED LAND2026终极冒险玩家指南', url: 'https://xhslink.cn/o/8T58bYhrWUj', noteId: '6abccac4000000000a01da85', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-30' },
+    { title: '比奇堡登陆上海！（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/AJixoCdtkUi', noteId: '6aa3e95100000000270144f6', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-11' },
+  ],
   boothNo: 'A29',
   location: '翻身时空港 A29',
   intro: '谁懂啊——海绵宝宝真的来上海了！准备好和海绵宝宝一起，开启一场真正的比奇堡欢乐海滩冒险了吗？',
-  notes: ['本次活动仅限 14 岁及以上观众参与（笔记原文）'],
+  notes: [
+    '本次活动仅限 14 岁及以上观众参与（笔记原文）',
+    '展台日夜场切换：日场 12:30–17:30 / 夜场 17:30–21:30',
+  ],
   activities: [
     {
-      title: '比奇堡欢乐海滩冒险',
+      title: '比奇堡欢乐海滩 · 必去打卡点',
       items: [
-        { desc: '坐超大水母秋千，穿梭梦幻灯海。' },
-        { desc: '去酷乐湖畅享冲浪乐趣。' },
-        { desc: '打卡 4.5 米高巨型菠萝屋。' },
-        { desc: '解锁水母狂欢舞挑战。' },
+        { title: '酷乐湖冲浪挑战', desc: '站上浪板，稳住姿势！冲浪挑战等你来，化身比奇堡海滩最靓的仔。' },
+        { title: '水母狂欢舞', desc: '跟海绵宝宝水母舞步一起摇摆，现场一起跳，快乐直接拉满。' },
+        { title: '水母秋千', desc: '打卡超大水母秋千，随手一拍就是朋友圈 C 位。' },
+        { title: 'BEACH MART 海滩集市', desc: '比奇堡居民逛街时间！限定周边 & 纪念好物等你来淘。' },
+        { title: '巨型菠萝屋', desc: '打卡 4.5 米高巨型菠萝屋。' },
       ],
     },
-    { title: '解锁惊喜 · 打卡点 / 限定收藏品', desc: '现场还有超酷打卡点、限定收藏品，更有机会与海绵宝宝和忍者神龟见面！', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
+    { title: '解锁惊喜 · 集 XP 换限定好礼', desc: '现场可集 XP 解锁限定好礼；还有超酷打卡点与限定收藏品。具体集 XP 的规则与奖品官方未公布。', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
   ],
-  stage: [],
+  stage: [
+    {
+      title: '海绵宝宝 & 派大星见面会',
+      desc: '在海绵宝宝菠萝屋零距离互动，欢乐见面。',
+      schedule: [
+        { day: '10月2日 – 10月6日', times: ['15:00', '18:00'], guests: ['海绵宝宝 & 派大星'] },
+      ],
+    },
+  ],
   tasks: [],
-  rewards: [],
-  footnote: '同一 A-29 展位还有忍者神龟（同属尼克乐恩）。',
-  images: [nickImg, { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' }],
+  rewards: [
+    { name: '限定好礼（集 XP 兑换）', how: '现场集 XP 解锁；内容官方未公布' },
+    { name: '限定周边 / 纪念好物', how: 'BEACH MART 海滩集市现场选购' },
+  ],
+  footnote: '同一 A-29 展位还有忍者神龟（同属尼克乐恩）。水母狂欢舞挑战赛（9/25–10/18）是线上活动，不在现场。',
+  images: [
+    { src: 'img/booths/A29a/nick-00.jpg', caption: '尼克乐恩终极冒险玩家指南 KV（海绵宝宝 SpongeBob 官方号 9/30）' },
+    { src: 'img/booths/A29a/nick-01.jpg', caption: '比奇堡欢乐海滩必去打卡点 · 冲浪挑战 / 水母狂欢舞 / 水母秋千 / BEACH MART 海滩集市' },
+    { src: 'img/booths/A29a/nick-05.jpg', caption: '活动信息 · A-29 翻身时空港，日场 12:30–17:30 / 夜场 17:30–21:30' },
+    { src: 'img/booths/A29a/nick-03.jpg', caption: '惊喜见面会 · 海绵宝宝 & 派大星 每天 15:00 / 18:00' },
+    nickImg,
+    { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' },
+  ],
 }
 
 const tmnt = {
   source: nickSource,
-  moreSources: [{ title: '想闯上海忍者神龟秘密基地的举手（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/8VNWQPJDq23', noteId: '6aa3ef1a000000002803615d', author: '忍者神龟官方', publishedAt: '2026-09-12' }],
+  moreSources: [
+    { title: '请收好！RED LAND2026终极冒险玩家指南', url: 'https://xhslink.cn/o/8T58bYhrWUj', noteId: '6abccac4000000000a01da85', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-30' },
+    { title: '想闯上海忍者神龟秘密基地的举手（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/8VNWQPJDq23', noteId: '6aa3ef1a000000002803615d', author: '忍者神龟官方', publishedAt: '2026-09-12' },
+  ],
   boothNo: 'A29',
   location: '翻身时空港 A29',
   intro: '爷青回！忍者神龟秘密基地空降上海。这一次，不只是来打卡——真正的半壳英雄，准备好接受挑战了吗？',
-  notes: ['本次活动仅限 14 岁及以上观众参与（笔记原文）'],
+  notes: [
+    '本次活动仅限 14 岁及以上观众参与（笔记原文）',
+    '展台日夜场切换：日场 12:30–17:30 / 夜场 17:30–21:30',
+  ],
   activities: [
     {
-      title: '穿越次元入口，闯入神龟地下世界',
+      title: '潜入地下巢穴 · 解锁忍者冒险任务',
       items: [
-        { desc: '启动变种扫描仪，解锁你的专属变种身份。' },
-        { desc: '接受忍者训练，挑战各项技能任务。' },
-        { desc: '一路闯关升级，成为真正的半壳英雄。' },
+        { title: '变种扫描仪', desc: '站上扫描区域，开启变种扫描，解锁你的内在变种潜质。' },
+        { title: '莱昂纳多靶场突击', desc: '瞄准！投掷！挑战飞镖闯关，解锁忍者天赋。' },
+        { title: '多纳泰罗激光迷阵', desc: '穿梭、躲避、突破！和搭子一起挑战谁更快。' },
+        { title: '米开朗基罗披萨大作战', desc: '披萨派对开局！制作你的专属变种披萨。' },
+        { title: '拉斐尔天台激斗', desc: '限时挑战，火力全开！击倒敌人，成为「半壳英雄」。' },
       ],
     },
-    { title: '解锁惊喜 · 打卡点 / 限定收藏品', desc: '现场还有超酷打卡点、限定收藏品，更有机会与海绵宝宝和忍者神龟见面！', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
+    { title: '解锁惊喜 · 集 XP 换限定好礼', desc: '现场可集 XP 解锁限定好礼；还有超酷打卡点与限定收藏品。具体集 XP 的规则与奖品官方未公布。', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
   ],
-  stage: [],
+  stage: [
+    {
+      title: '忍者神龟见面会',
+      desc: '和神龟们来一场热血合影，一次满足。',
+      schedule: [
+        { day: '10月2日 – 10月6日', times: ['14:00', '16:00', '20:00'], guests: ['忍者神龟'] },
+      ],
+    },
+  ],
   tasks: [],
-  rewards: [],
-  footnote: '同一 A-29 展位还有海绵宝宝（同属尼克乐恩）。',
-  images: [nickImg, { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' }],
+  rewards: [
+    { name: '限定好礼（集 XP 兑换）', how: '现场集 XP 解锁；内容官方未公布' },
+  ],
+  footnote: '同一 A-29 展位还有海绵宝宝（同属尼克乐恩）。水母狂欢舞挑战赛（9/25–10/18）是线上活动，不在现场。',
+  images: [
+    { src: 'img/booths/A29a/nick-02.jpg', caption: '潜入地下巢穴 · 变种扫描仪 / 莱昂纳多靶场突击 / 多纳泰罗激光迷阵 / 米开朗基罗披萨大作战 / 拉斐尔天台激斗' },
+    { src: 'img/booths/A29a/nick-03.jpg', caption: '惊喜见面会 · 忍者神龟 每天 14:00 / 16:00 / 20:00' },
+    { src: 'img/booths/A29a/nick-05.jpg', caption: '活动信息 · A-29 翻身时空港，日场 12:30–17:30 / 夜场 17:30–21:30' },
+    nickImg,
+    { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' },
+  ],
 }
 
 // MARD 马尔德（C-11，重生试炼场）：官方号 9/26「小红书redland展位活动指南」为主来源——奇境拼豆工坊（需预约：每天 3 场 × 1.5 小时 × 20 人，9/30 按门票日期分档开约）、

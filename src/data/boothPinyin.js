@@ -35,7 +35,7 @@ export default {
   A27: { f: ["wuxiannuannuan"], i: ["wxnn"] },
   A28: { f: ["daihaoxiang"], i: ["dhx"] },
   A29a: { f: ["haimianbaobao","haimianbaobaospongebob"], i: ["hmbb","hmbbs"] },
-  A29b: { f: ["renzheshengui","renzheshenguiguanfang"], i: ["rzsg","rzsggf"] },
+  A29b: { f: ["renzheshengui","renzheshenguiguanfang","haimianbaobaospongebob"], i: ["rzsg","rzsggf","hmbbs"] },
   A30: { f: ["qijiemengtan"], i: ["qjmt"] },
   A31: { f: ["motorslice","silly","polly","beast","gunvkunyan","feidoudianjuji","tophat","top","hat","studios","inc"], i: ["gnky","fddjj"] },
   A32: { f: ["daihaozaichangzhengming","red","land"], i: ["dhzczm"] },
