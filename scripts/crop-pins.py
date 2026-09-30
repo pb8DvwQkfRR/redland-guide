@@ -47,8 +47,8 @@ CROPS = {
     'A34-2': ('public/img/booths/A34/01.jpg', (432, 635, 698, 895)),
     # 剑网3 PIN 卡：9/11「发鸡蛋啦」图 02 里那张是**正的**（9/24 攻略图里的斜了约 8°，用户 9/24 指出），从 02 裁、用 fileId 拉原图
     'A38': ('public/img/booths/A38/02.jpg', (493, 732, 702, 941), {'fileId': 'spectrum/1040g0k0324v7dt4hj2005n32if540gvjnd2kklg', 'upscale': True}),
-    # 命运扳机「存档碎片」PIN 套装（橙 = A 区），官方图里是单款内卡效果示意
-    'A17c': ('public/img/booths/A17c/02.jpg', (152, 808, 349, 999), {'fileId': 'spectrum/1040g0k03254npqkik2105o798t908et3lr8shvg', 'upscale': True}),
+    # 命运扳机 PIN 卡（橙 = A 区）：9/30「存好4张图」奖品展示图里的成品实图，比 9/15 的内卡示意更清晰更正
+    'A17c': ('public/img/booths/A17c/guide-05.jpg', (580, 499, 698, 616), {'fileId': 'spectrum/1040g0k0325o63nask49g5o798t908et3h65uilg', 'upscale': True}),
     # 逆水寒 REDLAND PIN（黄 = B 区），图里只有 ~145px
     'B15': ('public/img/booths/B15/02.jpg', (450, 477, 595, 617), {'fileId': 'spectrum/1040g0k03254k0cq52u105o6g01o85eeu44mul50', 'upscale': True}),
     # 绝区零《绝区零》限定「存档碎片」（橙 = A 区），官方图里是卡套里的日场 / 夜场两款，单枚约 120px
