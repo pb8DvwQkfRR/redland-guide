@@ -1856,15 +1856,15 @@ const reverse1999 = {
 // 笔记里「小红书平台同步开启的抽奖活动」属线上抽奖，未收录
 const opcg = {
   source: {
-    title: '〓《航海王卡牌对战》RED LAND 2026 展台活动详情〓',
-    url: 'https://xhslink.cn/o/33QAjHhFciU',
-    noteId: '6aa277b5000000002700aa4e',
+    title: '〓《航海王卡牌对战》RED LAND 2026 情报汇总〓',
+    url: 'https://xhslink.cn/o/3nLJV2CjLVM',
+    noteId: '6ab4ed550000000015015d10',
     author: '航海王卡牌对战',
-    publishedAt: '2026-09-11',
+    publishedAt: '2026-09-30',
   },
   boothNo: 'C-17',
   location: '重生试炼场 C-17',
-  intro: '《航海王卡牌对战》展台活动详情来啦！多种互动挑战惊喜不断，还有试玩活动等你来参加🌟',
+  intro: 'RED LAND 2026，踏浪、登岛，赴一场宝藏之约。',
   notes: [
     '领取集章活动奖品前，需扫描「集章兑换区」和展台入口处指引牌上的二维码，完成调查问卷并下载万代卡牌 APP',
     '所有纪念品图片仅供参考，请以实物为准；奖品数量有限，先到先得，赠完即止',
@@ -1921,6 +1921,23 @@ const opcg = {
       ],
       note: '两个展台分属 C 区（重生试炼场 C-17）与 A 区（翻身时空港 A-23），需两边各盖一次；官方未写联动章可换什么奖品。',
     },
+    {
+      title: '场贩商品',
+      desc: '场贩商品现场热卖中，人气商品任你挑选，更有套装商品等你入手。',
+      items: [
+        { title: '豪华卡牌收藏 — 领袖套装' },
+        { title: '迷你收藏套装' },
+        { title: '官方卡套 2' },
+        { title: '对战桌垫 + 卡盒套装 · 25 周年版' },
+        { title: '基本卡组 对战进阶套组 2025【STC 23 / 24 / 25 / 26 / 27 / 28】' },
+        { title: '基本卡组 佐罗 & 山智【STC12】' },
+        { title: '基本卡组 两年后再出发【STC14】' },
+        { title: '基本卡组 变档 5 档【STC21】' },
+        { title: '基本卡组 艾斯和纽哥特【STC22】' },
+        { title: '基本卡组 艾格赫德【STC29】' },
+      ],
+      note: '商品价格官方未公布，以现场为准',
+    },
   ],
   tasks: [
     {
@@ -1942,7 +1959,7 @@ const opcg = {
     },
   ],
   rewards: [
-    { name: 'RED LAND 2026 限定徽章（样式待公布）', how: '集齐 3 枚航海王卡牌对战印章，现场兑换；共限量 1600 枚', pin: true, pinId: 'C17-pin' },
+    { name: 'RED LAND 2026 限定徽章（蓝色软盘造型，实图已公布）', how: '集齐 3 枚航海王卡牌对战印章，现场兑换；共限量 1600 枚', pin: true, pinId: 'C17-pin' },
     { name: 'RED LAND 2026「奈美」帆布袋', how: '集齐 3 枚印章，现场兑换；共限量 1600 个' },
     { name: '航海王卡牌对战 宣传卡包（P-097 / P-098 / P-099 / P-100 各一张）', how: '策牌破局挑战成功；共限量 1600 份' },
     { name: '「蒙奇·D·路飞」团扇', how: '翻牌挑战或欧皇单抽挑战成功；共限量 5000 把' },
@@ -1951,12 +1968,22 @@ const opcg = {
     { name: '店铺奖品（补充包 OPC-12 师徒之绊 + OPC-14 苍海七杰 各 1 包）', how: '集齐 3 枚印章后凭万代卡牌 APP 兑换码，10/2–10/31 到全国万代卡牌官方游戏中心兑换；共限量 200 份' },
   ],
   footnote: '所有纪念品图片仅供参考，以实物为准；奖品数量有限，先到先得，赠完即止。店铺奖品兑换期为 2026 年 10 月 2 日至 10 月 31 日，仅支持凭兑换码到店兑换，不支持现场领取或邮寄。',
+  moreSources: [
+    { title: '《航海王卡牌对战》RED LAND 2026 展台活动详情', url: 'https://xhslink.cn/o/33QAjHhFciU', noteId: '6aa277b5000000002700aa4e', author: '航海王卡牌对战', publishedAt: '2026-09-11' },
+    { title: '展台活动详情（官方微博）', url: 'https://weibo.com/7745557190/RhCNlDJBJ', author: '航海王卡牌对战' },
+    { title: '场贩商品详情（官方微博）', url: 'https://weibo.com/7745557190/RhCZwBzAo', author: '航海王卡牌对战' },
+  ],
   images: [
-    { src: 'img/booths/A23/stamp-00.jpg', caption: '展台联动盖章活动 · C-17 与 A-23 两枚半章拼合（航海王ONEPIECE官方 9/30）' },
-    { src: 'img/booths/C17/00.jpg', caption: '集章活动 · 三项活动各 1 枚印章，集齐 3 枚兑换帆布袋与限定徽章' },
-    { src: 'img/booths/C17/01.jpg', caption: '策牌破局 · 3 回合破解残局，成功得宣传卡包' },
-    { src: 'img/booths/C17/02.jpg', caption: '互动游戏 · 翻牌挑战 / 欧皇单抽挑战，成功得路飞团扇' },
-    { src: 'img/booths/C17/03.jpg', caption: 'SNS 打卡与试玩活动、注意事项' },
+    { src: 'img/booths/C17/guide-00.jpg', caption: '展台信息 · C-17 位置、四个分区（贩卖区 / SNS 打卡 / 互动游戏体验区 ×2 / 卡牌对战区 / 卡牌展示 & 策牌破局）与交通方式' },
+    { src: 'img/booths/C17/guide-01.jpg', caption: '集章活动 · 集齐 3 枚印章现场兑换「奈美」帆布袋与 RED LAND 2026 限定徽章（各限量 1600）' },
+    { src: 'img/booths/C17/guide-02.jpg', caption: '策牌破局 / 互动游戏 / SNS 打卡 / 试玩活动 四项与各自奖品、限量' },
+    { src: 'img/booths/C17/guide-03.jpg', caption: '场贩信息 · 10 款场贩商品（价格未公布）' },
+    { src: 'img/booths/C17/guide-04.jpg', caption: '展台联动盖章活动 · C-17 与 A-23 两枚半章拼合成完整套色章' },
+    { src: 'img/booths/A23/stamp-00.jpg', caption: '联动套色章效果（航海王ONEPIECE官方 9/30）' },
+    { src: 'img/booths/C17/00.jpg', caption: '9/11 版详情 · 集章活动与兑换流程' },
+    { src: 'img/booths/C17/01.jpg', caption: '9/11 版详情 · 策牌破局' },
+    { src: 'img/booths/C17/02.jpg', caption: '9/11 版详情 · 互动游戏' },
+    { src: 'img/booths/C17/03.jpg', caption: '9/11 版详情 · SNS 打卡与试玩活动、注意事项' },
   ],
 }
 

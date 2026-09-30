@@ -125,6 +125,8 @@ CROPS = {
     'B02-1': ('public/img/booths/B02/04.jpg', (555, 335, 710, 480), {'upscale': True}),
     'B02-2': ('public/img/booths/B02/04.jpg', (555, 485, 710, 630), {'upscale': True}),
     'C16': ('public/img/booths/B02/card-03.jpg', (428, 600, 652, 842), {'fileId': 'spectrum/1040g0k0324vi29ubj2005pel9ok5qgj2bg30r70', 'upscale': True, 'rotate': 15}),
+    # 航海王卡牌对战 C-17：9/30 新笔记「情报汇总」图 01 右侧那枚蓝软盘（RED LAND 2026 限定徽章实图，正摆不用转）
+    'C17-pin': ('public/img/booths/C17/guide-01.jpg', (437, 495, 698, 724), {'fileId': 'spectrum/1040g34o325gc5l1qkc4g5q0dnk92ngkoakauag8', 'upscale': True}),
     # 夜间 PIN 在官方图里是斜 45° 摆的菱形，转正后框才收得紧
     'night': ('public/img/rules/pin/01.jpg', (144, 781, 221, 856), {'fileId': 'notes_pre_post/1040g3k83248ou79sgma05q2ssop2773g385jvfg', 'upscale': True, 'rotate': 34.5}),
     'veteran': ('public/img/rules/pin-npc/01.jpg', (220, 375, 560, 685), {'rotate': -14}),
