@@ -545,7 +545,9 @@ function undo(c) {
 }
 
 // ---- 图的显示尺寸 ----
-const NAT = { w: 6000, h: 4344 }
+// NAT = p2-full.jpg 的原始像素尺寸，只用来算显示宽高比。9/30 换新版官方图后从 6000×4344 变 3952×2879
+// （同一裁切框、同一比例），改了不影响本机 rl26.dev 的覆盖数据（坐标是归一化的）。
+const NAT = { w: 3952, h: 2879 }
 const imgW = ref(1200)
 const imgH = computed(() => Math.round((imgW.value * NAT.h) / NAT.w))
 const scroller = ref(null)
@@ -1110,7 +1112,7 @@ const gapOf = (d) => sideGaps.value[d] ?? 99
 // ---- 试走 ----
 // 折线长度换成米：与 utils/plan.js 的 fmtDist 同一比例尺（按 2400 宽的 P2 像素算）
 const PX_W = 2400
-const PX_H = 1738
+const PX_H = 1748
 function pathLen(pts) {
   let d = 0
   for (let i = 1; i < pts.length; i++) d += Math.hypot((pts[i].x - pts[i - 1].x) * PX_W, (pts[i].y - pts[i - 1].y) * PX_H)

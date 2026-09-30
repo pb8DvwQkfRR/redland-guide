@@ -16,7 +16,7 @@ export const booths = [
   { id: 'A02', zone: 'A', no: 'A02', ip: '三角洲行动', blurb: '来洲洲大红街区观光做客，解锁干员撤离后的另一种生活', xhs: { uid: '63205dd8000000002303aaa7', name: '三角洲行动' } },
   { id: 'A03a', zone: 'A', no: 'A03', ip: '王者万象棋', blurb: '棋手闺蜜团登岛炸场！', xhs: { uid: '62da1715000000000e00fae1', name: '王者万象棋' } },
   { id: 'A03b', zone: 'A', no: 'A03', ip: '王者荣耀世界', blurb: '世民入镜，你是世界里的风景', xhs: { uid: '653a085e00000000020106cc', name: '王者荣耀世界' } },
-  { id: 'A04', zone: 'A', no: 'A04', noPin: true, ip: '待解锁', blurb: '官方场馆平面图标注「待解锁」，IP 待公布' },
+  // A04：新版官方场馆平面图里这一格已改为「coser 换装区 + 服务台」两个功能点位，不再作展位（用户 9/30）
   { id: 'A05', zone: 'A', no: 'A05', ip: '心动小镇', blurb: '小镇庆典日开张，庆典派对狂欢不停！', xhs: { uid: '60e29bf70000000020029ea6', name: '心动小镇' } },
   { id: 'A06', zone: 'A', no: 'A06', ip: '星布谷地', blurb: '米哈游最新生活模拟游戏国内首展，感受治愈新生活！', xhs: { uid: '619603700000000021028fc6', name: '星布谷地' } },
   { id: 'A07', zone: 'A', no: 'A07', noPin: true, ip: '京东 101HOME', alias: 'JD 京东101HOME', blurb: '官方场馆平面图（2026-09-11）新增，展台详情待公布', xhs: { uid: '6315d8ba000000001501a9e9', name: '京东101HOME' } },
@@ -84,7 +84,7 @@ export const booths = [
   { id: 'B16', zone: 'B', no: 'B16', noPin: true, ip: 'IP 贩售 · 宝藏码头', alias: '宝藏码头 IP贩售 谷子 集市', blurb: '各世界的冒险者在此归港，听说他们带来了不少宝藏……', xhs: { uid: '685ce6320000000008039c70', name: 'RED LAND' } },
   { id: 'B18', zone: 'B', no: 'B18', ip: '火影忍者手游', blurb: '《火影忍者》手游启动！来修炼你的忍道，成为最强忍者学员！', xhs: { uid: '650b9eb20000000012007285', name: '火影忍者手游情报君' } },
   { id: 'B19', zone: 'B', no: 'B19', ip: 'CLUTCH', alias: '离合：红线 离合红线', blurb: '摩纳哥海岸的昼夜双面世界，解锁速度与激情！', xhs: { uid: '6aa5b578000000000301cb9a', name: 'CLUTCH | 离合：红线' } },
-  { id: 'B20', zone: 'B', no: 'B20', noPin: true, ip: '待解锁', blurb: '官方场馆平面图标注「待解锁」，IP 待公布' },
+  { id: 'B20', zone: 'B', no: 'B20', ip: '联想拯救者', alias: 'LEGION Lenovo 拯救者 拯救者', blurb: '新版官方场馆平面图已解锁为「联想拯救者」，展台玩法待公布' },
   { id: 'B21a', zone: 'B', no: 'B21', noPin: true, ip: '康师傅冰红茶', alias: '冰红茶 饮料 低糖高纤 低GI', blurb: '「低 GI 痛快海滩」限时营业，玩游戏解锁好礼，冰红茶男团 coser 空降', xhs: { uid: '667636f90000000003032dfe', name: '康师傅冰红茶' } },
   { id: 'B21b', zone: 'B', no: 'B21', noPin: true, ip: 'Danisa 皇冠丹麦曲奇', alias: '丹麦曲奇 饼干', blurb: '趣味烘焙屋上岛，邀你一起解锁美味「曲奇食光」～', xhs: { uid: '5cdd6863000000001700ecd9', name: 'Danisa皇冠丹麦曲奇' } },
   { id: 'B21c', zone: 'B', no: 'B21', noPin: true, ip: '中国银联', alias: 'UnionPay 云闪付 银圆圆', blurb: '红支付 联结热爱 —— 带上银圆圆去冒险；9/28 起线上福利与登岛出行优惠开启', xhs: { uid: '6367125e000000001f01fca1', name: '中国银联' } },
