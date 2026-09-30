@@ -34,6 +34,12 @@ CROPS = {
     # 乌合之众 C03a：两枚软盘在原图里约 207×208（蓝色日场 / 绿色夜场）
     'C03a-1': ('public/img/booths/C03a/00.jpg', (272, 1282, 478, 1490), {'upscale': True}),
     'C03a-2': ('public/img/booths/C03a/00.jpg', (574, 1286, 776, 1488), {'upscale': True}),
+    # 沉星之序 C03b：两枚软盘在同一张图里约 193×207（蓝色日场 / 绿色夜场）
+    'C03b-1': ('public/img/booths/C03b/guide-00.jpg', (326, 1084, 519, 1291), {'upscale': True}),
+    'C03b-2': ('public/img/booths/C03b/guide-00.jpg', (564, 1084, 761, 1291), {'upscale': True}),
+    # 古剑 A15：两枚橙色软盘约 444×446（角色款 / RED LAND × 古剑 logo 款）
+    'A15-1': ('public/img/booths/A15/guide-00.jpg', (66, 1663, 510, 2109), {'upscale': True}),
+    'A15-2': ('public/img/booths/A15/guide-00.jpg', (569, 1663, 1015, 2109), {'upscale': True}),
     'A09-2': ('public/img/booths/A09/01.jpg', (425, 730, 698, 1008)),
     'A24-1': ('public/img/booths/A24/02.jpg', (516, 608, 702, 792)),
     'A24-2': ('public/img/booths/A24/02.jpg', (516, 784, 702, 966)),
