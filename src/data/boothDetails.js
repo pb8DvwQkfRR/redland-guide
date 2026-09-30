@@ -2132,6 +2132,42 @@ const clutch = {
   ],
 }
 
+// TopHat / A-31（翻身时空港）：发行商 Top Hat Studios Inc 9/27「孤女&电锯姬 | RED LAND 2026 酷飒登场」
+// 两款游戏的中国「展览」首秀（《孤女困魇》Silly Polly Beast、《废都电锯姬》MOTORSLICE）
+const tophat = {
+  source: {
+    title: '孤女&电锯姬 | RED LAND 2026 酷飒登场',
+    url: 'https://xhslink.cn/o/A9XoKPJyo35',
+    noteId: '6ab8a5a2000000000e03f000',
+    author: 'Top Hat Studios Inc',
+    publishedAt: '2026-09-27',
+  },
+  boothNo: 'A31',
+  location: '翻身时空港 A31',
+  intro: 'TopHat 将为 RED LAND 2026 带来一场独一无二的体验：我们倾力打造《孤女困魇》和《废都电锯姬》在中国的「展览」首秀！',
+  notes: [
+    '两款游戏都是在中国的「展览」首秀',
+    '官方原文只给玩法概述，现场迷你游戏的规则与奖励未公布',
+  ],
+  activities: [
+    {
+      title: '《孤女困魇》Silly Polly Beast',
+      desc: '探索那个阴影笼罩、雾气弥漫的深渊世界，「追随光芒」逃离怪物，完成迷你游戏，并领取你的奖励。',
+    },
+    {
+      title: '《废都电锯姬》MOTORSLICE',
+      desc: '踏入巨构体世界——结识「P 姐」和她的挚友、一只名叫奥比的漂浮球形无人机（它可是爱找你聊天的可爱家伙！），与她们一起完成迷你游戏，赢取奖励。',
+    },
+  ],
+  rewards: [
+    { name: '现场迷你游戏奖励', how: '完成两款游戏的现场迷你游戏领取；内容官方未公布' },
+  ],
+  footnote: '现场迷你游戏的具体规则与奖励官方未公布，以现场为准。',
+  images: [
+    { src: 'img/booths/A31/kv-00.jpg', caption: '主视觉 · 《孤女困魇》× 《废都电锯姬》双游戏（10/02–10/06）' },
+  ],
+}
+
 // 联想拯救者（B-20，黄金海岸线）：9/30 新版官方地图才解锁的展位
 // 来源是数码 KOL「Geek小哥哥」的笔记（正文 @ 官方号、物料是官方 KV），按 A13 / B22 先例收录
 const legion = {
@@ -6996,6 +7032,7 @@ export default {
   C10: ffrs,
   B19: clutch,
   B20: legion,
+  A31: tophat,
   C08: partyAnimals,
   A15: swordsOfLegends,
   B22: shenbuyan,
