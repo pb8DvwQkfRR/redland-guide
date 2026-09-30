@@ -4785,6 +4785,7 @@ const indieHall = {
     '「愿望单」指该游戏的愿望单加入记录，领无料时需现场出示。',
     '各摊位号（救世阿姨 Z19 / 落日山丘 C01～C02 / 我不是胖虎 C24～C25 / 宇宙怪谈2 C22～C23 / 唐宫诗与谋 沉浸区 C03～C04 / 神缺席 C31～C33）是独游区内部编号，与 C01 刺客信条展位无关。',
     '「主创小圆桌见面会」需在 RED LAND 主会场预约（RED LAND 官方 9/25 预约日历，9 月 27 日开约，是最早开约的一批）。',
+    '育碧那两款在 C-04 的「游戏试玩区」（UBISOFT 专题页 9/22 标注）：《魔法门之英雄无敌 III 重制版》与《异变金属 Morbid Metal》；育碧的《刺客信条：黑旗 记忆重置》则在 C-01 互动体验区，两边不是同一个位置。',
   ],
   activities: [
     {
@@ -4941,6 +4942,13 @@ const indieHall = {
     { uid: '68e88082000000003201982d', name: '神缺席官方' },
   ],
   moreSources: [
+    {
+      title: 'UBISOFT 育碧 RED LAND 2026 专题页（含 C-04 游戏试玩区两款的现场说明）',
+      url: 'https://xhslink.com/m/TJhxJT8NDo',
+      noteId: '0c12f457ac8d44f587368e164deab8fb',
+      author: 'UBISOFT育碧',
+      publishedAt: '2026-09-22',
+    },
     {
       title: 'RED LAND 独立游戏试玩区 · 近百款独立游戏集中上桌（官方聚合页，84 款名单出处）',
       url: 'https://xhslink.com/m/4VL27MmQ48U',
@@ -6763,6 +6771,7 @@ const assassins = {
     publishedAt: '2026-09-25',
   },
   moreSources: [
+    { title: 'UBISOFT 育碧 RED LAND 2026 专题页（三款游戏 · C-01 互动体验区 / C-04 游戏试玩区，含 #育碧游戏航海计划 与记忆碎片图）', url: 'https://xhslink.com/m/TJhxJT8NDo', noteId: '0c12f457ac8d44f587368e164deab8fb', author: 'UBISOFT育碧', publishedAt: '2026-09-22' },
     { title: '黑旗登船指南！复兴岛展台周边全攻略（UBISOFT育碧 主号版：长图与刺客信条 9/25 那条相同，另切成 4 段；活动四的每日暗号就在这个账号的置顶笔记里）', url: 'https://xhslink.cn/o/VXDZ7fq7ma', noteId: '6ab509140000000015013a16', author: 'UBISOFT育碧', publishedAt: '2026-09-25' },
     { title: '一个闪身步，寒鸦号即将靠岸复兴岛', url: 'https://xhslink.cn/o/AMulkNLb0ck', noteId: '6ab24396000000003501505b', author: '刺客信条', publishedAt: '2026-09-22' },
   ],
@@ -6806,7 +6815,7 @@ const assassins = {
   stage: [],
   tasks: [
     {
-      title: '活动二 · 整点儿！（拿骚酒馆合影）',
+      title: '活动二 · 整点儿！（拿骚酒馆合影）#育碧游戏航海计划',
       desc: '快来拿骚酒馆，爱德华还有安妮在这儿等着你呢！将你与角色或吧台的合影发布至小红书，带话题 #育碧游戏航海计划 并 @UBISOFT育碧，即可获得 1 枚行动印记，并可领取 1 份黑旗限定手提袋与存档碎片。',
       tags: ['#育碧游戏航海计划'],
       post: '在 RED LAND 2026 的 C01 拿骚酒馆和爱德华、安妮合影啦！寒鸦号靠岸复兴岛，这个国庆一起出海～ @UBISOFT育碧\n\n#育碧游戏航海计划',
