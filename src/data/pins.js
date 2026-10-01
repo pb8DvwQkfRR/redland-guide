@@ -77,6 +77,7 @@ export const pins = [
   { id: 'B08', no: 'B08', type: 'region', zone: 'B', name: '遗忘之海「存档碎片」· 王女款', booth: 'B08', how: '现场参与互动领取（互动周边之一），具体领取规则以线下活动规则为准；周边数量有限先到先得', thumb: 'img/pins/B08.jpg', image: 'img/booths/B08/03.jpg' },
   { id: 'B09-1', no: 'B09-1', type: 'region', zone: 'B', name: '重返未来：1999「存档碎片」· 日场款', booth: 'B09', how: '完成展台互动问答领取；12:30–17:30，每日 800 份（官方称「徽章」）', thumb: 'img/pins/B09-1.jpg', image: 'img/booths/B09/05.jpg' },
   { id: 'B09-2', no: 'B09-2', type: 'region', zone: 'B', name: '重返未来：1999「存档碎片」· 夜场款', booth: 'B09', how: '完成展台互动问答领取；17:30–21:30，每日 400 份（官方称「徽章」）', thumb: 'img/pins/B09-2.jpg', image: 'img/booths/B09/05.jpg' },
+  { id: 'B19-pin', no: 'B19-1', type: 'region', zone: 'B', name: 'CLUTCH「存档碎片」· 款式待公布', booth: 'B19', how: '展台出口凭盖章兑换：任意 1 枚「极速」章得 1 枚；1 枚「竞速」章 + 任意 1 枚「极速」章则再加赛车主题魔术贴 ×1。绰「极速」章：掉落反应 / 熄灯反应挑战任选一项；「竞速」章：完成 CLUTCH 试玩', thumb: null, image: 'img/booths/B19/guide-03.jpg' },
   { id: 'B02-pin-1', no: 'B02-1', type: 'region', zone: 'B', name: '宝可梦「存档碎片」· 皮卡丘款', booth: 'B02', how: '护照集章任务 1·2·3，12:30–17:30 领，每日 2500（官方称「宝可梦江畔乐游主题 PIN」）', thumb: 'img/pins/B02-1.jpg', image: 'img/booths/B02/04.jpg' },
   { id: 'B02-pin-2', no: 'B02-2', type: 'region', zone: 'B', name: '宝可梦「存档碎片」· 谜拟丘款', booth: 'B02', how: '护照集章任务 1·2·3·6，17:30–21:30 领，每日 2000（官方称「宝可梦江畔乐游主题 PIN」）', thumb: 'img/pins/B02-2.jpg', image: 'img/booths/B02/04.jpg' },
   { id: 'B03-pin', no: 'B03', type: 'region', zone: 'B', name: 'Lovania「存档碎片」· 小人偶款', booth: 'B03', how: '完成盖章任务（记忆留言 / 记忆绘画 / 记忆合奏）集齐 3 个记忆盖章，与「奢华贝壳马桶气球」一同领取；每日数量有限领完即止', thumb: 'img/pins/B03-pin.jpg', image: 'img/booths/B03/guide-04.jpg' },
@@ -100,6 +101,8 @@ export const pins = [
   { id: 'C05-1', no: 'C05-1', type: 'region', zone: 'C', name: '女神异闻录4 Revival「存档碎片」· P4R 主视觉款', booth: 'C05', how: '完成展位内全部指定打卡任务后领取；日场发放 12:30–17:30 / 夜场发放 17:30–21:30（日 / 夜场对应哪款官方未标）', thumb: 'img/pins/C05-1.jpg', image: 'img/booths/C05/guide-00.jpg' },
   { id: 'C05-2', no: 'C05-2', type: 'region', zone: 'C', name: '女神异闻录4 Revival「存档碎片」· RED LAND 2026 × P4R logo 款', booth: 'C05', how: '同上', thumb: 'img/pins/C05-2.jpg', image: 'img/booths/C05/guide-00.jpg' },
   { id: 'C09', no: 'C09', type: 'region', booking: true, zone: 'C', name: '世界之外「存档碎片」· 黄金绮旅款', booth: 'C09', how: '预约或凭整理券进入「黄金绮旅空间」后，当前场次内到「无料领取处」凭导览手册领取，每人限一份；预约 9/28 开约', thumb: 'img/pins/C09.jpg', image: 'img/booths/C09/08.jpg' },
+  { id: 'C10-1', no: 'C10-1', type: 'region', zone: 'C', name: 'FINAL FANTASY RESONANCE「存档碎片」· 日场款', booth: 'C10', how: '完成「共鸣印记卡」上 3/3 枚主印记（幻兵水晶共鸣 / 经典对战再现 / 许下冒险心愿），日场 12:30–17:30 发放；蓝色软盘，数量有限送完即止', thumb: 'img/pins/C10-1.jpg', image: 'img/booths/C10/guide-06.jpg' },
+  { id: 'C10-2', no: 'C10-2', type: 'region', zone: 'C', name: 'FINAL FANTASY RESONANCE「存档碎片」· 夜场款', booth: 'C10', how: '同上，夜场 17:30–21:30 发放；绿色软盘、夜光，数量有限送完即止', thumb: 'img/pins/C10-2.jpg', image: 'img/booths/C10/guide-06.jpg' },
   { id: 'C18-1', no: 'C18-1', type: 'region', booking: true, zone: 'C', name: '闪魂「存档碎片」· 日场款', booth: 'C18', how: '白天灵魂试炼场（绝区零 / 纸嫁衣 / 闪魂三区）集齐 3 枚印章兑换；PIN 章共 2050 个、每日限量 410，换完即止（需预约领打卡册）', thumb: 'img/pins/C18-1.jpg', image: 'img/booths/C18/fb-06.jpg' },
   { id: 'C18-2', no: 'C18-2', type: 'region', booking: true, zone: 'C', name: '闪魂「存档碎片」· 夜场夜光款', booth: 'C18', how: '夜间副本「小小梦魇」集齐 3 枚不同印章兑换夜光版；共 650 个、每日限量 130，换完即止', thumb: 'img/pins/C18-2.jpg', image: 'img/booths/C18/fb-06.jpg' },
 

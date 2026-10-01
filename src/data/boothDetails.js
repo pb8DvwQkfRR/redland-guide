@@ -1989,6 +1989,229 @@ const opcg = {
 
 // 猛兽派对（C-08，重生试炼场）：官方 ditto 分会场页「绝密！猛兽登岛攻略泄露」
 // 展台是「猛兽小屋」，四个亮点里有两处能拿 REDLAND 官方 PIN
+// FINAL FANTASY RESONANCE（C-10，重生试炼场）：SQUARE ENIX ASIA 9/29「FFRS × RED LAND2026 登岛攻略来了！」
+// 四个任务都收在「共鸣印记卡」上，完成主印记换日 / 夜两款存档碎片（蓝 / 绿软盘）
+const ffrs = {
+  source: {
+    title: '💎FFRS × RED LAND2026 登岛攻略来了！',
+    url: 'https://xhslink.cn/o/9l4waM4OK4t',
+    noteId: '6abbb2970000000019026eb9',
+    author: 'SQUARE ENIX ASIA',
+    publishedAt: '2026-09-29',
+  },
+  boothNo: 'C-10',
+  location: '重生试炼场 C-10',
+  intro: '这个国庆，来复兴岛寻找属于你的「共鸣印记」吧！',
+  notes: [
+    '「共鸣印记卡」在展台「入口区域」领取，四个任务都记在这张卡上',
+    '现场另有游戏试玩区与菲娜 & 魔人 COSER 互动',
+    '奖品数量有限，送完即止',
+  ],
+  activities: [
+    {
+      title: '「共鸣印记」任务',
+      desc: '在「入口区域」领取「共鸣印记卡」，完成卡上的任务即可获得对应的主印记，集齐主印记兑换限定奖励。',
+      items: [
+        {
+          no: 'TASK 01',
+          title: '幻兵水晶共鸣',
+          desc: '前往「幻兵水晶区域」，触发幻兵水晶，与历代主角产生共鸣，完成任务获得「幻兵水晶」主印记 ×1（1/3）。',
+        },
+        {
+          no: 'TASK 02',
+          title: '经典对战再现',
+          desc: '前往「经典对战区域」，打卡对战场景发布小红书，并带话题，@ 并关注官方小红书账号，完成任务获得「经典对战」主印记 ×1（2/3）。',
+          tags: ['#FFRS', '#REDLAND2026'],
+          follow: [{ uid: '6a859028000000000301c941', name: 'SQUARE ENIX ASIA' }],
+        },
+        {
+          no: 'TASK 03',
+          title: '许下冒险心愿',
+          desc: '前往「心愿单区域」，添加本作至 STEAM 心愿单，完成任务获得「冒险心愿」主印记 ×1（3/3）。',
+        },
+      ],
+    },
+    {
+      title: 'HIDDEN TASK · 寻找仙人掌',
+      desc: '熟悉的仙人掌，又藏进了这次冒险。找到 20 只编号仙人掌中的 10 只，记下对应的当日密码，即可解锁隐藏奖励。',
+      note: '与主印记奖励叠加：完成 ≥2 枚主印记 + 10 组仙人掌密码，额外获得共鸣镭射卡 ×1',
+    },
+    {
+      title: '现场游戏试玩',
+      desc: '展台设有四机位试玩区，可现场体验《FINAL FANTASY RESONANCE》。',
+    },
+  ],
+  stage: [
+    {
+      title: '菲娜 & 魔人 COSER 互动',
+      desc: '两位 COSER「小虎牙」（饰 菲娜）与「名莺莺」（饰 魔人）在展台迎接主角。官方未公布具体场次，以现场为准。',
+    },
+  ],
+  rewards: [
+    { name: '存档碎片 · 日场款（蓝色软盘）', how: '集齐 3/3 枚主印记，日场 12:30–17:30 发放；数量有限送完即止', pin: true, pinId: 'C10-1' },
+    { name: '存档碎片 · 夜场款（绿色夜光软盘）', how: '集齐 3/3 枚主印记，夜场 17:30–21:30 发放；数量有限送完即止', pin: true, pinId: 'C10-2' },
+    { name: '吧唧盲袋（内含随机主角吧唧 ×1）', how: '完成 2/3 枚主印记即可领取' },
+    { name: '共鸣镭射卡', how: '完成 ≥2 枚主印记 + 10 组仙人掌密码，额外获得；数量有限送完即止' },
+  ],
+  footnote: '奖励数量有限，送完即止。主印记卡在展台「入口区域」领取。',
+  images: [
+    { src: 'img/booths/C10/guide-00.jpg', caption: '展位示意图 · 重生试炼场 C-10，活动时间 10.02–10.06' },
+    { src: 'img/booths/C10/guide-01.jpg', caption: '「共鸣印记」任务总览 · 入口领卡，四项任务 + 共鸣奖励' },
+    { src: 'img/booths/C10/guide-02.jpg', caption: 'TASK 01 幻兵水晶共鸣' },
+    { src: 'img/booths/C10/guide-03.jpg', caption: 'TASK 02 经典对战再现' },
+    { src: 'img/booths/C10/guide-04.jpg', caption: 'TASK 03 许下冒险心愿' },
+    { src: 'img/booths/C10/guide-05.jpg', caption: 'HIDDEN TASK · 寻找仙人掌（20 只中找 10 只）' },
+    { src: 'img/booths/C10/guide-06.jpg', caption: '共鸣奖励 · 吧唧盲袋 / 存档碎片日场（蓝）夜场（绿） / 共鸣镭射卡' },
+    { src: 'img/booths/C10/guide-07.jpg', caption: '现场游戏试玩区（四机位）' },
+    { src: 'img/booths/C10/guide-08.jpg', caption: '菲娜 & 魔人 COSER 互动（小虎牙 / 名莺莺）' },
+    { src: 'img/booths/C10/kv-00.jpg', caption: '主视觉 KV' },
+  ],
+}
+
+// CLUTCH（B-19，黄金海岸线）：官方账号 9/30「CLUTCH 展台玩法大公开！」
+// 赛车主题展台，两枚章（极速 / 竞速）换存档碎片
+const clutch = {
+  source: {
+    title: 'Red Land 2026｜CLUTCH 展台玩法大公开！',
+    url: 'https://xhslink.cn/o/4wjpoaBvtfo',
+    noteId: '6abcfb77000000001401dfdb',
+    author: 'CLUTCH | 离合：红线',
+    publishedAt: '2026-09-30',
+  },
+  boothNo: 'B-19',
+  location: '黄金海岸线 B-19',
+  intro: '各位车手，久等啦！在本次 Red Land 展上，我们为大家精心准备了丰富的赛车主题游戏及 demo 试玩。',
+  notes: [
+    '出口兑换纪念品，需凭当日盖章的核销章；日间章留住，夜间返场还有额外好礼',
+  ],
+  activities: [
+    {
+      title: '入口签到',
+      desc: '在展台入口签到，可免费领取 Paddock Pass。',
+    },
+    {
+      title: '极速挑战',
+      desc: '两项挑战任选一项完成，即可盖「极速」章。',
+      items: [
+        { no: '01', title: '掉落反应挑战', desc: '在模拟驾驶位上对突然的下落作出反应。' },
+        { no: '02', title: '熄灯反应挑战', desc: '起跑灯熄灭的瞬间作出反应，比快。' },
+      ],
+    },
+    {
+      title: '赛道竞速',
+      desc: '完成 CLUTCH 试玩，即可盖「竞速」章。展台设四机位试玩区。',
+      note: '活动期间试玩成绩总榜前三，可获《CLUTCH》签名版游戏卡带',
+    },
+    {
+      title: '出口兑换',
+      desc: '凭盖章到出口兑换纪念品。',
+      items: [
+        { title: '任意 1 枚「极速」章', desc: '兑换「存档碎片」×1 枚。' },
+        { title: '1 枚「竞速」章 + 任意 1 枚「极速」章', desc: '兑换赛车主题魔术贴 ×1 份 + 「存档碎片」×1 枚。' },
+      ],
+    },
+    {
+      title: '天黑以后，再来一趟',
+      desc: '留好日间核销章，夜间返场参与涂鸦互动，还有额外好礼。',
+      note: '夜场涂鸦互动的具体规则与额外好礼内容官方未公布',
+    },
+  ],
+  rewards: [
+    { name: 'CLUTCH「存档碎片」', how: '任意 1 枚「极速」章即可兑换；1 枚「竞速」章 + 任意 1 枚「极速」章则额外加赠赛车主题魔术贴 ×1（款式待公布）', pin: true, pinId: 'B19-pin' },
+    { name: '赛车主题魔术贴', how: '1 枚「竞速」章 + 任意 1 枚「极速」章，与存档碎片一并兑换' },
+    { name: '《CLUTCH》签名版游戏卡带', how: '活动期间试玩成绩总榜前三' },
+    { name: 'Paddock Pass', how: '入口签到免费领取' },
+  ],
+  footnote: '纪念品凭当日盖章核销，日间章请保留，夜间返场另有额外好礼。',
+  images: [
+    { src: 'img/booths/B19/guide-00.jpg', caption: '入口签到 · 免费领取 Paddock Pass' },
+    { src: 'img/booths/B19/guide-01.jpg', caption: '极速挑战 · 掉落反应挑战 / 熄灯反应挑战，任选一项盖「极速」章' },
+    { src: 'img/booths/B19/guide-02.jpg', caption: '赛道竞速 · 完成 CLUTCH 试玩盖「竞速」章；总榜前三得签名版游戏卡带' },
+    { src: 'img/booths/B19/guide-03.jpg', caption: '出口兑换 · 两档兑奖规则与纪念品实物' },
+    { src: 'img/booths/B19/guide-04.jpg', caption: '天黑以后再来一趟 · 夜间涂鸦返场' },
+  ],
+}
+
+// TopHat / A-31（翻身时空港）：发行商 Top Hat Studios Inc 9/27「孤女&电锯姬 | RED LAND 2026 酷飒登场」
+// 两款游戏的中国「展览」首秀（《孤女困魇》Silly Polly Beast、《废都电锯姬》MOTORSLICE）
+const tophat = {
+  source: {
+    title: '孤女&电锯姬 | RED LAND 2026 酷飒登场',
+    url: 'https://xhslink.cn/o/A9XoKPJyo35',
+    noteId: '6ab8a5a2000000000e03f000',
+    author: 'Top Hat Studios Inc',
+    publishedAt: '2026-09-27',
+  },
+  boothNo: 'A31',
+  location: '翻身时空港 A31',
+  intro: 'TopHat 将为 RED LAND 2026 带来一场独一无二的体验：我们倾力打造《孤女困魇》和《废都电锯姬》在中国的「展览」首秀！',
+  notes: [
+    '两款游戏都是在中国的「展览」首秀',
+    '官方原文只给玩法概述，现场迷你游戏的规则与奖励未公布',
+  ],
+  activities: [
+    {
+      title: '《孤女困魇》Silly Polly Beast',
+      desc: '探索那个阴影笼罩、雾气弥漫的深渊世界，「追随光芒」逃离怪物，完成迷你游戏，并领取你的奖励。',
+    },
+    {
+      title: '《废都电锯姬》MOTORSLICE',
+      desc: '踏入巨构体世界——结识「P 姐」和她的挚友、一只名叫奥比的漂浮球形无人机（它可是爱找你聊天的可爱家伙！），与她们一起完成迷你游戏，赢取奖励。',
+    },
+  ],
+  rewards: [
+    { name: '现场迷你游戏奖励', how: '完成两款游戏的现场迷你游戏领取；内容官方未公布' },
+  ],
+  footnote: '现场迷你游戏的具体规则与奖励官方未公布，以现场为准。',
+  images: [
+    { src: 'img/booths/A31/kv-00.jpg', caption: '主视觉 · 《孤女困魇》× 《废都电锯姬》双游戏（10/02–10/06）' },
+  ],
+}
+
+// 联想拯救者（B-20，黄金海岸线）：9/30 新版官方地图才解锁的展位
+// 来源是数码 KOL「Geek小哥哥」的笔记（正文 @ 官方号、物料是官方 KV），按 A13 / B22 先例收录
+const legion = {
+  source: {
+    title: '联想拯救者邀你登岛🎮全场由你拯救！',
+    url: 'https://xhslink.cn/o/HboSd8ujoc',
+    noteId: '6abc83f1000000000a026b9d',
+    author: 'Geek小哥哥',
+    publishedAt: '2026-09-30',
+  },
+  boothNo: 'B-20',
+  location: '黄金海岸线 B-20',
+  intro: '满配登岛，拯救全场！买拯救者平板，赢拯救者电脑。',
+  notes: [
+    '展位号 B-20（新版官方场馆平面图 9/30 才把它从「待解锁」标为联想拯救者）',
+    '线上 H5 点赞积分抽奖（9/30–10/29）属线上活动，不在现场展台，未收录为任务',
+  ],
+  activities: [
+    {
+      title: '拯救者 × 鸣潮 竞速挑战赛',
+      desc: '参与 B20 联想拯救者展位的「鸣潮挑战赛」活动，可获得 1 次抽奖机会；如进入前 5，可额外获得 1 次抽奖机会。参与展位内其他互动挑战也均有机会获得抽奖机会。',
+      note: '具体活动参与规则见线下；奖品含优惠券、平板、周边等',
+      rewards: ['抽奖机会（优惠券 / 平板 / 周边等）'],
+    },
+  ],
+  rewards: [
+    { name: '显眼包（「你的装备，拯救者包了」购物袋）', how: '线下参与展位互动挑战抽奖；限量 5000' },
+    { name: '联想小新平板 11', how: '线下参与展位互动挑战抽奖；限量 5' },
+    { name: '整版像素贴纸', how: '线下参与展位互动挑战抽奖；限量 1000' },
+    { name: '单个拯救姬贴纸', how: '线下参与展位互动挑战抽奖；限量 5000' },
+    { name: '拯救者产品优惠券（10 元 / 5 折等）', how: '线下参与展位互动挑战抽奖；限量 112' },
+    { name: '麦麦大拯救工卡', how: '线下参与展位互动挑战抽奖；限量 100' },
+  ],
+  footnote: '奖品款式随机，数量有限先到先得。线上 H5 活动（9/30–10/29）另有独立奖品池，不在现场展台。',
+  images: [
+    { src: 'img/booths/B20/guide-00.jpg', caption: '主视觉 · 满配登岛 拯救全场（买拯救者平板，赢拯救者电脑）' },
+    { src: 'img/booths/B20/guide-01.jpg', caption: '线上玩法 · H5 任务赢好礼（9/30–10/29，线上活动）' },
+    { src: 'img/booths/B20/guide-02.jpg', caption: '线下玩法 · 拯救者 × 鸣潮竞速挑战赛（10/02–10/06）' },
+    { src: 'img/booths/B20/guide-03.jpg', caption: '线下奖品清单 · 6 款奖品与限量数' },
+  ],
+}
+
+// 猛兽派对（C-08，重生试炼场）：官方 ditto 分会场页「绝密！猛兽登岛攻略泄露」
+// 展台是「猛兽小屋」，四个亮点里有两处能拿 REDLAND 官方 PIN
 const partyAnimals = {
   source: {
     title: '绝密！猛兽登岛攻略泄露（官方专题页）',
@@ -3365,26 +3588,41 @@ const lovania = {
 // 与 A17a 奥星热浪 / A17b 归环 同展位号但各自独立，不共用详情
 const fateTrigger = {
   source: {
-    title: '命运扳机RED LAND 2026参展信息速报',
-    url: 'https://xhslink.cn/o/1tuIc9cfwMI',
-    noteId: '6aa9173f0000000012025a58',
+    title: '《命运扳机》RED LAND丨登岛前，存好4张图',
+    url: 'https://xhslink.cn/o/7OSc6WtoB3r',
+    noteId: '6abcf055000000001a02193e',
     author: '命运扳机',
-    publishedAt: '2026-09-15',
+    publishedAt: '2026-09-30',
   },
   boothNo: 'A17',
   location: '翻身时空港',
-  intro: '《命运扳机》即将登陆 RED LAND！向你发出逛展邀请——速来复兴岛，与我们碰头~',
-  notes: [],
+  intro: '人在工位，灵魂已上岛！为了让各位先觉者不迷路，已整理好玩法图文前瞻，先保存吧。',
+  notes: [
+    '正文写的出行路线是「12 号线复兴岛站 2 号口出站步行 110 米」，与官方「功能点位指南」的 4 号口口径不同，以官方为准',
+  ],
   activities: [
     {
       title: '先觉者特训基地 限时开放',
-      desc: '坐标：翻身时空港 A17 展台。我在「先觉者特训基地」很想你',
-      items: ['先觉者射击试炼', '缤纷浴缸寻宝', '松弛枕边合影'],
-      note: '官方原文以「……」结尾，现场项目可能不止这三项；参与展台趣味互动即可获得印章',
+      desc: '坐标：翻身时空港 A17 展台。展台设三个互动项目，完成指定互动即可获得对应印章。',
+      items: [
+        {
+          title: '松弛枕边合影',
+          desc: '在宿舍区域与 COSER 合拍专属「回家照」，合影完成即可获得印章 ×1。',
+        },
+        {
+          title: '浴缸寻宝',
+          desc: '来浴缸区域开启 30 秒极速捞宝，捞出【命运秘宝】，读出卡片暗号并跟 COSER 互动，更有机会摸出大奖；对上暗号并互动可获得印章 ×1。',
+        },
+        {
+          title: '先觉者精准试炼',
+          desc: '双人同台 PK，限时 120 秒射击挑战，命中更多的选手拿下胜利。参与打卡即可获得印章 ×1，胜利者额外再加印章 ×1。',
+        },
+      ],
+      note: '8 位 COSER 轮流营业，可零距离互动合拍',
     },
     {
       title: '花车游行 · 先觉者登场',
-      desc: '每日 17:00 - 17:30，来自命运扳机的先觉者在冒险者大道登场（蕾诺诺为头号花车嘉宾）。',
+      desc: '每日 17:00 - 17:30，来自命运扳机的先觉者在冒险者大道登场（蕾诺诺为头号花车嘉宾），一人饰 3 角。',
     },
   ],
   stage: [
@@ -3447,41 +3685,46 @@ const fateTrigger = {
   ],
   tasks: [
     {
-      title: '展台趣味互动集印章',
-      desc: '参与展台趣味互动，即可获得印章，抽取限量官方周边',
-      rewards: ['限量官方周边（抽取）'],
-    },
-    {
-      title: '参与展台互动并打卡分享',
-      desc: '即有机会抽奖获得以下周边',
-      rewards: ['蚂蚁搬家袋', '命运扳机 PIN 内小卡', '角色香薰片', '赫希黎吧唧', '明迪扇子', '绮罗钥匙扣', '亚克力发光眼镜'],
-    },
-    {
-      title: '预约游戏并关注命运扳机小红书账号',
-      desc: '即可获得「命运扳机 PIN 卡」',
+      title: '集章兑礼',
+      desc: '兑换地点在周边兑奖区，按下面四步参与。',
+      items: [
+        { no: 'STEP 1', title: '参与展台指定互动', desc: '参与展台指定互动后，即可获得对应互动印章。' },
+        { no: 'STEP 2', title: '发布打卡', desc: '拍现场照，带指定话题发小红书图文，出示发布成功页核验后即可参与抽奖。' },
+        { no: 'STEP 3', title: '集章抽奖', desc: '1 枚章 = 1 次抽奖，每人每张集章卡最多可抽奖 4 次，礼品数量有限先到先得。' },
+        { no: 'STEP 4', title: '领 PIN', desc: '凭游戏预约界面及关注小红书官方账号页面，可兑换小红书官方 PIN，并获得 1 张命运扳机 PIN 内卡。' },
+      ],
+      tags: ['#命运扳机', '#REDLAND2026'],
       follow: [{ uid: '60e947520000000001003ba3', name: '命运扳机' }],
-      note: '套装含「外包装 + 三 IP 合一内卡」成品一件，另附《命运扳机》单款内卡；官方图示为单款内卡效果示意',
-      rewards: ['命运扳机「存档碎片」(PIN) 套装'],
+      note: 'STEP 4 要同时出示「游戏预约界面」与「官方小红书账号关注页」',
+      rewards: ['限量官方周边（抽取）'],
     },
   ],
   rewards: [
-    { name: '命运扳机「存档碎片」(PIN) 套装', how: '预约游戏并关注命运扳机小红书账号', pin: true, pinId: 'A17c-pin' },
-    { name: '蚂蚁搬家袋', how: '参与展台互动并打卡分享（抽奖）' },
-    { name: '命运扳机 PIN 内小卡', how: '参与展台互动并打卡分享（抽奖）' },
-    { name: '角色香薰片', how: '参与展台互动并打卡分享（抽奖）' },
-    { name: '赫希黎吧唧', how: '参与展台互动并打卡分享（抽奖）' },
-    { name: '明迪扇子', how: '参与展台互动并打卡分享（抽奖）' },
-    { name: '绮罗钥匙扣', how: '参与展台互动并打卡分享（抽奖）' },
-    { name: '亚克力发光眼镜', how: '参与展台互动并打卡分享（抽奖）' },
-    { name: '限量官方周边', how: '参与展台趣味互动获得印章后抽取' },
+    { name: '命运扳机「存档碎片」(PIN) 套装', how: '凭游戏预约界面 + 关注命运扳机小红书账号，到周边兑奖区兑换（含小红书官方 PIN 与 1 张命运扳机 PIN 内卡）', pin: true, pinId: 'A17c-pin' },
+    { name: '蚂蚁搬家袋', how: '集章抽奖（1 枚章 = 1 次，每张集章卡最多 4 次）' },
+    { name: '命运扳机 PIN 内小卡', how: '集章抽奖（随 PIN 兑换另得 1 张）' },
+    { name: '角色香薰片', how: '集章抽奖（1 枚章 = 1 次，每张集章卡最多 4 次）' },
+    { name: '吧唧', how: '集章抽奖（1 枚章 = 1 次，每张集章卡最多 4 次）' },
+    { name: '扇子', how: '集章抽奖（1 枚章 = 1 次，每张集章卡最多 4 次）' },
+    { name: '亚克力发光眼镜', how: '集章抽奖（1 枚章 = 1 次，每张集章卡最多 4 次）' },
+    { name: '钥匙扣', how: '集章抽奖（1 枚章 = 1 次，每张集章卡最多 4 次）' },
   ],
-  footnote: '所有周边每日发放数量有限，先到先得，领完即止。',
+  footnote: '所有周边每日发放数量有限，先到先得，领完即止。兑换地点在周边兑奖区。',
   images: [
-    { src: 'img/booths/A17c/00.jpg', caption: '参展情报 · 翻身时空港 A17（10/02 - 10/06）' },
-    { src: 'img/booths/A17c/01.jpg', caption: 'PART 01 展台活动 · 先觉者特训基地限时开放（展台效果图）' },
-    { src: 'img/booths/A17c/02.jpg', caption: 'PART 02 周边预告 · 抽奖周边一览与「存档碎片」PIN 套装' },
-    { src: 'img/booths/A17c/03.jpg', caption: 'PART 03 现场 COSER 01 - 04（蕾诺诺 / 汐尔sama / 二二二月 / 企有小鹅）' },
-    { src: 'img/booths/A17c/04.jpg', caption: 'PART 03 现场 COSER 05 - 08（是己不是已 / 幺鸡 / 狩司 / 小猫）' },
+    { src: 'img/booths/A17c/guide-00.jpg', caption: '参展速通前瞻 KV · 翻身时空港 A17（10/02 - 10/06）' },
+    { src: 'img/booths/A17c/guide-01.jpg', caption: 'PART 01 展位指引 · 展位坐标与路线图（地铁 12 号线复兴岛站）' },
+    { src: 'img/booths/A17c/guide-02.jpg', caption: 'PART 02 活动前瞻 · 枕边合影（与 COSER 合拍「回家照」）与浴缸寻宝（30 秒捞宝）' },
+    { src: 'img/booths/A17c/guide-03.jpg', caption: 'PART 02 活动前瞻 · 先觉者精准试炼（双人同台 PK，限时 120 秒射击）' },
+    { src: 'img/booths/A17c/guide-04.jpg', caption: 'PART 03 集章兑礼规则 STEP 1–4（兑换地点：周边兑奖区）' },
+    { src: 'img/booths/A17c/guide-05.jpg', caption: 'PART 04 奖品展示 · 含「命运扳机PIN卡」成品实图' },
+    { src: 'img/booths/A17c/00.jpg', caption: '9/15 参展情报 · 翻身时空港 A17' },
+    { src: 'img/booths/A17c/01.jpg', caption: '9/15 PART 01 展台活动 · 先觉者特训基地限时开放（展台效果图）' },
+    { src: 'img/booths/A17c/02.jpg', caption: '9/15 PART 02 周边预告 · 抽奖周边一览与「存档碎片」PIN 套装' },
+    { src: 'img/booths/A17c/03.jpg', caption: '9/15 PART 03 现场 COSER 01 - 04（蕾诺诺 / 汐尔sama / 二二二月 / 企有小鹅）' },
+    { src: 'img/booths/A17c/04.jpg', caption: '9/15 PART 03 现场 COSER 05 - 08（是己不是已 / 幺鸡 / 狩司 / 小猫）' },
+  ],
+  moreSources: [
+    { title: '命运扳机RED LAND 2026参展信息速报', url: 'https://xhslink.cn/o/1tuIc9cfwMI', noteId: '6aa9173f0000000012025a58', author: '命运扳机', publishedAt: '2026-09-15' },
   ],
 }
 
@@ -3824,53 +4067,102 @@ const nickSource = { title: '开启尼克乐恩终极冒险！（派拉蒙 REDLA
 const nickImg = { src: 'img/booths/A29a/hub-00.jpg', caption: '开启尼克乐恩终极冒险！· 比奇堡欢乐海滩 / 忍者神龟秘密基地 / 解锁惊喜（派拉蒙专题页 9/24）' }
 const spongebob = {
   source: nickSource,
-  moreSources: [{ title: '比奇堡登陆上海！（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/AJixoCdtkUi', noteId: '6aa3e95100000000270144f6', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-11' }],
+  moreSources: [
+    { title: '请收好！RED LAND2026终极冒险玩家指南', url: 'https://xhslink.cn/o/8T58bYhrWUj', noteId: '6abccac4000000000a01da85', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-30' },
+    { title: '比奇堡登陆上海！（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/AJixoCdtkUi', noteId: '6aa3e95100000000270144f6', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-11' },
+  ],
   boothNo: 'A29',
   location: '翻身时空港 A29',
   intro: '谁懂啊——海绵宝宝真的来上海了！准备好和海绵宝宝一起，开启一场真正的比奇堡欢乐海滩冒险了吗？',
-  notes: ['本次活动仅限 14 岁及以上观众参与（笔记原文）'],
+  notes: [
+    '本次活动仅限 14 岁及以上观众参与（笔记原文）',
+    '展台日夜场切换：日场 12:30–17:30 / 夜场 17:30–21:30',
+  ],
   activities: [
     {
-      title: '比奇堡欢乐海滩冒险',
+      title: '比奇堡欢乐海滩 · 必去打卡点',
       items: [
-        { desc: '坐超大水母秋千，穿梭梦幻灯海。' },
-        { desc: '去酷乐湖畅享冲浪乐趣。' },
-        { desc: '打卡 4.5 米高巨型菠萝屋。' },
-        { desc: '解锁水母狂欢舞挑战。' },
+        { title: '酷乐湖冲浪挑战', desc: '站上浪板，稳住姿势！冲浪挑战等你来，化身比奇堡海滩最靓的仔。' },
+        { title: '水母狂欢舞', desc: '跟海绵宝宝水母舞步一起摇摆，现场一起跳，快乐直接拉满。' },
+        { title: '水母秋千', desc: '打卡超大水母秋千，随手一拍就是朋友圈 C 位。' },
+        { title: 'BEACH MART 海滩集市', desc: '比奇堡居民逛街时间！限定周边 & 纪念好物等你来淘。' },
+        { title: '巨型菠萝屋', desc: '打卡 4.5 米高巨型菠萝屋。' },
       ],
     },
-    { title: '解锁惊喜 · 打卡点 / 限定收藏品', desc: '现场还有超酷打卡点、限定收藏品，更有机会与海绵宝宝和忍者神龟见面！', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
+    { title: '解锁惊喜 · 集 XP 换限定好礼', desc: '现场可集 XP 解锁限定好礼；还有超酷打卡点与限定收藏品。具体集 XP 的规则与奖品官方未公布。', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
   ],
-  stage: [],
+  stage: [
+    {
+      title: '海绵宝宝 & 派大星见面会',
+      desc: '在海绵宝宝菠萝屋零距离互动，欢乐见面。',
+      schedule: [
+        { day: '10月2日 – 10月6日', times: ['15:00', '18:00'], guests: ['海绵宝宝 & 派大星'] },
+      ],
+    },
+  ],
   tasks: [],
-  rewards: [],
-  footnote: '同一 A-29 展位还有忍者神龟（同属尼克乐恩）。',
-  images: [nickImg, { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' }],
+  rewards: [
+    { name: '限定好礼（集 XP 兑换）', how: '现场集 XP 解锁；内容官方未公布' },
+    { name: '限定周边 / 纪念好物', how: 'BEACH MART 海滩集市现场选购' },
+  ],
+  footnote: '同一 A-29 展位还有忍者神龟（同属尼克乐恩）。水母狂欢舞挑战赛（9/25–10/18）是线上活动，不在现场。',
+  images: [
+    { src: 'img/booths/A29a/nick-00.jpg', caption: '尼克乐恩终极冒险玩家指南 KV（海绵宝宝 SpongeBob 官方号 9/30）' },
+    { src: 'img/booths/A29a/nick-01.jpg', caption: '比奇堡欢乐海滩必去打卡点 · 冲浪挑战 / 水母狂欢舞 / 水母秋千 / BEACH MART 海滩集市' },
+    { src: 'img/booths/A29a/nick-05.jpg', caption: '活动信息 · A-29 翻身时空港，日场 12:30–17:30 / 夜场 17:30–21:30' },
+    { src: 'img/booths/A29a/nick-03.jpg', caption: '惊喜见面会 · 海绵宝宝 & 派大星 每天 15:00 / 18:00' },
+    nickImg,
+    { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' },
+  ],
 }
 
 const tmnt = {
   source: nickSource,
-  moreSources: [{ title: '想闯上海忍者神龟秘密基地的举手（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/8VNWQPJDq23', noteId: '6aa3ef1a000000002803615d', author: '忍者神龟官方', publishedAt: '2026-09-12' }],
+  moreSources: [
+    { title: '请收好！RED LAND2026终极冒险玩家指南', url: 'https://xhslink.cn/o/8T58bYhrWUj', noteId: '6abccac4000000000a01da85', author: '海绵宝宝SpongeBob', publishedAt: '2026-09-30' },
+    { title: '想闯上海忍者神龟秘密基地的举手（仅收录 RED LAND 参展情报部分）', url: 'https://xhslink.cn/o/8VNWQPJDq23', noteId: '6aa3ef1a000000002803615d', author: '忍者神龟官方', publishedAt: '2026-09-12' },
+  ],
   boothNo: 'A29',
   location: '翻身时空港 A29',
   intro: '爷青回！忍者神龟秘密基地空降上海。这一次，不只是来打卡——真正的半壳英雄，准备好接受挑战了吗？',
-  notes: ['本次活动仅限 14 岁及以上观众参与（笔记原文）'],
+  notes: [
+    '本次活动仅限 14 岁及以上观众参与（笔记原文）',
+    '展台日夜场切换：日场 12:30–17:30 / 夜场 17:30–21:30',
+  ],
   activities: [
     {
-      title: '穿越次元入口，闯入神龟地下世界',
+      title: '潜入地下巢穴 · 解锁忍者冒险任务',
       items: [
-        { desc: '启动变种扫描仪，解锁你的专属变种身份。' },
-        { desc: '接受忍者训练，挑战各项技能任务。' },
-        { desc: '一路闯关升级，成为真正的半壳英雄。' },
+        { title: '变种扫描仪', desc: '站上扫描区域，开启变种扫描，解锁你的内在变种潜质。' },
+        { title: '莱昂纳多靶场突击', desc: '瞄准！投掷！挑战飞镖闯关，解锁忍者天赋。' },
+        { title: '多纳泰罗激光迷阵', desc: '穿梭、躲避、突破！和搭子一起挑战谁更快。' },
+        { title: '米开朗基罗披萨大作战', desc: '披萨派对开局！制作你的专属变种披萨。' },
+        { title: '拉斐尔天台激斗', desc: '限时挑战，火力全开！击倒敌人，成为「半壳英雄」。' },
       ],
     },
-    { title: '解锁惊喜 · 打卡点 / 限定收藏品', desc: '现场还有超酷打卡点、限定收藏品，更有机会与海绵宝宝和忍者神龟见面！', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
+    { title: '解锁惊喜 · 集 XP 换限定好礼', desc: '现场可集 XP 解锁限定好礼；还有超酷打卡点与限定收藏品。具体集 XP 的规则与奖品官方未公布。', note: '专题页奖品图里还有「忍者神龟眼罩」，获取方式未写' },
   ],
-  stage: [],
+  stage: [
+    {
+      title: '忍者神龟见面会',
+      desc: '和神龟们来一场热血合影，一次满足。',
+      schedule: [
+        { day: '10月2日 – 10月6日', times: ['14:00', '16:00', '20:00'], guests: ['忍者神龟'] },
+      ],
+    },
+  ],
   tasks: [],
-  rewards: [],
-  footnote: '同一 A-29 展位还有海绵宝宝（同属尼克乐恩）。',
-  images: [nickImg, { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' }],
+  rewards: [
+    { name: '限定好礼（集 XP 兑换）', how: '现场集 XP 解锁；内容官方未公布' },
+  ],
+  footnote: '同一 A-29 展位还有海绵宝宝（同属尼克乐恩）。水母狂欢舞挑战赛（9/25–10/18）是线上活动，不在现场。',
+  images: [
+    { src: 'img/booths/A29a/nick-02.jpg', caption: '潜入地下巢穴 · 变种扫描仪 / 莱昂纳多靶场突击 / 多纳泰罗激光迷阵 / 米开朗基罗披萨大作战 / 拉斐尔天台激斗' },
+    { src: 'img/booths/A29a/nick-03.jpg', caption: '惊喜见面会 · 忍者神龟 每天 14:00 / 16:00 / 20:00' },
+    { src: 'img/booths/A29a/nick-05.jpg', caption: '活动信息 · A-29 翻身时空港，日场 12:30–17:30 / 夜场 17:30–21:30' },
+    nickImg,
+    { src: 'img/booths/A29a/00.jpg', caption: '尼克乐恩 × RED LAND 2026 共用 KV：解锁海绵宝宝、忍者神龟经典世界' },
+  ],
 }
 
 // MARD 马尔德（C-11，重生试炼场）：官方号 9/26「小红书redland展位活动指南」为主来源——奇境拼豆工坊（需预约：每天 3 场 × 1.5 小时 × 20 人，9/30 按门票日期分档开约）、
@@ -4491,8 +4783,9 @@ const indieHall = {
   notes: [
     '官方写「80 款独立游戏」，聚合页名单是 84 款（见下方试玩名单），以现场档口为准。',
     '「愿望单」指该游戏的愿望单加入记录，领无料时需现场出示。',
-    '各摊位号（救世阿姨 Z34～Z35 / 落日山丘 C01～C02 / 我不是胖虎 C24～C25 / 宇宙怪谈2 C22～C23 / 唐宫诗与谋 沉浸区 C03～C04 / 神缺席 C31～C33）是独游区内部编号，与 C01 刺客信条展位无关。',
+    '各摊位号（救世阿姨 Z19 / 落日山丘 C01～C02 / 我不是胖虎 C24～C25 / 宇宙怪谈2 C22～C23 / 唐宫诗与谋 沉浸区 C03～C04 / 神缺席 C31～C33）是独游区内部编号，与 C01 刺客信条展位无关。',
     '「主创小圆桌见面会」需在 RED LAND 主会场预约（RED LAND 官方 9/25 预约日历，9 月 27 日开约，是最早开约的一批）。',
+    '育碧那两款在 C-04 的「游戏试玩区」（UBISOFT 专题页 9/22 标注）：《魔法门之英雄无敌 III 重制版》与《异变金属 Morbid Metal》；育碧的《刺客信条：黑旗 记忆重置》则在 C-01 互动体验区，两边不是同一个位置。',
   ],
   activities: [
     {
@@ -4535,7 +4828,7 @@ const indieHall = {
     {
       ip: '救世阿姨',
       title: '摊位位置与线下限定试玩版',
-      desc: '摊位在 C-04 独立游戏大食堂 Z34 – Z35（离出口处最近的角落）。现场有线下限定试玩版公开中，可体验阿姨们拯救世界的冒险。',
+      desc: '摊位在 C-04 独立游戏大食堂 Z19（离出口处最近的角落）。现场有线下限定试玩版公开中，可体验阿姨们拯救世界的冒险。',
     },
   ],
   stage: [
@@ -4610,7 +4903,7 @@ const indieHall = {
           title: 'Q 版粒牌（5 个套装 · 限量）',
           desc: '加入愿望单 + 在小红书发布包含现场照片、带 #救世阿姨 话题的公开笔记。',
           tags: ['#救世阿姨'],
-          post: '今天在 RED LAND 2026 的 C-04 独立游戏大食堂玩到了《救世阿姨》的线下限定试玩版，阿姨们拯救世界的冒险太上头了！摊位在 Z34 – Z35，离出口最近的角落，路过的一定要去试一把～\n\n#救世阿姨',
+          post: '今天在 RED LAND 2026 的 C-04 独立游戏大食堂玩到了《救世阿姨》的线下限定试玩版，阿姨们拯救世界的冒险太上头了！摊位在 Z19，离出口最近的角落，路过的一定要去试一把～\n\n#救世阿姨',
           note: '笔记须为公开笔记并包含现场照片',
           rewards: ['Q 版粒牌 5 个套装'],
         },
@@ -4633,7 +4926,7 @@ const indieHall = {
     { name: '限定角色夹子（宇宙怪谈2）', how: '摊位 C22～C23：关注小红书 + 加入玩家 QQ 群 + 加入 Steam 愿望单' },
     { name: '贴纸物料（唐宫诗与谋，抽奖）', how: '沉浸区 C03～C04：关注木兰舟工作室小红书账号参与抽奖' },
     { name: '宣纸扇子（唐宫诗与谋）', how: '沉浸区 C03～C04：加入 Steam 愿望单 + 现场试玩' },
-    { name: '香薰卡挂件（救世阿姨）', how: '《救世阿姨》摊位（Z34 – Z35）到场即可领取' },
+    { name: '香薰卡挂件（救世阿姨）', how: '《救世阿姨》摊位（Z19）到场即可领取' },
     { name: '邮票贴纸 随机 1 张（救世阿姨）', how: '出示愿望单加入记录，或关注其小红书账号' },
     { name: '像素风贴纸 5 枚套装（救世阿姨）', how: '出示愿望单加入记录 + 现场试玩并留下反馈；限量先到先得' },
     { name: 'Q 版粒牌 5 个套装（救世阿姨）', how: '出示愿望单加入记录 + 发布含现场照片、带 #救世阿姨 话题的公开笔记；限量先到先得' },
@@ -4649,6 +4942,13 @@ const indieHall = {
     { uid: '68e88082000000003201982d', name: '神缺席官方' },
   ],
   moreSources: [
+    {
+      title: 'UBISOFT 育碧 RED LAND 2026 专题页（含 C-04 游戏试玩区两款的现场说明）',
+      url: 'https://xhslink.com/m/TJhxJT8NDo',
+      noteId: '0c12f457ac8d44f587368e164deab8fb',
+      author: 'UBISOFT育碧',
+      publishedAt: '2026-09-22',
+    },
     {
       title: 'RED LAND 独立游戏试玩区 · 近百款独立游戏集中上桌（官方聚合页，84 款名单出处）',
       url: 'https://xhslink.com/m/4VL27MmQ48U',
@@ -4673,7 +4973,7 @@ const indieHall = {
     { src: 'img/booths/C04/hall-00.jpg', caption: '独立游戏大食堂 · 打卡攻略与兑换福利（RED LAND 官方 9/21）' },
     { src: 'img/booths/C04/hall-01.jpg', caption: '主创区效果图 ·「独游主理人私房菜」与独家特供档口' },
     { src: 'img/booths/C04/hall-02.jpg', caption: '公共区效果图 · 各档口试玩区与休息区' },
-    { src: 'img/booths/C04/jiushiayi-00.jpg', caption: '救世阿姨 · REDLAND 参展无料公开（摊位 Z34 – Z35，陆生海胆LandUni 9/21）' },
+    { src: 'img/booths/C04/jiushiayi-00.jpg', caption: '救世阿姨 · REDLAND 参展无料公开（摊位 Z19，陆生海胆LandUni 9/21 发布、9/30 修订摊位号）' },
     { src: 'img/booths/C04/jiushiayi-01.jpg', caption: '救世阿姨 · 四款无料的领取规则' },
     { src: 'img/booths/C04/luorishanqiu-00.jpg', caption: '落日山丘 · 线下专属好礼（限定角色立牌 / 尼柯玩偶每日 2 个），摊位 C01～C02（落日山丘SunsetHills 9/23）' },
     { src: 'img/booths/C04/panghu-00.jpg', caption: '我不是胖虎：小岛大当家 · 三步免费领限定解压捏捏游戏机 / 小虎森邻盲盒每日 2 个，摊位 C24～C25（9/23）' },
@@ -6471,6 +6771,7 @@ const assassins = {
     publishedAt: '2026-09-25',
   },
   moreSources: [
+    { title: 'UBISOFT 育碧 RED LAND 2026 专题页（三款游戏 · C-01 互动体验区 / C-04 游戏试玩区，含 #育碧游戏航海计划 与记忆碎片图）', url: 'https://xhslink.com/m/TJhxJT8NDo', noteId: '0c12f457ac8d44f587368e164deab8fb', author: 'UBISOFT育碧', publishedAt: '2026-09-22' },
     { title: '黑旗登船指南！复兴岛展台周边全攻略（UBISOFT育碧 主号版：长图与刺客信条 9/25 那条相同，另切成 4 段；活动四的每日暗号就在这个账号的置顶笔记里）', url: 'https://xhslink.cn/o/VXDZ7fq7ma', noteId: '6ab509140000000015013a16', author: 'UBISOFT育碧', publishedAt: '2026-09-25' },
     { title: '一个闪身步，寒鸦号即将靠岸复兴岛', url: 'https://xhslink.cn/o/AMulkNLb0ck', noteId: '6ab24396000000003501505b', author: '刺客信条', publishedAt: '2026-09-22' },
   ],
@@ -6514,7 +6815,7 @@ const assassins = {
   stage: [],
   tasks: [
     {
-      title: '活动二 · 整点儿！（拿骚酒馆合影）',
+      title: '活动二 · 整点儿！（拿骚酒馆合影）#育碧游戏航海计划',
       desc: '快来拿骚酒馆，爱德华还有安妮在这儿等着你呢！将你与角色或吧台的合影发布至小红书，带话题 #育碧游戏航海计划 并 @UBISOFT育碧，即可获得 1 枚行动印记，并可领取 1 份黑旗限定手提袋与存档碎片。',
       tags: ['#育碧游戏航海计划'],
       post: '在 RED LAND 2026 的 C01 拿骚酒馆和爱德华、安妮合影啦！寒鸦号靠岸复兴岛，这个国庆一起出海～ @UBISOFT育碧\n\n#育碧游戏航海计划',
@@ -6786,6 +7087,10 @@ export default {
   B14: anying,
   B09: reverse1999,
   C17: opcg,
+  C10: ffrs,
+  B19: clutch,
+  B20: legion,
+  A31: tophat,
   C08: partyAnimals,
   A15: swordsOfLegends,
   B22: shenbuyan,
