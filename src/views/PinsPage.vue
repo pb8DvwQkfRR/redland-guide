@@ -2,17 +2,55 @@
   <div class="page">
     <PageHeader title="PIN 图鉴" :sub="`冒险者拼图（冰箱贴）· 已收集 ${collectedCount} / ${totalKnown} 枚已公布`" />
 
-    <!-- 官方口径核对（按展位号）：发 PIN 展位 74 个 = 已有情报 + 待公布（用户 9/28） -->
+    <!-- 官方口径核对：官方 10/1「限定 PIN 全图鉴」给了权威款数——区域 PIN 88（A47+B21+C20）+ NPC 6 + 老玩家 1 = 全岛 95（用户 10/2） -->
     <div class="pcard mt-10">
       <div class="pcard-body">
-        <div class="pcard-title">📊 发 PIN 展位统计（按官方口径）</div>
+        <div class="pcard-title">📊 官方 PIN 总量（10/1 全图鉴）</div>
         <div class="row wrap mt-6" style="gap:6px">
-          <span class="pill">官方：总展位 {{ allNos.length }} · 发 PIN {{ OFFICIAL_PIN_BOOTHS }}</span>
+          <span class="pill hot">全岛 {{ roster.total }} 款</span>
+          <span class="pill">区域 PIN {{ rosterRegionTotal }}</span>
+          <span class="pill warm">NPC {{ roster.others[0].count }}</span>
+          <span class="pill warm">老玩家 {{ roster.others[1].count }}</span>
+        </div>
+        <div class="row wrap mt-10" style="gap:10px">
+          <div v-for="z in roster.zones" :key="z.zone" style="flex:1;min-width:96px">
+            <div class="row between small"><b>{{ z.name }}</b><span>{{ zonePinCount(z.zone) }} / {{ z.count }}</span></div>
+            <div class="bar mt-6"><i :style="{ width: Math.min(100, (zonePinCount(z.zone) / z.count) * 100) + '%', background: ZONE_COLOR[z.zone] }" /></div>
+          </div>
+        </div>
+        <div class="small muted mt-6">官方口径：区域 PIN 共 {{ rosterRegionTotal }} 款（三大区域每个都分日间 / 夜间两款，所以款数多于展位数），另有 NPC 互动 PIN {{ roster.others[0].count }} 款、老玩家专属 PIN {{ roster.others[1].count }} 款。上面的进度分母就是官方款数，分子是本站<b>已收录实图</b>的款数。</div>
+        <div class="small muted mt-6">{{ roster.dayTime }}；{{ roster.nightTime }}。{{ roster.note }}</div>
+      </div>
+    </div>
+
+    <!-- 本站收录进度（按展位号）：仅用于说明我们收录到哪一步，不再与官方款数直接相减 -->
+    <div class="pcard mt-10">
+      <div class="pcard-body">
+        <div class="pcard-title">📥 本站收录进度（按展位号）</div>
+        <div class="row wrap mt-6" style="gap:6px">
+          <span class="pill">总展位号 {{ allNos.length }}</span>
+          <span class="pill">其中发 PIN {{ pinBoothCount }}</span>
           <span class="pill hot">已放实图 {{ imageNos.size }}</span>
           <span class="pill warm">有情报无图 {{ infoNos.size - imageNos.size }}</span>
           <span class="pill">待公布 {{ pendingNos.length }}</span>
         </div>
-        <div class="small muted mt-6">按展位号计：同一展位号的多个 IP 算一个展位，一个展位发两款 PIN 也算一个。{{ imageNos.size }} + {{ infoNos.size - imageNos.size }} + {{ pendingNos.length }} = {{ infoNos.size + pendingNos.length }}<template v-if="infoNos.size + pendingNos.length === OFFICIAL_PIN_BOOTHS">，与官方 {{ OFFICIAL_PIN_BOOTHS }} 个一致</template><template v-else>，与官方 {{ OFFICIAL_PIN_BOOTHS }} 个不一致（本站 {{ pinBoothCount }}），待核</template>；不发 PIN 的 {{ noPinNos.size }} 个展位（宝藏码头 / 补给点 / 赞助区 / 待解锁 / 光夜展陈）不列。</div>
+        <div class="small muted mt-6">这一行按<b>展位号</b>计（同展位号的多 IP 算一个展位、发两款 PIN 也只算一个），用来反映我们收录到哪一步，<b>不与官方款数相减</b>——官方 88 款区域 PIN 对应的是「款」不是「展位号」，A 区 47 款就分布在 39 个展位号上。不发 PIN 的 {{ noPinNos.size }} 个展位（宝藏码头 / 补给点 / 赞助区 / 待解锁 / 光夜展陈）不列。</div>
+      </div>
+    </div>
+
+    <!-- 官方「限定 PIN 全图鉴」实物图（10/1） -->
+    <div class="pcard sand mt-10">
+      <div class="pcard-body">
+        <div class="pcard-title fold-head" @click="openRoster = !openRoster">
+          🖼 官方限定 PIN 全图鉴（{{ rosterImages.length }} 张）<span class="fold-arrow" :class="{ open: openRoster }">&gt;</span>
+        </div>
+        <div v-if="openRoster" class="mt-6">
+          <div class="small muted">RED LAND 官方号 10/1 放出的全部 PIN 实物图，可对照下面的图鉴核对自己集到哪几款。</div>
+          <div class="gallery mt-10">
+            <img v-for="(r, i) in rosterImages" :key="r.src" :src="thumb(base + r.src)" :alt="r.alt" :title="r.alt" loading="lazy" @click="openImgs(rosterImages.map((x) => ({ src: base + x.src, caption: x.alt })), i)" />
+          </div>
+          <div class="small muted mt-6">来源：{{ rosterSource.author }} · {{ rosterSource.publishedAt }} 原笔记</div>
+        </div>
       </div>
     </div>
 
@@ -28,7 +66,7 @@
           </div>
         </div>
         <div class="small muted mt-6">* 编号为按展位号的占位编码（官方未给 PIN 编号）；灰色「?」软盘是<b>还没公布 PIN 情报</b>的 IP（同一展位号的多个 IP 各一张），公布后替换。黄色「需预约」= 这枚 PIN 要先在 RED LAND 主会场预约对应活动才能领。</div>
-        <div class="small muted mt-6">* 官方说 74 个展位发 PIN，每区集齐 4 / 2 / 2 枚即可兑换该区拼图。勾选「只看已公布」可只看实图已公布的 PIN。</div>
+        <div class="small muted mt-6">* 每区集齐 4 / 2 / 2 枚 IP 展位 PIN 即可兑换该区拼图（这里按「已打卡的展位」算，与上面的官方款数口径不同）。勾选「只看已公布」可只看实图已公布的 PIN。</div>
       </div>
     </div>
 
@@ -77,12 +115,21 @@ import PageHeader from '../components/PageHeader.vue'
 import Lightbox from '../components/Lightbox.vue'
 import { pins, pinTypes, zoneThumbs } from '../data/pins.js'
 import { booths, zones as boothZones } from '../data/booths.js'
+import { mainline } from '../data/rules.js'
 import { useCollected } from '../composables/useStore.js'
+import { thumb } from '../utils/thumb.js'
 
 const base = import.meta.env.BASE_URL
 const { has, toggle } = useCollected()
 const filter = ref('ALL')
 const onlyKnown = ref(false)
+const openRoster = ref(false)
+// 官方 10/1「限定 PIN 全图鉴」给的权威款数（用户 10/2 起改用这个口径）
+const roster = mainline.roster
+const rosterRegionTotal = roster.zones.reduce((n, z) => n + z.count, 0)
+const ZONE_COLOR = { A: '#f26a2e', B: '#f2c23a', C: '#2f8fe6' }
+const rosterSource = mainline.rosterSource
+const rosterImages = mainline.rosterImages
 // 灯箱：当前筛选下所有已公布 PIN 的缩略图，左右滑动切换
 const lb = reactive({ items: [], i: null })
 function openPin(p) {
@@ -149,6 +196,10 @@ const totalKnown = pins.filter((p) => p.thumb).length
 const collectedCount = computed(() => pins.filter((p) => p.thumb && has(p.id)).length)
 // 区域进度：已收集区域 PIN 覆盖的不同展位数（占位卡也算，方便现场先勾）
 const zoneCollected = (z) => new Set(all.value.filter((p) => p.type === 'region' && p.zone === z && has(p.id)).map((p) => p.booth)).size
+// 官方款数进度：本站已收录**实图**的区域 PIN 条数（按 zone 分；分母用官方 10/1 给的款数）
+const zonePinCount = (z) => pins.filter((p) => p.type === 'region' && p.zone === z && p.thumb).length
+// 官方全图鉴的灯箱
+const openImgs = (items, i) => { lb.items = items; lb.i = i }
 
 const tagClass = (p) => (p.type === 'night' ? 'gray' : p.type === 'reward' ? 'green' : p.zone === 'B' ? 'yellow' : p.zone === 'C' ? 'blue' : '')
 const typeName = (t) => pinTypes.find((x) => x.key === t)?.name || ''

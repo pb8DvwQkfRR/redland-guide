@@ -42,9 +42,43 @@ export const mainline = {
     { name: '重生试炼场', need: 2, zone: 'C', pin: '蓝色 PIN', color: '#2f8fe6' },
   ],
   nightPin: { name: '夜间 PIN', desc: '黑色夜间限定 PIN，夜间发放；月下模式下将有神秘变体 PIN 掉落，请务必逗留到夜幕降临！', color: '#1f2a1f' },
+  // 官方 10/1「限定 PIN 全图鉴」给出的**权威款数**（此前只能从各 IP 笔记里零散统计）：
+  // A 47 + B 21 + C 20 = 88 款区域 PIN（每个区域都分「日间 PIN / 夜间 PIN」两款，
+  // 所以款数多于展位数），另加 NPC 互动 PIN 6 款 + 老玩家专属 PIN 1 款 = 全岛 95 款。
+  roster: {
+    total: 95,
+    zones: [
+      { zone: 'A', name: '翻身时空港', count: 47 },
+      { zone: 'B', name: '黄金海岸线', count: 21 },
+      { zone: 'C', name: '重生试炼场', count: 20 },
+    ],
+    others: [
+      { name: 'NPC 互动 PIN', count: 6, desc: '靠近小岛的 NPC 会有随机惊喜任务掉落，聊天互动 / 合拍打卡有机会获得' },
+      { name: '老玩家专属 PIN', count: 1, desc: '去年登过岛的主角凭【身份证】线下兑换，款式「初代目回归」（金色）' },
+    ],
+    dayTime: '日场 PIN 发放时间 12:30–17:30',
+    nightTime: '夜场 PIN 发放时间 17:30–21:30',
+    note: '每日不同款式的 PIN 数量有限，先到先得。',
+  },
   tips: [
     '各 IP 展位 PIN 每日数量有限，先到先得。',
     '已收录的展台详情里，星布谷地 / 星穹铁道 / 我的世界（A 区）PIN 为橙色，宝可梦（B 区）PIN 为黄色，与区域分色一致。',
+  ],
+  rosterSource: {
+    title: '此薯PIN商极高！超丰富全图鉴来袭',
+    url: 'https://xhslink.cn/o/yEGsFkTBTL',
+    noteId: '6abe2f30000000001802e183',
+    author: 'RED LAND',
+    publishedAt: '2026-10-01',
+  },
+  rosterImages: [
+    { src: 'img/rules/pin-roster/all.jpg', alt: '限定 PIN 全图鉴 · 全岛 95 款合影' },
+    { src: 'img/rules/pin-roster/zone-A.jpg', alt: '翻身时空港 PIN · 47 款（橙色）' },
+    { src: 'img/rules/pin-roster/zone-B.jpg', alt: '黄金海岸线 PIN · 21 款（黄色）' },
+    { src: 'img/rules/pin-roster/zone-C.jpg', alt: '重生试炼场 PIN · 20 款（蓝色）' },
+    { src: 'img/rules/pin-roster/npc.jpg', alt: 'NPC 互动 PIN · 6 款（红色）' },
+    { src: 'img/rules/pin-roster/veteran.jpg', alt: '老玩家专属 PIN · 1 款「初代目回归」（金色）' },
+    { src: 'img/rules/pin-roster/puzzle.jpg', alt: '冒险者拼图 · 3 块（三区各一，拼成完整体）' },
   ],
   images: [
     { src: 'img/rules/pin/01.jpg', alt: '三大区域 PIN 与冒险者拼图兑换规则' },

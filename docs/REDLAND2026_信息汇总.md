@@ -1998,6 +1998,7 @@ IP 官方笔记（2026-09-09 增补，均为 xhslink 短链，App 内打开）
 - https://xhslink.cn/o/5KkZKJK9ZYX （京东101HOME 09/20「全球首店9.28盛大开业」，与 RED LAND 无关，只取 A07 账号 uid）
 - https://xhslink.com/m/TJhxJT8NDo （UBISOFT育碧 09/22 专题页「RED LAND 2026」：三款游戏 + C-01 互动体验区 / C-04 游戏试玩区分区 + #育碧游戏航海计划 + 记忆碎片图；已并入 C01 与 C04 的 moreSources）
 - https://xhslink.com/m/6ptFvDXaWD9 （FINAL FANTASY RESONANCE 专题页，lastEditTime 2026-09-30；内容与 SQUARE ENIX ASIA 9/29 那条笔记一致，无新增信息，未单独收录）
+- https://xhslink.cn/o/yEGsFkTBTL （RED LAND 官方号 10/01「此薯PIN商极高！超丰富全图鉴来袭」，noteId `6abe2f30000000001802e183`，8 张留 7：全岛 95 款权威款数 —— 区域 88（A47/B21/C20，每区分日夜）+ NPC 6 + 老玩家 1；图存 `public/img/rules/pin-roster/`）
 - https://xhslink.cn/o/8T58bYhrWUj （海绵宝宝SpongeBob 09/30「终极冒险玩家指南」，A29a/A29b 场次与项目）
 - https://xhslink.cn/o/A9XoKPJyo35 （Top Hat Studios Inc 09/27「孤女&电锯姬 酷飒登场」，A31 展台玩法）
 - https://xhslink.cn/o/HboSd8ujoc （Geek小哥哥 09/30「联想拯救者邀你登岛」，B20 首个展台笔记）
