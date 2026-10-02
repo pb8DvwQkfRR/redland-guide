@@ -10,7 +10,7 @@ import numpy as np
 from scipy import ndimage as ndi
 
 Image.MAX_IMAGE_PIXELS = None
-ROSTER = '_roster'
+ROSTER = 'scripts/_roster_src'
 ZONES = {'A': ('01', 'orange'), 'B': ('02', 'yellow'), 'C': ('03', 'blue'),
          'npc': ('04', 'red'), 'puzzle': ('07', 'mix')}
 
@@ -49,8 +49,16 @@ def detect(zone):
     return im, [(ri + 1, ci + 1, c) for ri, row in enumerate(rows) for ci, c in enumerate(row)]
 
 if __name__ == '__main__':
-    cmd = sys.argv[1]
-    if cmd == 'sheet':
+    cmd = sys.argv[1] if len(sys.argv) > 1 else 'grid'
+    if cmd == 'grid':
+        for z in ['A', 'B', 'C']:
+            _, cells = detect(z)
+            rowsn = max(r for r, _, _ in cells)
+            print(f'== {z} 区（{len(cells)} 枚）==')
+            for r in range(1, rowsn + 1):
+                row = [(c, box) for rr, c, box in cells if rr == r]
+                print(f'  第 {r} 行（{len(row)} 枚）: ' + '  '.join(f'{r},{c}@x{box[0]}' for c, box in row))
+    elif cmd == 'sheet':
         zone = sys.argv[2]
         im, cells = detect(zone)
         S = 132               # 每格缩略图边长
