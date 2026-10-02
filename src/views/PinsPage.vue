@@ -29,21 +29,6 @@
       </div>
     </div>
 
-    <!-- 本站收录进度（按展位号）：仅用于说明我们收录到哪一步，不再与官方款数直接相减 -->
-    <div class="pcard mt-10">
-      <div class="pcard-body">
-        <div class="pcard-title">📥 本站收录进度（按展位号）</div>
-        <div class="row wrap mt-6" style="gap:6px">
-          <span class="pill">总展位号 {{ allNos.length }}</span>
-          <span class="pill">其中发 PIN {{ pinBoothCount }}</span>
-          <span class="pill hot">已放实图 {{ imageNos.size }}</span>
-          <span class="pill warm">有情报无图 {{ infoNos.size - imageNos.size }}</span>
-          <span class="pill">待公布 {{ pendingNos.length }}</span>
-        </div>
-        <div class="small muted mt-6">这一行按<b>展位号</b>计（同展位号的多 IP 算一个展位、发两款 PIN 也只算一个），用来反映我们收录到哪一步，<b>不与官方款数相减</b>——官方 88 款区域 PIN 对应的是「款」不是「展位号」，A 区 47 款就分布在 39 个展位号上。不发 PIN 的 {{ noPinNos.size }} 个展位（宝藏码头 / 补给点 / 赞助区 / 待解锁 / 光夜展陈）不列。</div>
-      </div>
-    </div>
-
     <!-- 官方「限定 PIN 全图鉴」实物图（10/1） -->
     <div class="pcard sand mt-10">
       <div class="pcard-body">
