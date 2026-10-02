@@ -54,19 +54,23 @@
       </div>
     </div>
 
-    <!-- 三区开图进度（按已收集的区域 PIN 覆盖的展位数） -->
+    <!-- 三区开图进度：每区显示「可兑换拼图的门槛 / 该区官方 PIN 款数 / 本站已收录 / 我自己集到的展位数」 -->
     <div class="pcard sand mt-10">
       <div class="pcard-body">
         <div class="pcard-title">🧩 冒险者拼图进度</div>
-        <div class="small muted mt-6">每个区域集齐指定数量的 IP 展位 PIN，到区域结算点兑换该区拼图；三块拼成冒险岛拼图完整体。</div>
-        <div class="row wrap mt-10" style="gap:10px">
-          <div v-for="z in zones" :key="z.key" style="flex:1;min-width:90px">
-            <div class="row between small"><b :style="{ color: z.color }">{{ z.region }}</b><span>{{ zoneCollected(z.key) }} / {{ z.need }}</span></div>
-            <div class="bar mt-6"><i :style="{ width: Math.min(100, (zoneCollected(z.key) / z.need) * 100) + '%', background: z.color }" /></div>
+        <div class="small muted mt-6">每个区域集齐所需数量的 IP 展位 PIN，到该区结算点兑换对应拼图；三块拼成冒险岛拼图完整体。</div>
+        <div class="pin-zone-list mt-10">
+          <div v-for="z in zoneRows" :key="z.key" class="pin-zone-row">
+            <div class="pin-zone-head">
+              <b :style="{ color: z.color }">{{ z.region }}</b>
+              <span class="pin-zone-num">集到 {{ z.collected }} / 需 {{ z.need }}</span>
+            </div>
+            <div class="bar mt-6"><i :style="{ width: Math.min(100, (z.collected / z.need) * 100) + '%', background: z.color }" /></div>
+            <div class="pin-zone-sub">官方 {{ z.official }} 款 · 本站已收录 {{ z.documented }} 款</div>
           </div>
         </div>
-        <div class="small muted mt-6">* 编号为按展位号的占位编码（官方未给 PIN 编号）；灰色「?」软盘是<b>还没公布 PIN 情报</b>的 IP（同一展位号的多个 IP 各一张），公布后替换。黄色「需预约」= 这枚 PIN 要先在 RED LAND 主会场预约对应活动才能领。</div>
-        <div class="small muted mt-6">* 每区集齐 4 / 2 / 2 枚 IP 展位 PIN 即可兑换该区拼图（这里按「已打卡的展位」算，与上面的官方款数口径不同）。勾选「只看已公布」可只看实图已公布的 PIN。</div>
+        <div class="small muted mt-6">* 官方 10/1 全图鉴：三大区域 PIN 共 {{ rosterRegionTotal }} 款（{{ zoneRows.map((z) => z.official).join(' / ') }}），每区都分日间 / 夜间两款，所以款数多于展位数。<b>左上是「你自己打卡集到的展位数 / 兑换拼图所需」</b>，下面一行是该区官方款数与本站已收录实图数。</div>
+        <div class="small muted mt-6">* 编号为按展位号的占位编码（官方未给 PIN 编号）；灰色「?」软盘是<b>还没公布 PIN 情报</b>的 IP（同一展位号的多个 IP 各一张），公布后替换。黄色「需预约」= 这枚 PIN 要先在 RED LAND 主会场预约对应活动才能领。勾选「只看已公布」可只看实图已公布的 PIN。</div>
       </div>
     </div>
 
@@ -198,6 +202,21 @@ const collectedCount = computed(() => pins.filter((p) => p.thumb && has(p.id)).l
 const zoneCollected = (z) => new Set(all.value.filter((p) => p.type === 'region' && p.zone === z && has(p.id)).map((p) => p.booth)).size
 // 官方款数进度：本站已收录**实图**的区域 PIN 条数（按 zone 分；分母用官方 10/1 给的款数）
 const zonePinCount = (z) => pins.filter((p) => p.type === 'region' && p.zone === z && p.thumb).length
+// 拼图进度卡每区一行：兑换门槛（4/2/2）+ 我已集到的展位数 + 官方款数 + 本站已收录实图款数
+const zoneRows = computed(() =>
+  roster.zones.map((r) => {
+    const bz = zones.find((z) => z.key === r.zone)
+    return {
+      key: r.zone,
+      region: r.name,
+      color: ZONE_COLOR[r.zone],
+      need: bz ? bz.need : r.count,       // 兑换该区拼图所需集齐的 IP 展位数
+      collected: zoneCollected(r.zone),
+      official: r.count,                  // 官方该区 PIN 款数
+      documented: zonePinCount(r.zone),   // 本站已收录实图款数
+    }
+  }),
+)
 // 官方全图鉴的灯箱
 const openImgs = (items, i) => { lb.items = items; lb.i = i }
 
