@@ -6,3 +6,5 @@ scripts/_map_spots_out
 # fetch-note.mjs / fetch-ditto.mjs 的临时落地目录（看清作者后再改名成正式 id 并搬走）
 public/img/booths/_tmp
 public/img/_t/booths/_tmp
+# 官方全图鉴的原图与坐标记录（抠 PIN 用，原图太大不入库；坐标记录见 scripts/_roster_src/cropmap.txt）
+scripts/_roster_src

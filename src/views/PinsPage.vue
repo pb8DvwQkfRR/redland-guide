@@ -5,21 +5,27 @@
     <!-- 官方口径核对：官方 10/1「限定 PIN 全图鉴」给了权威款数——区域 PIN 88（A47+B21+C20）+ NPC 6 + 老玩家 1 = 全岛 95（用户 10/2） -->
     <div class="pcard mt-10">
       <div class="pcard-body">
-        <div class="pcard-title">📊 官方 PIN 总量（10/1 全图鉴）</div>
+        <div class="pcard-title fold-head" @click="openTotal = !openTotal">
+          📊 官方 PIN 总量（10/1 全图鉴）<span class="fold-arrow" :class="{ open: openTotal }">&gt;</span>
+        </div>
         <div class="row wrap mt-6" style="gap:6px">
           <span class="pill hot">全岛 {{ roster.total }} 款</span>
           <span class="pill">区域 PIN {{ rosterRegionTotal }}</span>
-          <span class="pill warm">NPC {{ roster.others[0].count }}</span>
-          <span class="pill warm">老玩家 {{ roster.others[1].count }}</span>
         </div>
-        <div class="row wrap mt-10" style="gap:10px">
-          <div v-for="z in roster.zones" :key="z.zone" style="flex:1;min-width:96px">
-            <div class="row between small"><b>{{ z.name }}</b><span>{{ zonePinCount(z.zone) }} / {{ z.count }}</span></div>
-            <div class="bar mt-6"><i :style="{ width: Math.min(100, (zonePinCount(z.zone) / z.count) * 100) + '%', background: ZONE_COLOR[z.zone] }" /></div>
+        <div v-if="openTotal" class="mt-10">
+          <div class="row wrap mt-6" style="gap:6px">
+            <span class="pill warm">NPC {{ roster.others[0].count }}</span>
+            <span class="pill warm">老玩家 {{ roster.others[1].count }}</span>
           </div>
+          <div class="row wrap mt-10" style="gap:10px">
+            <div v-for="z in roster.zones" :key="z.zone" style="flex:1;min-width:96px">
+              <div class="row between small"><b>{{ z.name }}</b><span>{{ zonePinCount(z.zone) }} / {{ z.count }}</span></div>
+              <div class="bar mt-6"><i :style="{ width: Math.min(100, (zonePinCount(z.zone) / z.count) * 100) + '%', background: ZONE_COLOR[z.zone] }" /></div>
+            </div>
+          </div>
+          <div class="small muted mt-6">官方口径：区域 PIN 共 {{ rosterRegionTotal }} 款（三大区域每个都分日间 / 夜间两款，所以款数多于展位数），另有 NPC 互动 PIN {{ roster.others[0].count }} 款、老玩家专属 PIN {{ roster.others[1].count }} 款。上面的进度分母就是官方款数，分子是本站<b>已收录实图</b>的款数。</div>
+          <div class="small muted mt-6">{{ roster.dayTime }}；{{ roster.nightTime }}。{{ roster.note }}</div>
         </div>
-        <div class="small muted mt-6">官方口径：区域 PIN 共 {{ rosterRegionTotal }} 款（三大区域每个都分日间 / 夜间两款，所以款数多于展位数），另有 NPC 互动 PIN {{ roster.others[0].count }} 款、老玩家专属 PIN {{ roster.others[1].count }} 款。上面的进度分母就是官方款数，分子是本站<b>已收录实图</b>的款数。</div>
-        <div class="small muted mt-6">{{ roster.dayTime }}；{{ roster.nightTime }}。{{ roster.note }}</div>
       </div>
     </div>
 
@@ -54,23 +60,16 @@
       </div>
     </div>
 
-    <!-- 三区开图进度：每区显示「可兑换拼图的门槛 / 该区官方 PIN 款数 / 本站已收录 / 我自己集到的展位数」 -->
+    <!-- 三区开图进度（按已收集的区域 PIN 覆盖的展位数） -->
     <div class="pcard sand mt-10">
       <div class="pcard-body">
         <div class="pcard-title">🧩 冒险者拼图进度</div>
-        <div class="small muted mt-6">每个区域集齐所需数量的 IP 展位 PIN，到该区结算点兑换对应拼图；三块拼成冒险岛拼图完整体。</div>
-        <div class="pin-zone-list mt-10">
-          <div v-for="z in zoneRows" :key="z.key" class="pin-zone-row">
-            <div class="pin-zone-head">
-              <b :style="{ color: z.color }">{{ z.region }}</b>
-              <span class="pin-zone-num">集到 {{ z.collected }} / 需 {{ z.need }}</span>
-            </div>
-            <div class="bar mt-6"><i :style="{ width: Math.min(100, (z.collected / z.need) * 100) + '%', background: z.color }" /></div>
-            <div class="pin-zone-sub">官方 {{ z.official }} 款 · 本站已收录 {{ z.documented }} 款</div>
+        <div class="row wrap mt-10" style="gap:10px">
+          <div v-for="z in zones" :key="z.key" style="flex:1;min-width:90px">
+            <div class="row between small"><b :style="{ color: z.color }">{{ z.region }}</b><span>{{ zoneCollected(z.key) }} / {{ z.need }}</span></div>
+            <div class="bar mt-6"><i :style="{ width: Math.min(100, (zoneCollected(z.key) / z.need) * 100) + '%', background: z.color }" /></div>
           </div>
         </div>
-        <div class="small muted mt-6">* 官方 10/1 全图鉴：三大区域 PIN 共 {{ rosterRegionTotal }} 款（{{ zoneRows.map((z) => z.official).join(' / ') }}），每区都分日间 / 夜间两款，所以款数多于展位数。<b>左上是「你自己打卡集到的展位数 / 兑换拼图所需」</b>，下面一行是该区官方款数与本站已收录实图数。</div>
-        <div class="small muted mt-6">* 编号为按展位号的占位编码（官方未给 PIN 编号）；灰色「?」软盘是<b>还没公布 PIN 情报</b>的 IP（同一展位号的多个 IP 各一张），公布后替换。黄色「需预约」= 这枚 PIN 要先在 RED LAND 主会场预约对应活动才能领。勾选「只看已公布」可只看实图已公布的 PIN。</div>
       </div>
     </div>
 
@@ -128,6 +127,7 @@ const { has, toggle } = useCollected()
 const filter = ref('ALL')
 const onlyKnown = ref(false)
 const openRoster = ref(false)
+const openTotal = ref(false)
 // 官方 10/1「限定 PIN 全图鉴」给的权威款数（用户 10/2 起改用这个口径）
 const roster = mainline.roster
 const rosterRegionTotal = roster.zones.reduce((n, z) => n + z.count, 0)

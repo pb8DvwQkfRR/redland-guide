@@ -18,6 +18,7 @@
     "img/rules/pin-roster/zone-C.jpg",
     "img/rules/pin-roster/npc.jpg",
     "img/rules/pin-roster/veteran.jpg",
+    "img/rules/pin-roster/night.jpg",
     "img/rules/pin-roster/puzzle.jpg"
   ],
   "fileIds": [
@@ -30,5 +31,6 @@
     "spectrum/1040g0k0325pdaehn46305q2ssop2773gmes4sdo",
     "spectrum/1040g0k0325pdaehn463g5q2ssop2773gmek74k0"
   ],
-  "keptOnly": "8 张留 7（05 与 06 是同一张「老玩家 PIN」，去重）：00 限定 PIN 全图鉴（全部 95 款合影）/ 01 翻身时空港 PIN 47 款 / 02 黄金海岸线 PIN 21 款 / 03 重生试炼场 PIN 20 款 / 04 NPC 互动 PIN 6 款 / 06 老玩家 PIN 1 款（初代目回归，金色）/ 07 冒险者拼图 3 块。**这是官方首次给出分区 PIN 款数与全部实物图**，可用于核对图鉴进度。"
+  "keptOnly": "8 张全留：00 限定 PIN 全图鉴（全岛 95 款合影）/ 01 翻身时空港 47 款 / 02 黄金海岸线 21 款 / 03 重生试炼场 20 款 / 04 NPC 互动 6 款 / 05 老玩家 1 款（初代目回归，金色）/ 06 夜光 PIN（刺客信条黑旗夜光款）/ 07 冒险者拼图 3 块。**这是官方首次给出分区 PIN 款数与全部实物图**，已按它把图鉴里 15 个此前显示「?」的展位补上真实缩略图（坐标由用户逐条给出）。",
+  "coordinateSource": "官方原图 3024×4032，按颜色连通块自动化出网格（scripts/roster-pins.py），逐枚由用户指认展位。坐标记录见 scripts/_roster_src/cropmap.txt"
 }

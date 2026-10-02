@@ -78,6 +78,7 @@ export const mainline = {
     { src: 'img/rules/pin-roster/zone-C.jpg', alt: '重生试炼场 PIN · 20 款（蓝色）' },
     { src: 'img/rules/pin-roster/npc.jpg', alt: 'NPC 互动 PIN · 6 款（红色）' },
     { src: 'img/rules/pin-roster/veteran.jpg', alt: '老玩家专属 PIN · 1 款「初代目回归」（金色）' },
+    { src: 'img/rules/pin-roster/night.jpg', alt: '夜光 PIN · 刺客信条：黑旗 记忆重置夜光款' },
     { src: 'img/rules/pin-roster/puzzle.jpg', alt: '冒险者拼图 · 3 块（三区各一，拼成完整体）' },
   ],
   images: [
